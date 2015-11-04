@@ -8,10 +8,9 @@
  *
  * @package noFluxo
  */
-
 ?>
 
-	</div><!-- #content .site-conten .container-->
+</div><!-- #content .site-conten .container-->
 
 <footer class="container-fluid">
     <div class="row">
@@ -85,7 +84,7 @@
 
         </div><!-- container footer-conteudo -->
     </div><!--row-->
-    
+
     <div class="row credito">
         <div class="col-xs-12 ">
             <p>All content designs 2010-<?php echo date('Y'); ?> No Fluxo. <a href="#">Politica de Privacidade</a></p>

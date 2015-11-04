@@ -22,10 +22,12 @@
 
     <body <?php body_class(); ?>>
         <div id="page" class="hfeed site">
+
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'nofluxo'); ?></a>
 
+            <?php get_template_part('template-parts/header/menu'); ?>
+
             <?php if (is_front_page()) : ?>
-                <?php get_template_part('template-parts/header/home'); ?>
                 <div class="container-fluid banner">
                     <div class="row">
                         <div class="col-xs-12">
@@ -35,12 +37,7 @@
                     </div>
 
                 </div>
-
-            <?php else: ?>
-                <?php get_template_part('template-parts/header/padrao'); ?>
-
             <?php endif; ?>
-
 
 
 

@@ -18,251 +18,1280 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-@import "underscore.less";
+/* ==========================================================================
+   Google Font
+   ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* ==========================================================================
+   Underscore
+   ========================================================================== */
+//@import "underscore.less";
+
+/* ==========================================================================
+   Bootstrap
+   ========================================================================== */
 @import "bootstrap.less";
 
-/* 
-    Created on : 29/09/2015, 12:02:43
-    Author     : rodrigomuniz
-*/
+
+/* ==========================================================================
+   Reset MMGV
+   ========================================================================== */
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
 
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
+.navbar{
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0px; 
 
---------------------------------------------------------------*/
+}
 
-/*--------------------------------------------------------------
-# CORES
---------------------------------------------------------------*/
-@cinza-muito-escuro: #333333;
-@verde-escuro: #77a464;
-@azul-on: #15c6d8;
-
-/*--------------------------------------------------------------
-# HEADER
---------------------------------------------------------------*/
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: initial;
+    border-color: initial;
+}
 
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: @cinza-escuro-x;
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
 
-#masthead{
-    background-color: @cinza-muito-escuro;
-    height: 50px;
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: initial;
+    white-space: nowrap;
+}
+
+
+.breadcrumb {
+    background-color: transparent; 
+}
+
+
+.form-control:focus {
+
+    border-color: initial;    
+    outline: 0;
+    -webkit-box-shadow: 0;
+    box-shadow: none;
+    border: 1px solid #cccccc;
+
+}
+
+.glyphicon{
+    color: @cor-p-padrao; 
+}
+
+
+.skip-link{
+    display: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Cores
+   ========================================================================== */
+
+@cinza-escuro-xxx: #61656d;
+@cinza-escuro-xx: #1f2427;
+@cinza-escuro-x:#333333;
+@cinza-escuro: #5e626c;
+
+@cinza: #d8d8d8;
+
+
+@cinza-claro:#e3e1e1;
+@cinza-claro-x: #ebebeb;
+@cinza-claro-xx: #f3f3f3;
+
+@cinza-prod-font: #716f6f;
+
+@vermelho-padrao: #f45245;
+
+@branco: #fff;
+@cor-hover: #15c6d8;
+@cor-linha: #f1f1f1;
+
+@col-linha-titulo-prod-single: #858585;
+
+@cor-p-padrao: #858585;
+
+
+@bread-ativo: #7c7c7c;
+
+
+/* ==========================================================================
+   Font
+   ========================================================================== */
+
+@font-1: 'Raleway', sans-serif;
+@font-2: 'Lato', sans-serif;
+
+
+/* ==========================================================================
+   BOTOES
+   ========================================================================== */
+
+.btn-padrao(@fonte, @back, @border){
+    .btn;
+    .button-variant(@fonte, @back, @border);
+    border-radius: 0;
+    font-size: 25px;
+    .text-uppercase;
+
+}
+.btn-vermelho{
+    .btn-padrao(white, @vermelho-padrao, @vermelho-padrao);
+}
+
+.btn-azul{                    
+    .btn-padrao(white, @cor-hover, @cor-hover); 
+}
+
+.btn-cinza{                    
+    .btn-padrao(white, @cinza-escuro-xxx, @cinza-escuro-xxx) ;
+}
+
+.footer-conteudo-esq{
+    .btn-default{
+        .button-variant(white, @cor-hover, @cor-hover);
+    }    
+}
+
+
+
+/* ==========================================================================
+   Geral
+   ========================================================================== */
+body{
+    font-family: @font-1;
+}
+
+.h1-titulo-produto{
+    font-size: 28px;
+    color: @cinza-escuro-x;    
+}
+
+
+.h2-com-linha {
+
     position: relative;
+    font-family: @font-1;
+    font-weight: 600;
+    .text-uppercase;
+    font-size: 20px;
+    color: @cinza-escuro-x;
+    margin: 10px 0 12px;
 
-    .site-branding{
+    &:before {
+        background: @cor-linha;
+        content: "";
+        display: block;
+        height: 2px;
         position: absolute;
-        top:0px;
+        top: 50%;
+        width: 100%;
+        left: 0;
+    }
 
-        .logo{
-            padding-top: 12px;
-            width: 160px;
 
+    span {
+        background: #fff;
+        padding: 0 15px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.sublinhado{
+    border-bottom: solid 1px @cinza-claro-x;
+}
+
+.breadcrumb {
+    background-color: transparent; 
+    font-family: @font-1;
+    font-size: 12px;
+    color: @cinza-escuro-x;
+
+    a{
+        color: @cinza-escuro-x;
+    }
+
+
+    .active {
+        color: @bread-ativo;
+
+
+    }
+
+    & > li + li:before {
+        content: ">";
+        padding: 0 5px;
+
+    }
+
+}
+
+
+p.linha-inteira{
+    width: 100%;
+}
+
+
+.esq{
+    float: left;
+}
+
+.dir{
+    float: right;
+    .text-right;
+}
+
+
+.tbl-widget{
+
+    width: 100%;
+
+    td{
+        .sublinhado; 
+    }
+
+    .nome{
+        width: 50%;        
+    }
+
+    .preco{
+        width: 50%;
+        .text-right;
+    }
+
+}
+
+
+
+
+
+
+.paginacao{
+
+    .text-right;
+
+
+    .pagination > li > a, .pagination > li > span {
+        padding: 6px 12px;
+        color: @branco;
+        background-color: @cinza-escuro-x;
+        border: 0;
+        margin-left: -1px;
+        margin: 0 4px;
+        border-radius: 0;
+    }
+
+
+    .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+        z-index: 3;
+        color: @branco;
+        background-color: @cor-hover;
+    }
+
+}
+
+
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+/* ==========================================================================
+   PAGINA PADRAO
+   ========================================================================== */
+
+.pagina{
+
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    a{
+        color: @cor-hover;
+    }
+
+    h1{
+        font-family: @font-2;
+        font-size: 28px;
+        color: @cinza-escuro-x;
+        border-bottom: solid 1px @col-linha-titulo-prod-single;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        .text-uppercase;
+    }
+
+    p{
+        font-family: @font-2;
+        font-size: 15px;
+        color: @cor-p-padrao;
+        text-align:justify;
+        margin-bottom: 40px;
+
+        @media (max-width: @screen-xs-max) {  }
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+            font-size: 11px;
+        }
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+            font-size: 13px;
+        }
+
+    }
+
+    h2{
+        font-family: @font-2;
+        font-size: 21px;
+        color: @cinza-escuro-x;
+        margin-bottom: 25px;
+        .text-uppercase;
+    }
+
+    h3{
+        font-family: @font-2;
+        font-size: 18px;
+        color: @cinza-escuro-x;
+        margin-bottom: 15px;
+        .text-uppercase;
+    }
+
+    h3.sublinhado{
+        .sublinhado;
+        padding-bottom: 10px;
+        .text-uppercase;
+        margin: 50px 0 0 ;
+
+    }
+
+
+    .faq{
+        .sublinhado;
+
+        .btn-mais{
+            .btn-azul;
+            padding: 0px;
+            margin: 0px;
+            width: 24px;
+            height: 24px;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+
+
+
+        h4{
+            margin: 15px 0;
+        }
+
+        p{
+            margin: 0 0 15px;
+        }
+
+        .texto-explicativo{
+            display: none;
+        }
+    }
+
+
+    .endereco{
+
+        p{
+            margin: 0;
+            padding: 0 0 5px;
+            font-style: italic;
+
+            &:last-of-type{
+                margin-bottom: 15px;
+            }
         }
 
     }
 
 
+}
 
+.icone-titulo{
+    margin-top: -10px;
+    width: 25px;
+}
 
-    .main-navigation{
-        background-color: @cinza-muito-escuro;
-        clear: initial;
-        display: initial;
-        border-bottom: solid 1px @azul-on;
-        height: 32px;
+.icone-menu{
+    width: 20px;
+}
 
-
-        font-family: 'Lato', sans-serif;
-        text-transform: uppercase;
-        background: @cinza-muito-escuro;
-
-
-        a {
-            display: block;
-            padding: 1.3em 1em;
-            padding-bottom: 0;
-            font-size: 12px;
-            font-size: 1.2rem;
+.menu{
+       
+    a{
+        font-size: 15px;
+        margin: 20px 10px 16px;
+        
+        &:active, &:hover, &:focus{
             text-decoration: none;
-            line-height: 1.3em;
-            color: white;
-            color: hsl(0, 0%, 100%);
+        }
+        
+        
+        &:first-of-type{
+            margin-left: 0;
+        }                
+    }
+    
+    a.last-item{
+        margin-right: 0;
+    }     
+}
+
+.sub-menu{
+    display: none;
+    padding-bottom: 20px;
+    
+    .linha-azul{
+        border-top: solid 1px @cor-hover;
+        margin-bottom: 23px;
+    }
+    
+    
+    h2{
+        font-size: 15px;
+        .text-uppercase;
+        padding-bottom: 18px;
+    }
+    
+    a{
+        font-size: 15px;
+        text-transform: initial;
+        
+        p{
+            padding-bottom: 14px;
+        }
+        
+    }
+}
+
+
+
+
+/* ==========================================================================
+   RADIO BUTTONS
+   ========================================================================== */
+
+@radio-color: #5e626c;
+@radio-border-color: #c5c3c6;
+
+
+input[type=radio   ]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+
+input[type=radio   ]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+
+input[type=radio   ]:not(old) + label > span{
+    display          : inline-block;
+    width            : 15px;
+    height           : 15px;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 1px solid @radio-border-color;
+    border-radius    : 0;
+    vertical-align   : bottom;
+}
+
+
+input[type=radio]:not(old):checked +  label > span > span{
+    display          : block;
+    width            : 9px;
+    height           : 9px;
+    margin           : 2px;
+    border           : 1px solid @radio-color;
+    border-radius    : 0;
+    background       : @radio-color;
+    background-image :    @radio-color;
+}
+
+
+/* ==========================================================================
+   SELECT
+   ========================================================================== */
+
+div.select {
+    height: 50px;
+    overflow: hidden;
+    background: url(../img/select/arrow.png) no-repeat right #f8f8f8;
+    width: 80%;
+    border: 0px;
+    display: inline-block;
+    padding: 0px;
+    vertical-align: bottom;
+    min-width: 45px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+div.select select {
+    font-size: 15px;
+    .text-uppercase;
+    height: 50px;
+    min-width: 100%;
+    border: 1px solid silver;
+    border-radius: 0px;
+    background: transparent;
+    -webkit-appearance: none;
+    padding-top: 7px;
+    padding-left: 18px;
+    color: @cinza-escuro-x;
+}
+
+
+
+/* ==========================================================================
+   Items
+   ========================================================================== */
+
+.item-produto{
+    position: relative;
+    border: solid 1px #ddd;
+    margin-bottom: 40px;    
+
+    a{
+        color: initial;
+
+        &:hover, &:active, &:focus{
+            text-decoration: none;
         }
 
-        ul{
-            ul {
-                z-index: 99999;
-                padding: 0;
-                background: @cinza-muito-escuro;
-                top: 32px;
+        img{
 
-                @media screen and (max-width: @screen-xs-max) {
-                    top: 0px;
+
+        }
+
+        .item-produto-label{
+
+            height: 52px;
+            background-color: @cinza-claro-x;
+            //border: solid 1px #ddd;
+
+            padding: 18px 10px 0;
+            .text-uppercase;
+            font-family: @font-2;
+            font-size: 13px;
+            line-height: 15px;
+            color: @cinza-escuro-x;
+
+            p{
+                font-family: @font-2 !important;
+                font-size: 13px !important;
+                line-height: 15px !important;
+                color: @cinza-escuro-x !important;
+            }
+
+            .item-produto-label-nome{                
+                p{
+                    .text-left !important;
+                }
+                float: left;
+                padding-right: 2.5px;
+
+
+            }
+
+            .item-produto-label-preco{
+                p{
+                    .text-right !important;
                 }
 
-                ul{
-                    top: 0px;
-                }
+                float: right;
+                padding-left: 2.5px;
             }
 
         }
 
 
-        .current_page_item > a,
-        .current-menu-item > a,
-        .current_page_item > a:hover,
-            .current-menu-item > a:hover {
-            color: @verde-escuro;
-        }
-
-        .current_page_ancestor {
-            background: #4d4d4d;
-        }
-
-        ul ul .current_page_parent,
-        .current_page_parent .current_page_item > a {
-            color: #fff;
-            color: hsl(0, 0%, 100%);
-            background: #313131;
-            background: hsl(0, 0%, 19%);
-        }
-
-
-
-
-
     }
 
 }
 
 
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
-}
 
+/* ==========================================================================
+   FORM PADRÃO
+   ========================================================================== */
+.formPadrao{
 
-//RESPONSIVE MENU
-@media screen and (max-width: @screen-xs-max) {
-    .menu-toggle {
-        display: block;
-        height: 3.75em;
-        padding: 0 1em;
-        font-weight: normal;
+    .form-control{
+        margin: 20px 0;
         font-size: 14px;
-        font-size: 1.4rem;
-        text-decoration: none;
-        line-height: 3.75em;
+        .text-uppercase;
+        background-color: @cinza-claro-x;
+        height: 40px;
+        border-radius: 0px;
+        color: @cinza-escuro-xx;
+
+        .placeholder(@cinza-escuro-xx);
+
     }
 
-    .main-navigation.toggled .nav-menu {
-        display: block;
-        /*                border-top: 1px solid;
-                        border-top-color: #fff;
-                        border-top-color: hsla(0, 0%, 100%, .5);*/
+    textarea{
+        height: 150px !important;
+        border-radius: 0px;
+
     }
 
-    .main-navigation ul {
-        display: none;
-        padding-left: 0;
+    select{
+        font-size: 14px;
+        height: 40px;
+        min-width: 100%;
+        border: 1px solid silver;
+        border-radius: 0px;
+        background: transparent;
+        -webkit-appearance: none;
+        padding-top: 0px;
+        padding-left: 5px;
+
     }
 
-    .main-navigation li { 
-        float: none; 
+
+    .btn-enviar{
+        .btn-azul;
+        .pull-right;
+        font-size: 14px;
+        .make-sm-column(2);
+        .make-xs-column(6);
     }
 
-    .main-navigation li a { 
-        padding: 1.3em 2em; 
+
+
+}
+
+
+
+/* ==========================================================================
+   TABETAS
+   ========================================================================== */
+
+.tabela-pedido{
+
+    .table; 
+    .table-hover;
+
+    font-family: @font-2;
+
+    thead{
+        font-weight: bold;
+        .text-uppercase;
+        .text-center;
     }
 
-    .main-navigation li li a { 
-        padding-left: 4em; 
+    tbody{
+
+        .btn-visualizar{
+            .btn-cinza;
+            font-size: 13px;
+            .text-capitalize;
+        }
+
+    }    
+
+}
+
+
+/* ==========================================================================
+   Seletor e Filtro de produtos
+   ========================================================================== */
+
+
+.selecao-produto-grupo{
+
+    h3{
+        //border-bottom: solid 1px @col-linha-titulo-prod-single;
+        padding-bottom: 5px;
     }
 
-    .main-navigation li li li a { 
-        padding-left: 6em; 
+    .selecao-produto-caract{
+        margin-bottom: 15px;
+
+        .btn{
+            border-radius: 0;
+            margin: 0 3px;
+            min-height: 35px;
+            min-width: 35px;
+
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+   WIDGET
+   ========================================================================== */
+.widget{
+
+    .texto-padrao{
+        font-family: @font-2;
+        //border-bottom: solid 1px @cinza-claro-x !important;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 
-    .main-navigation li:hover > a {
-        /*                background: #313131;
-                        background: hsl(0, 0%, 19%);*/
+
+
+    p{
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
-    .main-navigation ul ul,
-    .main-navigation ul ul ul {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
-        float: none;
-        /*                background: #313131;
-                        background: hsl(0, 0%, 19%);*/
+    h2{
+        .text-uppercase ;
+        font-family: @font-1 ;
+        font-size: 15px ;
+        color: @cinza-escuro;
+        border-bottom: solid 1px @col-linha-titulo-prod-single !important;
+        font-weight: bold !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 5px !important;
     }
 
-    .main-navigation ul ul a { width: 100%; }
-
-    .main-navigation ul a:hover,
-    .main-navigation ul ul a:hover {
-        /*                background: #4d4d4d;
-                        background: hsl(0, 0%, 30%);*/
+    h2.destaque{
+        font-size: 18px;
+        color: @cinza-escuro-x;
     }
 
-    .main-navigation .current_page_ancestor { background: inherit; }
 
-    .main-navigation ul ul .current_page_parent {
-        /*                color: inherit;
-                        background: inherit;*/
+
+    & > div{
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        & > p{
+            .texto-padrao;
+        }
+
+        & > table{
+            .texto-padrao;
+        }
+
     }
 
-    .main-navigation .current_page_item > a,
-    .main-navigation .current_page_item > a:hover,
-    .main-navigation .current_page_item li:hover,
-    .main-navigation .current_page_parent .current_page_item > a  {
-        /*                color: #fff;
-                        color: hsl(0, 0%, 100%);
-                        background: #4d4d4d;
-                        background: hsl(0, 0%, 30%);    */
+
+    .filtro{
+        font-family: @font-1 !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        color: @cinza-escuro-x !important;
+
+        h2{
+            border-bottom: solid 2px @col-linha-titulo-prod-single !important;
+        }
+
+
     }
 
-} // End responsive menu
+    .preco{
 
+        #sliderPreco{
+            margin-bottom: 20px;
+        }
+
+        .btn-filtrar{
+            .btn-vermelho;
+            font-size: 14px;
+            width: 90px;
+        }
+
+
+
+    }
+
+    .carrinho, .filtro {
+        p{
+            border: 0 !important;
+        }
+    }
+
+    .categorias{
+
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li{
+            .texto-padrao;
+            .sublinhado;          
+        }
+    }
+}
+
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
 .banner{
-    background-color: @verde-escuro;
-    height: 150px;
+    background-color: #255625;
+    height: 210px;
+    background-image: url("../img/logo/logo-noFluxo-rodape.png");
+
 
 }
 
 
-/*--------------------------------------------------------------
-# sidebase
---------------------------------------------------------------*/
-.sidebar-esq{
-    padding-top: 60px;
+/* ==========================================================================
+   header
+   ========================================================================== */
+
+header{
+
+    p{
+        margin:0;
+        padding: 0;
+
+    }
+
+    .navbar {
+        background-color: @cinza-escuro-x;
+        color: @branco;
+        .text-uppercase;
+
+
+
+        a{
+            font-size: 15px;
+            color: @branco;
+
+            &:hover, &:active, &:focus{
+                color: @cor-hover;
+                background-color: transparent;
+            }
+
+
+        }
+
+
+        .navbar-brand{
+
+            /*            @media (max-width: @screen-xs-max) { 
+            
+                        }
+                        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {  
+            
+                        }
+                        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+            
+                        }
+                        @media (min-width: @screen-lg-min) { 
+                            width: 190px;    
+                        }
+            
+                        img{
+                            width: 190px;
+                        }*/
+
+
+
+            img{
+                width: 180px;  
+            }
+
+        }
+        .logo-interno{
+
+            img{
+                width: 160px;
+            }
+
+        }
+
+    }
+
 }
 
 
 
-/*--------------------------------------------------------------
-# loja-3
---------------------------------------------------------------*/
 
-.loja-3-col{
-    .make-row;
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
-    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-        float: none;
-        position: relative;
-        width: inherit;
-        padding: initial;
-        margin: initial;
-        .make-xs-column(4);
-    }  
+footer{
+
+    background-color: @cinza-escuro-x;
+    min-height: 230px;
+    padding-top: 33px;
+
+    a{
+        color: @branco;        
+    }
+
+
+
+    .footer-conteudo{
+
+        .titulo{
+            font-family: @font-1;
+            font-weight: bold;
+            font-size: 22px;
+            color: @branco;
+            padding-bottom: 25px;
+            .text-uppercase;
+        }
+
+        .sitemap{
+            font-family: @font-2;
+            font-weight: bold;
+            font-size: 12px;
+            color: @cinza-claro;
+            p{
+                padding-bottom: 10px;               
+            }
+
+            img.sitemap-icon{
+                width: 30px;
+                vertical-align: middle;
+                padding-right: 9px;
+
+            }
+
+        }
+
+        .outros{
+            font-family: @font-2;
+            font-weight: bold;
+            font-size: 14px;
+            color: @cinza-claro;
+
+            input, button{
+                border-radius: 0;
+            }
+        }
+
+        .logo-footer{
+            padding-top: 10px;
+
+        }
+
+    }
+
+    .credito{
+        margin-top: 15px;
+        background-color: @cinza-escuro-xx;
+        .text-center;
+        color: @branco;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+}
+
+
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+
+.mais-vendidas{
+
+    .mais-vendidas-titulo{
+
+        h2{
+            .h2-com-linha;
+            margin-top: 27px;
+
+        }
+
+    }
+
+    .mais-vendidas-passador{
+        .text-center;
+        margin-top: 20px;
+        padding-left: 10px;
+
+        a{
+            font-size: 25px;
+            margin: 0 10px;
+        }
+
+
+    }
+
+
+    .mais-vendidas-carousel{
+
+    }
+}
+
+
+/* ==========================================================================
+   PRODUTO-SINGLE
+   ========================================================================== */
+
+.produto-single{
+
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .produto-single-imagens{
+
+        .produto-single-imagens-unica{
+            /*margin-bottom: 15px;*/
+
+        }
+
+        .produto-single-imagens-thumbnails{
+
+            margin-top: 16px;
+
+
+
+            .cropFrame{
+
+                width: 80px;
+                height: 78px;
+                overflow: hidden;
+                margin: 0;
+                position: relative;
+                float: left;
+                margin-left: 13px;
+
+                &:first-of-type{
+                    margin-left: 0px;
+                }
+
+            }
+
+            .cropImg{
+                position:absolute;
+                left: -100%;
+                right: -100%;
+                top: -100%;
+                bottom: -100%;
+                margin: auto;
+                width: 100px;
+
+
+            }
+
+        }
+
+    }
+
+    .produto-single-info{        
+
+
+        .produto-single-info-titulo{
+
+            border-bottom: solid 1px @col-linha-titulo-prod-single;
+
+
+            .produto-single-info-titulo-h1{
+
+                border: 0;
+                margin: 0;
+                padding: 0;
+                float: left;
+                .h1-titulo-produto;
+                margin-bottom: 5px;
+                
+
+
+            }
+
+            .produto-single-info-titulo-wishlist{
+                float: right;
+                padding-right: 20px;
+                .h1-titulo-produto;
+                font-size: 15px;
+                .btn;
+                margin-top: -6px;
+            }
+
+            .produto-single-info-titulo-passador{
+                float: right;
+                .h1-titulo-produto;
+                font-size: 25px;
+                margin-top: -8px;
+
+            }
+
+        }
+
+
+        .produto-single-info-descricao{
+            font-family: @font-2;
+
+            .produto-categoria{
+                padding-top: 5px;
+
+                color: @cor-hover;
+                font-size: 15px;
+                
+                span{
+                    color: @cinza;
+                }
+
+            }
+
+            .descricao{
+                margin-top: 30px;
+                font-size: 25px;
+                color: @cinza-prod-font;
+
+
+            }
+
+            .disponiveis-compra{
+                margin-top: 50px;
+
+
+
+                .comprar-produto{
+                    position: relative;
+
+
+
+                    .btn-comprar{
+
+                        .btn-vermelho;
+
+                        width: 200px;
+                        height: 60px;
+
+
+                        padding-top: 13px;
+                        position: absolute;
+                        bottom: 10px;
+                    }
+
+                }
+
+                .selecao-produto, .comprar-produto{
+                    min-height: 245px;
+                }
+
+
+
+            }
+        }
+
+        .produto-single-info-adicional{
+            color: @col-linha-titulo-prod-single;
+
+
+
+            .produto-single-info-adicional-titulo{
+                margin-top: 50px;
+                font-size: 20px;
+                .text-uppercase;
+
+
+            }
+
+            .produto-single-info-adicional-texto{
+                background-color: @cinza-claro-xx;
+                font-size: 18px;
+                padding: 10px 0;
+                font-style: italic;
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+    .linha-btns-sociais{
+        padding-top: 20px;
+        .text-right;
+
+
+        a{
+            border: solid 1px @cinza;
+            border-radius: 23px;
+            width: 35px;
+            padding-left: 10px;
+            padding-top: 6px;
+            color: @cinza;
+            margin: 0 2px;            
+        }
+    }
 
 }
 
@@ -270,7 +1299,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 
-/*--------------------------------------------------------------
-# loja-4
---------------------------------------------------------------*/
+
+/* ==========================================================================
+   PAGE-LOJA
+   ========================================================================== */
+
+.colecao-completa-3-colunas, .colecao-completa-4-colunas{
+
+
+
+}
+
+
+.grade-prod{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   PAGE-CONTATO
+   ========================================================================== */
+
+.page-contato{
+
+}
 

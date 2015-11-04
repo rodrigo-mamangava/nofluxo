@@ -26,7 +26,12 @@ if (empty($woocommerce_loop['columns'])) {
         echo '<div class="loja-4-col">';
         $woocommerce_loop['columns'] = apply_filters('loop_shop_columns', 4);
         echo '<div class="loja">';
+
+        $classes[] = 'col-sm-3';
     } else {
+
+        $classes[] = 'col-sm-3';
+
         echo '<div class="loja-3-col">';
         $woocommerce_loop['columns'] = apply_filters('loop_shop_columns', 3);
         echo '<div class="loja">';
@@ -43,14 +48,15 @@ $woocommerce_loop['loop'] ++;
 
 // Extra post classes
 $classes = array();
-if (0 == ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 == $woocommerce_loop['columns']) {
-    $classes[] = 'first';
-}
-if (0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns']) {
-    $classes[] = 'last';
+
+if (is_front_page()) {
+    $classes[] = 'col-sm-3';
+} else {
+    $classes[] = 'col-sm-4';
 }
 ?>
-<li <?php post_class($classes); ?>>
+
+<div <?php post_class($classes); ?>>
 
 <?php do_action('woocommerce_before_shop_loop_item'); ?>
 
@@ -92,4 +98,4 @@ do_action('woocommerce_after_shop_loop_item_title');
 do_action('woocommerce_after_shop_loop_item');
 ?>
 
-</li>
+</div>

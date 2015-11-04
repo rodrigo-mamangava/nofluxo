@@ -1,4 +1,5 @@
 <?php
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -6,9 +7,10 @@
  */
 
 
- do_action('woocommerce_archive_description');
+do_action('woocommerce_archive_description');
 
-if (have_posts()) : ?>
+if (have_posts()) :
+    ?>
 
     <?php do_action('woocommerce_before_shop_loop'); ?>
 
@@ -30,4 +32,6 @@ if (have_posts()) : ?>
 
     <?php wc_get_template('loop/no-products-found.php'); ?>
 
-    <?php endif;
+    <?php
+
+ endif;

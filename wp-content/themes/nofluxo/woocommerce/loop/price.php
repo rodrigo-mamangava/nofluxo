@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
+
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
