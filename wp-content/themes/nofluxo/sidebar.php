@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The sidebar containing the main widget area.
  *
@@ -12,7 +11,16 @@ if (!is_active_sidebar('sidebar-1')) {
 }
 ?>
 
+<div class="widget">
 
-<?php dynamic_sidebar('sidebar-1'); ?>
+    <div class="filtro">
+        <h2 class="destaque">Filtre sua busca</h2>
+    </div>
+    
+    <?php echo current_filter(); ?>
+
+    <?php dynamic_sidebar('sidebar-1'); ?>
+
+</div>
 
 

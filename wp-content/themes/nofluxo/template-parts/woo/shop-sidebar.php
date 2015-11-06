@@ -4,13 +4,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+?>
 
-if (apply_filters('woocommerce_show_page_title', true)) : ?>
-
-    <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-
-<?php endif;
+<div class="colecao-completa-3-colunas">'
 
 
-get_template_part('template-parts/woo/shop');
+    <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 
+        <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+
+    <?php endif; ?>
+
+
+    <?php get_template_part('template-parts/woo/shop'); ?>
+
+</div>

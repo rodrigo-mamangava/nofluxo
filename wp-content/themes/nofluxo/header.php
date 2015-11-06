@@ -21,24 +21,24 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <div id="page" class="hfeed site">
 
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'nofluxo'); ?></a>
 
-            <?php get_template_part('template-parts/header/menu'); ?>
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'nofluxo'); ?></a>
 
-            <?php if (is_front_page()) : ?>
-                <div class="container-fluid banner">
-                    <div class="row">
-                        <div class="col-xs-12">
+        <?php get_template_part('template-parts/header/menu'); ?>
 
-                        </div>
+        <?php if (is_front_page()) : ?>
+            <div class="container-fluid banner">
+                <div class="row">
+                    <div class="col-xs-12">
 
                     </div>
 
                 </div>
-            <?php endif; ?>
+
+            </div>
+        <?php endif; ?>
 
 
 
-            <div id="content" class="site-conten container">
+        <div class="main container">

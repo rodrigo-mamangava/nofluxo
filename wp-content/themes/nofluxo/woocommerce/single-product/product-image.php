@@ -14,7 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $woocommerce, $product;
 
 ?>
-<div class="images">
+<div class="row">
+    <div class="produto-single-imagens">
+        
+        <div class="col-xs-12 produto-single-imagens-unica">
 
 	<?php
 		if ( has_post_thumbnail() ) {
@@ -24,7 +27,8 @@ global $post, $woocommerce, $product;
 			$image_link  	= wp_get_attachment_url( get_post_thumbnail_id() );
 			$image       	= get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
 				'title'	=> $image_title,
-				'alt'	=> $image_title
+				'alt'	=> $image_title, 
+                                'class' => 'img-responsive'
 				) );
 
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
@@ -43,7 +47,12 @@ global $post, $woocommerce, $product;
 
 		}
 	?>
+        </div>
+        
 
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
+        
+        <div class="clearfix"></div>
 
+    </div>
 </div>

@@ -12,4 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<h3><?php the_title(); ?></h3>
+<div class="col-xs-8 item-produto-label-nome bubble">
+    <p><?php the_title(); ?></p>
+</div>

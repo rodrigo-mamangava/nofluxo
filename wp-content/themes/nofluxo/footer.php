@@ -1,17 +1,4 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package noFluxo
- */
-?>
-
-</div><!-- #content .site-conten .container-->
-
+</div><!--main container-->
 <footer class="container-fluid">
     <div class="row">
         <div class="container footer-conteudo">
@@ -84,7 +71,7 @@
 
         </div><!-- container footer-conteudo -->
     </div><!--row-->
-
+    
     <div class="row credito">
         <div class="col-xs-12 ">
             <p>All content designs 2010-<?php echo date('Y'); ?> No Fluxo. <a href="#">Politica de Privacidade</a></p>
@@ -92,7 +79,6 @@
     </div>
 
 </footer>
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

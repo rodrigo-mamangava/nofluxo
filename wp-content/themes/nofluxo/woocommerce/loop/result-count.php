@@ -18,6 +18,7 @@ global $wp_query;
 if ( ! woocommerce_products_will_display() )
 	return;
 ?>
+<div class="contadorResultados">
 <p class="woocommerce-result-count">
 	<?php
 	$paged    = max( 1, $wp_query->get( 'paged' ) );
@@ -35,3 +36,5 @@ if ( ! woocommerce_products_will_display() )
 	}
 	?>
 </p>
+
+</div>

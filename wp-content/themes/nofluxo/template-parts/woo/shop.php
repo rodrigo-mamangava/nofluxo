@@ -12,7 +12,9 @@ do_action('woocommerce_archive_description');
 if (have_posts()) :
     ?>
 
-    <?php do_action('woocommerce_before_shop_loop'); ?>
+    <?php //do_action('woocommerce_before_shop_loop'); ?>
+
+    <?php get_template_part('template-parts/woo/loop/ordenadorAndContador'); ?>
 
     <?php woocommerce_product_loop_start(); ?>
 
