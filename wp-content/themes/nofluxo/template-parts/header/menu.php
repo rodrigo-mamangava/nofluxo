@@ -58,12 +58,9 @@
                             <div class="col-xs-12">
                                 <div class="linha-azul"></div>
                             </div>
-                            <div class="col-xs-2">
-                                <h2>Youtubers</h2>
                                 <?php
                                 wp_nav_menu(array('menu' => 'Menu Loja'));
                                 ?>
-                            </div>
 
                         </div>
                     </div>                         

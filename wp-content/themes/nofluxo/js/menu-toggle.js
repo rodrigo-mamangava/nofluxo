@@ -20,4 +20,6 @@ jQuery(document).ready(function ($) {
         }
 
     });
+    
+    $( "li.menu-item-has-children" ).wrap( "<div class='col-xs-2'></div>" );
 });
