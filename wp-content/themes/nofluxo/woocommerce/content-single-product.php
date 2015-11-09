@@ -75,44 +75,32 @@ if (post_password_required()) {
                         <div class="produto-single-info-descricao">
 
                             <div class="descricao">
-                                <?php woocommerce_template_single_excerpt(); ?>
+                                <?php 
+                                if($post->post_excerpt != ''){
+                                    woocommerce_template_single_excerpt();
+                                }else{
+                                    woocommerce_product_description_tab();
+                                }
+                                    
+                                ?>
                             </div>
 
                             <div class="disponiveis-compra">
-
                                 <div class="row">
-                                    <div class="col-sm-4 col-sm-offset-2 selecao-produto">
-
-                                        <div  class="selecao-produto-grupo select select-xs">
-                                            <select class="form-control ">
-                                                <option>Modelo</option>
-                                                <option>Masculino</option>
-                                                <option>Feminino</option>
-                                                <option>Infantil</option>
-                                            </select>
+                                        <?php                                        
+                                        woocommerce_template_single_add_to_cart(); 
+                                        ?>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="produto-single-info-adicional">
+                                    
+                                        <?php 
+                                        woocommerce_product_additional_information_tab();
+                                        ?>
+                                            
                                         </div>
-                                        <div  class="selecao-produto-grupo select select-xs">
-                                            <select class="form-control ">
-                                                <option>Cor</option>
-                                                <option>Vermelho</option>
-                                                <option>Azul</option>
-                                            </select>
-                                        </div>
-                                        <div  class="selecao-produto-grupo select select-xs">
-                                            <select class="form-control ">
-                                                <option>Tamanho</option>
-                                                <option>P</option>
-                                                <option>M</option>
-                                                <option>G</option>
-                                                <option>GG</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-5 col-sm-offset-1 comprar-produto">
-
-                                        <?php woocommerce_template_single_add_to_cart(); ?>
-
-
+                                    
                                     </div>
                                 </div>
                             </div><!--disponiveis-compra -->
@@ -123,11 +111,6 @@ if (post_password_required()) {
                     <?php get_template_part('template-parts/woo/sharebuttons'); ?>
                     
                 </div>
-
-
-
-
-
 
                 <?php
                 /**

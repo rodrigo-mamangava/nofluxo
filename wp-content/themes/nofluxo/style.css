@@ -6897,6 +6897,7 @@ h6 {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
+  padding: 6.5px 12px;
 }
 .btn-vermelho:focus,
 .btn-vermelho:active:focus,
@@ -7726,7 +7727,7 @@ input[type=radio]:not(old):checked + label > span > span {
 div.select {
   height: 50px;
   overflow: hidden;
-  background: url(../img/select/arrow.png) no-repeat right #f8f8f8;
+  background: url("../nofluxo/img/select/arrow.png") no-repeat right #f8f8f8;
   width: 80%;
   border: 0px;
   display: inline-block;
@@ -8335,9 +8336,6 @@ fieldset[disabled] .tabela-pedido tbody .btn-visualizar.active {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.widget aside {
-  margin-bottom: 50px;
-}
 .widget .filtro {
   font-family: 'Raleway', sans-serif !important;
   font-size: 18px !important;
@@ -8374,6 +8372,7 @@ fieldset[disabled] .tabela-pedido tbody .btn-visualizar.active {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
+  padding: 6.5px 12px;
   font-size: 14px;
   width: 90px;
 }
@@ -8492,6 +8491,9 @@ fieldset[disabled] .widget .preco .btn-filtrar.active {
 /* ==========================================================================
    ASIDE
    ========================================================================== */
+aside {
+  margin-bottom: 50px;
+}
 .woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range {
   top: 0;
   height: 100%;
@@ -8507,11 +8509,11 @@ woocommerce .widget_price_filter .ui-slider {
   z-index: 2;
   width: 1em;
   height: 1em;
-  background-color: #a46497;
+  background-color: #6a666e;
   border-radius: 1em;
   cursor: ew-resize;
   outline: 0;
-  top: -0.3em;
+  top: -0.37em;
   margin-left: -0.5em;
 }
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
@@ -8521,11 +8523,11 @@ woocommerce .widget_price_filter .ui-slider {
   display: block;
   border: 0;
   border-radius: 1em;
-  background-color: #a46497;
+  background-color: #6a666e;
 }
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
-  border-radius: 1em;
-  background-color: #602053;
+  border-radius: 0.2em;
+  background-color: #b3acba;
   border: 0;
 }
 .woocommerce .widget_price_filter .ui-slider {
@@ -8533,11 +8535,6 @@ woocommerce .widget_price_filter .ui-slider {
   text-align: left;
   margin-left: .5em;
   margin-right: .5em;
-}
-.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
-  border-radius: 1em;
-  background-color: #602053;
-  border: 0;
 }
 .woocommerce .widget_price_filter .price_slider_amount {
   text-align: right;
@@ -8552,27 +8549,411 @@ woocommerce .widget_price_filter .ui-slider {
 .woocommerce a.button,
 .woocommerce button.button,
 .woocommerce input.button {
-  font-size: 100%;
-  margin: 0;
-  line-height: 1;
-  cursor: pointer;
-  position: relative;
-  font-family: inherit;
-  text-decoration: none;
-  overflow: visible;
-  padding: .618em 1em;
-  font-weight: 700;
-  border-radius: 3px;
-  left: auto;
-  color: #515151;
-  background-color: #ebe9eb;
-  border: 0;
-  white-space: nowrap;
   display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
   background-image: none;
-  box-shadow: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #f45245;
+  border-color: #f45245;
+  border-radius: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 6.5px 12px;
+}
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:focus,
+.woocommerce button.button:focus,
+.woocommerce input.button:focus,
+.woocommerce #respond input#submit:active:focus,
+.woocommerce a.button:active:focus,
+.woocommerce button.button:active:focus,
+.woocommerce input.button:active:focus,
+.woocommerce #respond input#submit.active:focus,
+.woocommerce a.button.active:focus,
+.woocommerce button.button.active:focus,
+.woocommerce input.button.active:focus,
+.woocommerce #respond input#submit.focus,
+.woocommerce a.button.focus,
+.woocommerce button.button.focus,
+.woocommerce input.button.focus,
+.woocommerce #respond input#submit:active.focus,
+.woocommerce a.button:active.focus,
+.woocommerce button.button:active.focus,
+.woocommerce input.button:active.focus,
+.woocommerce #respond input#submit.active.focus,
+.woocommerce a.button.active.focus,
+.woocommerce button.button.active.focus,
+.woocommerce input.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:focus,
+.woocommerce button.button:focus,
+.woocommerce input.button:focus,
+.woocommerce #respond input#submit.focus,
+.woocommerce a.button.focus,
+.woocommerce button.button.focus,
+.woocommerce input.button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.woocommerce #respond input#submit:active,
+.woocommerce a.button:active,
+.woocommerce button.button:active,
+.woocommerce input.button:active,
+.woocommerce #respond input#submit.active,
+.woocommerce a.button.active,
+.woocommerce button.button.active,
+.woocommerce input.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.woocommerce #respond input#submit.disabled,
+.woocommerce a.button.disabled,
+.woocommerce button.button.disabled,
+.woocommerce input.button.disabled,
+.woocommerce #respond input#submit[disabled],
+.woocommerce a.button[disabled],
+.woocommerce button.button[disabled],
+.woocommerce input.button[disabled],
+fieldset[disabled] .woocommerce #respond input#submit,
+fieldset[disabled] .woocommerce a.button,
+fieldset[disabled] .woocommerce button.button,
+fieldset[disabled] .woocommerce input.button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
   -webkit-box-shadow: none;
-  text-shadow: none;
+  box-shadow: none;
+}
+a.woocommerce #respond input#submit.disabled,
+a.woocommerce a.button.disabled,
+a.woocommerce button.button.disabled,
+a.woocommerce input.button.disabled,
+fieldset[disabled] a.woocommerce #respond input#submit,
+fieldset[disabled] a.woocommerce a.button,
+fieldset[disabled] a.woocommerce button.button,
+fieldset[disabled] a.woocommerce input.button {
+  pointer-events: none;
+}
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:focus,
+.woocommerce button.button:focus,
+.woocommerce input.button:focus,
+.woocommerce #respond input#submit.focus,
+.woocommerce a.button.focus,
+.woocommerce button.button.focus,
+.woocommerce input.button.focus {
+  color: white;
+  background-color: #f12515;
+  border-color: #af170a;
+}
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.woocommerce #respond input#submit:active,
+.woocommerce a.button:active,
+.woocommerce button.button:active,
+.woocommerce input.button:active,
+.woocommerce #respond input#submit.active,
+.woocommerce a.button.active,
+.woocommerce button.button.active,
+.woocommerce input.button.active,
+.open > .dropdown-toggle.woocommerce #respond input#submit,
+.open > .dropdown-toggle.woocommerce a.button,
+.open > .dropdown-toggle.woocommerce button.button,
+.open > .dropdown-toggle.woocommerce input.button {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.woocommerce #respond input#submit:active:hover,
+.woocommerce a.button:active:hover,
+.woocommerce button.button:active:hover,
+.woocommerce input.button:active:hover,
+.woocommerce #respond input#submit.active:hover,
+.woocommerce a.button.active:hover,
+.woocommerce button.button.active:hover,
+.woocommerce input.button.active:hover,
+.open > .dropdown-toggle.woocommerce #respond input#submit:hover,
+.open > .dropdown-toggle.woocommerce a.button:hover,
+.open > .dropdown-toggle.woocommerce button.button:hover,
+.open > .dropdown-toggle.woocommerce input.button:hover,
+.woocommerce #respond input#submit:active:focus,
+.woocommerce a.button:active:focus,
+.woocommerce button.button:active:focus,
+.woocommerce input.button:active:focus,
+.woocommerce #respond input#submit.active:focus,
+.woocommerce a.button.active:focus,
+.woocommerce button.button.active:focus,
+.woocommerce input.button.active:focus,
+.open > .dropdown-toggle.woocommerce #respond input#submit:focus,
+.open > .dropdown-toggle.woocommerce a.button:focus,
+.open > .dropdown-toggle.woocommerce button.button:focus,
+.open > .dropdown-toggle.woocommerce input.button:focus,
+.woocommerce #respond input#submit:active.focus,
+.woocommerce a.button:active.focus,
+.woocommerce button.button:active.focus,
+.woocommerce input.button:active.focus,
+.woocommerce #respond input#submit.active.focus,
+.woocommerce a.button.active.focus,
+.woocommerce button.button.active.focus,
+.woocommerce input.button.active.focus,
+.open > .dropdown-toggle.woocommerce #respond input#submit.focus,
+.open > .dropdown-toggle.woocommerce a.button.focus,
+.open > .dropdown-toggle.woocommerce button.button.focus,
+.open > .dropdown-toggle.woocommerce input.button.focus {
+  color: white;
+  background-color: #d61c0d;
+  border-color: #af170a;
+}
+.woocommerce #respond input#submit:active,
+.woocommerce a.button:active,
+.woocommerce button.button:active,
+.woocommerce input.button:active,
+.woocommerce #respond input#submit.active,
+.woocommerce a.button.active,
+.woocommerce button.button.active,
+.woocommerce input.button.active,
+.open > .dropdown-toggle.woocommerce #respond input#submit,
+.open > .dropdown-toggle.woocommerce a.button,
+.open > .dropdown-toggle.woocommerce button.button,
+.open > .dropdown-toggle.woocommerce input.button {
+  background-image: none;
+}
+.woocommerce #respond input#submit.disabled,
+.woocommerce a.button.disabled,
+.woocommerce button.button.disabled,
+.woocommerce input.button.disabled,
+.woocommerce #respond input#submit[disabled],
+.woocommerce a.button[disabled],
+.woocommerce button.button[disabled],
+.woocommerce input.button[disabled],
+fieldset[disabled] .woocommerce #respond input#submit,
+fieldset[disabled] .woocommerce a.button,
+fieldset[disabled] .woocommerce button.button,
+fieldset[disabled] .woocommerce input.button,
+.woocommerce #respond input#submit.disabled:hover,
+.woocommerce a.button.disabled:hover,
+.woocommerce button.button.disabled:hover,
+.woocommerce input.button.disabled:hover,
+.woocommerce #respond input#submit[disabled]:hover,
+.woocommerce a.button[disabled]:hover,
+.woocommerce button.button[disabled]:hover,
+.woocommerce input.button[disabled]:hover,
+fieldset[disabled] .woocommerce #respond input#submit:hover,
+fieldset[disabled] .woocommerce a.button:hover,
+fieldset[disabled] .woocommerce button.button:hover,
+fieldset[disabled] .woocommerce input.button:hover,
+.woocommerce #respond input#submit.disabled:focus,
+.woocommerce a.button.disabled:focus,
+.woocommerce button.button.disabled:focus,
+.woocommerce input.button.disabled:focus,
+.woocommerce #respond input#submit[disabled]:focus,
+.woocommerce a.button[disabled]:focus,
+.woocommerce button.button[disabled]:focus,
+.woocommerce input.button[disabled]:focus,
+fieldset[disabled] .woocommerce #respond input#submit:focus,
+fieldset[disabled] .woocommerce a.button:focus,
+fieldset[disabled] .woocommerce button.button:focus,
+fieldset[disabled] .woocommerce input.button:focus,
+.woocommerce #respond input#submit.disabled.focus,
+.woocommerce a.button.disabled.focus,
+.woocommerce button.button.disabled.focus,
+.woocommerce input.button.disabled.focus,
+.woocommerce #respond input#submit[disabled].focus,
+.woocommerce a.button[disabled].focus,
+.woocommerce button.button[disabled].focus,
+.woocommerce input.button[disabled].focus,
+fieldset[disabled] .woocommerce #respond input#submit.focus,
+fieldset[disabled] .woocommerce a.button.focus,
+fieldset[disabled] .woocommerce button.button.focus,
+fieldset[disabled] .woocommerce input.button.focus,
+.woocommerce #respond input#submit.disabled:active,
+.woocommerce a.button.disabled:active,
+.woocommerce button.button.disabled:active,
+.woocommerce input.button.disabled:active,
+.woocommerce #respond input#submit[disabled]:active,
+.woocommerce a.button[disabled]:active,
+.woocommerce button.button[disabled]:active,
+.woocommerce input.button[disabled]:active,
+fieldset[disabled] .woocommerce #respond input#submit:active,
+fieldset[disabled] .woocommerce a.button:active,
+fieldset[disabled] .woocommerce button.button:active,
+fieldset[disabled] .woocommerce input.button:active,
+.woocommerce #respond input#submit.disabled.active,
+.woocommerce a.button.disabled.active,
+.woocommerce button.button.disabled.active,
+.woocommerce input.button.disabled.active,
+.woocommerce #respond input#submit[disabled].active,
+.woocommerce a.button[disabled].active,
+.woocommerce button.button[disabled].active,
+.woocommerce input.button[disabled].active,
+fieldset[disabled] .woocommerce #respond input#submit.active,
+fieldset[disabled] .woocommerce a.button.active,
+fieldset[disabled] .woocommerce button.button.active,
+fieldset[disabled] .woocommerce input.button.active {
+  background-color: #f45245;
+  border-color: #f45245;
+}
+.woocommerce #respond input#submit .badge,
+.woocommerce a.button .badge,
+.woocommerce button.button .badge,
+.woocommerce input.button .badge {
+  color: #f45245;
+  background-color: white;
+}
+.widget_product_search input[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #f45245;
+  border-color: #f45245;
+  border-radius: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 6.5px 12px;
+}
+.widget_product_search input[type="submit"]:focus,
+.widget_product_search input[type="submit"]:active:focus,
+.widget_product_search input[type="submit"].active:focus,
+.widget_product_search input[type="submit"].focus,
+.widget_product_search input[type="submit"]:active.focus,
+.widget_product_search input[type="submit"].active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.widget_product_search input[type="submit"]:hover,
+.widget_product_search input[type="submit"]:focus,
+.widget_product_search input[type="submit"].focus {
+  color: #333333;
+  text-decoration: none;
+}
+.widget_product_search input[type="submit"]:active,
+.widget_product_search input[type="submit"].active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.widget_product_search input[type="submit"].disabled,
+.widget_product_search input[type="submit"][disabled],
+fieldset[disabled] .widget_product_search input[type="submit"] {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.widget_product_search input[type="submit"].disabled,
+fieldset[disabled] a.widget_product_search input[type="submit"] {
+  pointer-events: none;
+}
+.widget_product_search input[type="submit"]:focus,
+.widget_product_search input[type="submit"].focus {
+  color: white;
+  background-color: #f12515;
+  border-color: #af170a;
+}
+.widget_product_search input[type="submit"]:hover {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.widget_product_search input[type="submit"]:active,
+.widget_product_search input[type="submit"].active,
+.open > .dropdown-toggle.widget_product_search input[type="submit"] {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.widget_product_search input[type="submit"]:active:hover,
+.widget_product_search input[type="submit"].active:hover,
+.open > .dropdown-toggle.widget_product_search input[type="submit"]:hover,
+.widget_product_search input[type="submit"]:active:focus,
+.widget_product_search input[type="submit"].active:focus,
+.open > .dropdown-toggle.widget_product_search input[type="submit"]:focus,
+.widget_product_search input[type="submit"]:active.focus,
+.widget_product_search input[type="submit"].active.focus,
+.open > .dropdown-toggle.widget_product_search input[type="submit"].focus {
+  color: white;
+  background-color: #d61c0d;
+  border-color: #af170a;
+}
+.widget_product_search input[type="submit"]:active,
+.widget_product_search input[type="submit"].active,
+.open > .dropdown-toggle.widget_product_search input[type="submit"] {
+  background-image: none;
+}
+.widget_product_search input[type="submit"].disabled,
+.widget_product_search input[type="submit"][disabled],
+fieldset[disabled] .widget_product_search input[type="submit"],
+.widget_product_search input[type="submit"].disabled:hover,
+.widget_product_search input[type="submit"][disabled]:hover,
+fieldset[disabled] .widget_product_search input[type="submit"]:hover,
+.widget_product_search input[type="submit"].disabled:focus,
+.widget_product_search input[type="submit"][disabled]:focus,
+fieldset[disabled] .widget_product_search input[type="submit"]:focus,
+.widget_product_search input[type="submit"].disabled.focus,
+.widget_product_search input[type="submit"][disabled].focus,
+fieldset[disabled] .widget_product_search input[type="submit"].focus,
+.widget_product_search input[type="submit"].disabled:active,
+.widget_product_search input[type="submit"][disabled]:active,
+fieldset[disabled] .widget_product_search input[type="submit"]:active,
+.widget_product_search input[type="submit"].disabled.active,
+.widget_product_search input[type="submit"][disabled].active,
+fieldset[disabled] .widget_product_search input[type="submit"].active {
+  background-color: #f45245;
+  border-color: #f45245;
+}
+.widget_product_search input[type="submit"] .badge {
+  color: #f45245;
+  background-color: white;
 }
 .woocommerce .widget_price_filter .price_slider_amount {
   text-align: right;
@@ -8587,10 +8968,105 @@ woocommerce .widget_price_filter .ui-slider {
   clear: both;
 }
 .woocommerce .widget_price_filter .ui-slider-horizontal {
-  height: .5em;
+  height: .2em;
 }
 .woocommerce .widget_price_filter .price_slider {
   margin-bottom: 1em;
+}
+.woocommerce .widget_price_filter .price_slider_amount {
+  text-align: left;
+}
+.woocommerce .widget_price_filter .price_slider_amount .button {
+  float: right;
+}
+.widget_product_categories,
+.widget_layered_nav {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+}
+.widget_product_categories a,
+.widget_layered_nav a {
+  color: #858585;
+}
+.widget_product_categories ul,
+.widget_layered_nav ul {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.widget_product_categories ul .filter-option,
+.widget_layered_nav ul .filter-option {
+  padding-top: 0px;
+  padding-bottom: 3px;
+}
+.widget_product_categories ul li,
+.widget_layered_nav ul li {
+  list-style: none;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5em;
+  text-indent: 0.4em;
+  background-repeat: no-repeat;
+  background-image: url("../nofluxo/img/icone/filtro/fitro_vazio.png");
+  background-position: 0px 5px;
+}
+.widget_product_categories ul li span.count,
+.widget_layered_nav ul li span.count {
+  float: right !important;
+}
+.widget_product_categories ul li:after:before,
+.widget_layered_nav ul li:after:before,
+.widget_product_categories ul li:after:after,
+.widget_layered_nav ul li:after:after {
+  content: " ";
+  display: table;
+}
+.widget_product_categories ul li:after:after,
+.widget_layered_nav ul li:after:after {
+  clear: both;
+}
+.widget_product_categories ul li:after:before,
+.widget_layered_nav ul li:after:before,
+.widget_product_categories ul li:after:after,
+.widget_layered_nav ul li:after:after {
+  content: " ";
+  display: table;
+}
+.widget_product_categories ul li:after:after,
+.widget_layered_nav ul li:after:after {
+  clear: both;
+}
+.widget_product_categories ul li.current-cat,
+.widget_layered_nav ul li.current-cat,
+.widget_product_categories ul li.chosen,
+.widget_layered_nav ul li.chosen {
+  background-image: url("../nofluxo/img/icone/filtro/filtro_ativo.png");
+}
+aside {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+}
+aside.widget_layered_nav_filters li.chosen {
+  padding-bottom: 10px;
+}
+aside.widget_layered_nav_filters li.chosen a {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+  border: solid 1px #f1f1f1;
+  padding: 4px 8px;
+}
+aside.widget_layered_nav_filters li.chosen a i {
+  padding-left: 5px;
+}
+aside.widget_layered_nav_filters li.chosen a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
 }
 /* ==========================================================================
    Header
@@ -8616,7 +9092,7 @@ woocommerce .widget_price_filter .ui-slider {
 .banner {
   background-color: #255625;
   height: 210px;
-  background-image: url("../img/logo/logo-noFluxo-rodape.png");
+  background-image: url("../nofluxo/img/logo/logo-noFluxo-rodape.png");
 }
 /* ==========================================================================
    header
@@ -8760,46 +9236,15 @@ footer .credito {
 /* ==========================================================================
    PRODUTO-SINGLE
    ========================================================================== */
-.produto-single {
-  /*    .produto-single-imagens-thumbnails{
-
-            margin-top: 16px;
-    }
-
-    .cropFrame{
-
-        width: 80px !important;
-        height: 78px !important;
-        overflow: hidden !important;
-        margin: 0 !important;
-        position: relative !important;
-        float: left !important;
-        margin-left: 13px !important;
-
-        &:first-of-type{
-            margin-left: 0px;
-        }
-
-    }
-
-    .cropImg{
-        position:absolute !important;
-        left: -100% !important;
-        right: -100% !important;
-        top: -100% !important;
-        bottom: -100% !important;
-        margin: auto !important;
-        width: 100px !important; 
-
-
-    }*/
-}
 .produto-single p {
   margin: 0;
   padding: 0;
 }
 .produto-single .produto-single-imagens .produto-single-imagens-unica {
   /*margin-bottom: 15px;*/
+}
+.produto-single .produto-single-info {
+  padding-bottom: 45px;
 }
 .produto-single .produto-single-info .produto-single-info-titulo h1 {
   font-size: 28px;
@@ -8811,6 +9256,7 @@ footer .credito {
   margin-top: -34px;
 }
 .produto-single .produto-single-info .produto-single-info-descricao {
+  position: relative;
   font-family: 'Lato', sans-serif;
 }
 .produto-single .produto-single-info .produto-single-info-descricao .produto-categoria {
@@ -8821,16 +9267,37 @@ footer .credito {
 .produto-single .produto-single-info .produto-single-info-descricao .produto-categoria span {
   color: #d8d8d8;
 }
-.produto-single .produto-single-info .produto-single-info-descricao .descricao {
+.produto-single .produto-single-info .produto-single-info-descricao .descricao p {
+  font-family: 'Lato', sans-serif;
   margin-top: 30px;
-  font-size: 25px;
+  font-size: 18px;
   color: #716f6f;
 }
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra {
   margin-top: 50px;
 }
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .selecao-produto,
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto {
+  min-height: 191px;
   position: relative;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto {
+  display: block !important;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto .comprar-produto-conteudo {
+  position: absolute;
+  bottom: 0;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto .price {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto .price del {
+  font-size: 12px;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto .price ins {
+  font-size: 20px;
 }
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto .btn-comprar {
   display: inline-block;
@@ -8857,6 +9324,7 @@ footer .credito {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
+  padding: 6.5px 12px;
   width: 200px;
   height: 60px;
   padding-top: 13px;
@@ -8960,16 +9428,19 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
   color: #f45245;
   background-color: white;
 }
-.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .selecao-produto,
-.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto {
-  min-height: 245px;
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .variations_form table {
+  width: 100%;
 }
 .produto-single .produto-single-info .produto-single-info-adicional {
   color: #858585;
 }
+.produto-single .produto-single-info .produto-single-info-adicional ul li {
+  list-style: disc;
+}
 .produto-single .produto-single-info .produto-single-info-adicional .produto-single-info-adicional-titulo {
   margin-top: 50px;
-  font-size: 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 .produto-single .produto-single-info .produto-single-info-adicional .produto-single-info-adicional-texto {
@@ -8977,6 +9448,29 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
   font-size: 18px;
   padding: 10px 0;
   font-style: italic;
+}
+.produto-single .produto-single-imagens .img-responsive,
+.produto-single .produto-single-imagens .thumbnail > img,
+.produto-single .produto-single-imagens .thumbnail a > img,
+.produto-single .produto-single-imagens .carousel-inner > .item > img,
+.produto-single .produto-single-imagens .carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.produto-single .produto-single-imagens .produto-single-imagens-thumbnails {
+  margin-top: 16px;
+  position: relative;
+}
+.produto-single .produto-single-imagens .produto-single-imagens-thumbnails .cropFrame {
+  position: relative;
+  float: left !important;
+  width: 25%;
+}
+.produto-single .produto-single-imagens .produto-single-imagens-thumbnails .cropFrame img {
+  width: 100% !important;
+  height: auto !important;
+  padding-right: 12px;
 }
 .produto-single .linha-btns-sociais {
   padding-top: 20px;
@@ -8991,6 +9485,20 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
   color: #d8d8d8;
   margin: 0 2px;
 }
+/*.input-qty{
+    height: 50px;
+    overflow: hidden;
+    width: 80%;
+    border: 0px;
+    display: inline-block;
+    padding: 0px;
+    vertical-align: bottom;
+    min-width: 45px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}*/
 /* ==========================================================================
    PAGE-LOJA
    ========================================================================== */

@@ -31,24 +31,25 @@ if ( ! $product->is_purchasable() ) {
 
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-	<form class="cart" method="post" enctype='multipart/form-data'>
-	 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
+
+	<form class="cart" method="post" enctype='multipart/form-data'>
+            
+            <div class="single_variation_wrap col-sm-5 col-sm-offset-7 comprar-produto">
+            
 	 	<?php
-	 		if ( ! $product->is_sold_individually() ) {
-	 			woocommerce_quantity_input( array(
-	 				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
-	 				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
-	 				'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
-	 			) );
-	 		}
-	 	?>
+                woocommerce_template_single_price();
+                ?>
+
+
 
 	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
 	 	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+                
+            </div>
 	</form>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>

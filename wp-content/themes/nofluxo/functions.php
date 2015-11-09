@@ -122,7 +122,7 @@ add_action('widgets_init', 'nofluxo_widgets_init');
  * Enqueue scripts and styles.
  */
 function nofluxo_scripts() {
-    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
     wp_enqueue_style('nofluxo-style', get_stylesheet_uri());
 
@@ -140,6 +140,8 @@ function nofluxo_scripts() {
 
 
     wp_enqueue_script('nofluxo-menu-toggle', get_template_directory_uri() . '/js/menu-toggle.js', array('jquery'), '20151105', true);
+    wp_enqueue_script('nofluxo-widget-ajuste', get_template_directory_uri() . '/js/widget-ajuste.js', array('jquery'), '20151109', true);
+    wp_enqueue_script('nofluxo-variations-ajuste', get_template_directory_uri() . '/js/variations-ajuste.js', array('jquery'), '20151109', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -305,7 +307,7 @@ function linkInOut() {
             title="<?php _e('Login / Register', 'woothemes'); ?>">
             <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png">
         </a>
-    <?php
+        <?php
     }
 }
 
@@ -343,71 +345,185 @@ function numeric_bootstrap_posts_nav() {
     <div class="col-xs-12 paginacao">
         <div class="row">
 
-    <?php
-    echo '<nav class=""><ul class="pagination">' . "\n";
-    /** Previous Post Link */
-    if (get_previous_posts_link()) {
-        printf('<li>%s</li>' . "\n", get_previous_posts_link("<<"));
-    }
-    /** Link to first page, plus ellipses if necessary */
-    if (!in_array(1, $links)) {
-        $class = 1 == $paged ? ' class="first active"' : ' class="first"';
-        printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link(1)), '1');
-        if (!in_array(2, $links)) {
-            echo '<li>…</li>';
-        }
-    }
-    /** Link to current page, plus 2 pages in either direction if necessary */
-    sort($links);
-    foreach ((array) $links as $link) {
-        $class = $paged == $link ? ' class="last active"' : ' class="last"';
-        printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($link)), $link);
-    }
-    /** Link to last page, plus ellipses if necessary */
-    if (!in_array($max, $links)) {
-        if (!in_array($max - 1, $links)) {
-            echo '<li><span class="btn disabled">…</span></li>' . "\n";
-        }
-        $class = $paged == $max ? ' class="active"' : '';
-        printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($max)), $max);
-    }
-    /** Next Post Link */
-    if (get_next_posts_link()) {
-        printf('<li>%s</li>' . "\n", get_next_posts_link(">>"));
-    }
-    echo '</ul></nav>' . "\n";
-    ?>
+            <?php
+            echo '<nav class=""><ul class="pagination">' . "\n";
+            /** Previous Post Link */
+            if (get_previous_posts_link()) {
+                printf('<li>%s</li>' . "\n", get_previous_posts_link("<<"));
+            }
+            /** Link to first page, plus ellipses if necessary */
+            if (!in_array(1, $links)) {
+                $class = 1 == $paged ? ' class="first active"' : ' class="first"';
+                printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link(1)), '1');
+                if (!in_array(2, $links)) {
+                    echo '<li>…</li>';
+                }
+            }
+            /** Link to current page, plus 2 pages in either direction if necessary */
+            sort($links);
+            foreach ((array) $links as $link) {
+                $class = $paged == $link ? ' class="last active"' : ' class="last"';
+                printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($link)), $link);
+            }
+            /** Link to last page, plus ellipses if necessary */
+            if (!in_array($max, $links)) {
+                if (!in_array($max - 1, $links)) {
+                    echo '<li><span class="btn disabled">…</span></li>' . "\n";
+                }
+                $class = $paged == $max ? ' class="active"' : '';
+                printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($max)), $max);
+            }
+            /** Next Post Link */
+            if (get_next_posts_link()) {
+                printf('<li>%s</li>' . "\n", get_next_posts_link(">>"));
+            }
+            echo '</ul></nav>' . "\n";
+            ?>
 
         </div>
     </div>
     <?php
 }
 
-
-function get_product_search_form(){
+function get_product_search_form() {
     ?>
     <div class="pesquisar"> 
-        <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
-                <input 
-                    type="search" 
-                    class="search-field" 
-                    placeholder="Pesquisar" 
-                    value="<?php echo get_search_query(); ?>" 
-                    name="s" 
-                    title="<?php echo esc_attr_x( 'Search for:', 'label', 'woocommerce' ); ?>" 
-                    />
-                <input 
-                    type="submit" 
-                    value="Pesquisar" 
-                    />
-                <input 
-                    type="hidden" 
-                    name="post_type" 
-                    value="product" 
-                    />
+        <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
+            <input 
+                type="search" 
+                class="search-field" 
+                placeholder="Pesquisar" 
+                value="<?php echo get_search_query(); ?>" 
+                name="s" 
+                title="<?php echo esc_attr_x('Search for:', 'label', 'woocommerce'); ?>" 
+                />
+            <input 
+                type="submit" 
+                value="Pesquisar" 
+                />
+            <input 
+                type="hidden" 
+                name="post_type" 
+                value="product" 
+                />
         </form>
     </div>
     <?php
-    
 }
 
+/**
+ * Output a list of variation attributes for use in the cart forms.
+ *
+ * @param array $args
+ * @since 2.4.0
+ */
+function wc_dropdown_variation_attribute_options($args = array()) {
+    $args = wp_parse_args(apply_filters('woocommerce_dropdown_variation_attribute_options_args', $args), array(
+        'options' => false,
+        'attribute' => false,
+        'product' => false,
+        'selected' => false,
+        'name' => '',
+        'id' => '',
+        'class' => '',
+        'show_option_none' => __('Choose an option', 'woocommerce')
+    ));
+
+    $options = $args['options'];
+    $product = $args['product'];
+    $attribute = $args['attribute'];
+    $name = $args['name'] ? $args['name'] : 'attribute_' . sanitize_title($attribute);
+    $id = $args['id'] ? $args['id'] : sanitize_title($attribute);
+    $class = $args['class'];
+
+    if (empty($options) && !empty($product) && !empty($attribute)) {
+        $attributes = $product->get_variation_attributes();
+        $options = $attributes[$attribute];
+    }
+
+    
+    echo '<div  class="selecao-produto-grupo select select-xs">';
+
+    echo '<select id="' . esc_attr($id) . '" class="' . esc_attr($class) . '" name="' . esc_attr($name) . '" data-attribute_name="attribute_' . esc_attr(sanitize_title($attribute)) . '">';
+
+    if ($args['show_option_none']) {
+        echo '<option  class="" value="">' . wc_attribute_label( $attribute ) . '</option>';
+    }
+
+    if (!empty($options)) {
+        if ($product && taxonomy_exists($attribute)) {
+            // Get terms if this is a taxonomy - ordered. We need the names too.
+            $terms = wc_get_product_terms($product->id, $attribute, array('fields' => 'all'));
+
+            foreach ($terms as $term) {
+                if (in_array($term->slug, $options)) {
+                    echo '<option value="' . esc_attr($term->slug) . '" ' . selected(sanitize_title($args['selected']), $term->slug, false) . '>' . apply_filters('woocommerce_variation_option_name', $term->name) . '</option>';
+                }
+            }
+        } else {
+            foreach ($options as $option) {
+                // This handles < 2.4.0 bw compatibility where text attributes were not sanitized.
+                $selected = sanitize_title($args['selected']) === $args['selected'] ? selected($args['selected'], sanitize_title($option), false) : selected($args['selected'], $option, false);
+                echo '<option value="' . esc_attr($option) . '" ' . $selected . '>' . esc_html(apply_filters('woocommerce_variation_option_name', $option)) . '</option>';
+            }
+        }
+    }
+
+    echo '</select>';
+
+
+    woocommerce_quantity_input(array('input_value' => isset($_POST['quantity']) ? wc_stock_amount($_POST['quantity']) : 1));
+
+    echo '</div>';
+}
+
+/**
+ * Output the add to cart button for variations.
+ */
+function woocommerce_single_variation_add_to_cart_button() {
+    global $product;
+    ?>
+    <div class="variations_button">
+
+        <button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+        <input type="hidden" name="add-to-cart" value="<?php echo absint($product->id); ?>" />
+        <input type="hidden" name="product_id" value="<?php echo absint($product->id); ?>" />
+        <input type="hidden" name="variation_id" class="variation_id" value="" />
+    </div>
+    <?php
+}
+
+/**
+ * Output the quantity input for add to cart forms.
+ *
+ * @param  array $args Args for the input
+ * @param  WC_Product|null $product
+ * @param  boolean $echo Whether to return or echo|string
+ */
+function woocommerce_quantity_input($args = array(), $product = null, $echo = true) {
+    
+    global $product;
+    
+    if (is_null($product))
+        $product = $GLOBALS['product'];
+
+    $defaults = array(
+        'input_name' => 'quantity',
+        'input_value' => '1',
+        'max_value' => apply_filters('woocommerce_quantity_input_max', '', $product),
+        'min_value' => apply_filters('woocommerce_quantity_input_min', '', $product),
+        'step' => apply_filters('woocommerce_quantity_input_step', '1', $product)
+    );
+
+    $args = apply_filters('woocommerce_quantity_input_args', wp_parse_args($args, $defaults), $product);
+
+    ob_start();
+
+    wc_get_template('global/quantity-input.php', $args);
+
+    if ($echo) {
+        echo ob_get_clean();
+    } else {
+        return ob_get_clean();
+    }
+}
