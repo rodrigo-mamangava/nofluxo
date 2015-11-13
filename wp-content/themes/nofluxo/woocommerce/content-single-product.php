@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
  *
  * @hooked wc_print_notices - 10
  */
-do_action('woocommerce_before_single_product');
+//do_action('woocommerce_before_single_product');
 
 if (post_password_required()) {
     echo get_the_password_form();
@@ -40,7 +40,7 @@ if (post_password_required()) {
              * @hooked woocommerce_show_product_images - 20
              */
             //do_action('woocommerce_before_single_product_summary');
-
+            //woocommerce_show_product_sale_flash();
             woocommerce_show_product_images();
             ?>
         </div><!-- col-sm-4 -->
@@ -72,35 +72,42 @@ if (post_password_required()) {
                     </div><!-- produto-categoria -->
 
                     <div class="col-xs-12">
+
                         <div class="produto-single-info-descricao">
 
                             <div class="descricao">
-                                <?php 
-                                if($post->post_excerpt != ''){
+                                <?php
+                                if ($post->post_excerpt != '') {
                                     woocommerce_template_single_excerpt();
-                                }else{
+                                } else {
                                     woocommerce_product_description_tab();
                                 }
-                                    
                                 ?>
                             </div>
 
                             <div class="disponiveis-compra">
-                                <div class="row">
-                                        <?php                                        
-                                        woocommerce_template_single_add_to_cart(); 
-                                        ?>
+
+                                <div class="row">  
+
+                                    <div class="col-xs-12">
+                                        <?php wc_print_notices_single(); ?>
+                                    </div>
+
+                                    <?php
+                                    woocommerce_template_single_add_to_cart();
+                                    ?>
+
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="produto-single-info-adicional">
-                                    
-                                        <?php 
+
+                                        <?php
                                         woocommerce_product_additional_information_tab();
                                         ?>
-                                            
+
                                         </div>
-                                    
+
                                     </div>
                                 </div>
                             </div><!--disponiveis-compra -->
@@ -108,24 +115,24 @@ if (post_password_required()) {
                         </div>
                     </div>
 
-                    <?php get_template_part('template-parts/woo/sharebuttons'); ?>
-                    
+<?php get_template_part('template-parts/woo/sharebuttons'); ?>
+
                 </div>
 
-                <?php
-                /**
-                 * woocommerce_single_product_summary hook
-                 *
-                 * @hooked woocommerce_template_single_title - 5
-                 * @hooked woocommerce_template_single_rating - 10
-                 * @hooked woocommerce_template_single_price - 10
-                 * @hooked woocommerce_template_single_excerpt - 20
-                 * @hooked woocommerce_template_single_add_to_cart - 30
-                 * @hooked woocommerce_template_single_meta - 40
-                 * @hooked woocommerce_template_single_sharing - 50
-                 */
-                //do_action('woocommerce_single_product_summary');
-                ?>
+<?php
+/**
+ * woocommerce_single_product_summary hook
+ *
+ * @hooked woocommerce_template_single_title - 5
+ * @hooked woocommerce_template_single_rating - 10
+ * @hooked woocommerce_template_single_price - 10
+ * @hooked woocommerce_template_single_excerpt - 20
+ * @hooked woocommerce_template_single_add_to_cart - 30
+ * @hooked woocommerce_template_single_meta - 40
+ * @hooked woocommerce_template_single_sharing - 50
+ */
+//do_action('woocommerce_single_product_summary');
+?>
 
                 <meta itemprop="url" content="<?php the_permalink(); ?>" />
 

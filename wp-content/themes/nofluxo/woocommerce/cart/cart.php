@@ -149,7 +149,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <div class="cart-collaterals">
 
-	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
+	<?php 
+            //do_action( 'woocommerce_cart_collaterals' ); 
+            woocommerce_cart_totals();
+            //woocommerce_button_proceed_to_checkout();
+        ?>
 
 </div>
 

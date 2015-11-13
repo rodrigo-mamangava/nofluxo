@@ -29,7 +29,12 @@
 
                                 <?php linkInOut(); ?>
                                 <?php linkMyCart(); ?>
-                                <a href="#" class="pull-right " > <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2x.png"> 4</a>
+                                <a 
+                                    href="<?php echo YITH_WCWL()->get_wishlist_url(); ?>" 
+                                    class="pull-right " > 
+                                    <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2x.png">
+                                    <?php echo yith_wcwl_count_products(); ?>
+                                </a>
                             </div>
 
                         </div><!--menu-->

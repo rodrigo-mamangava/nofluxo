@@ -1113,6 +1113,10 @@ class WC_Geo_IP {
 	 * @param string $message
 	 */
 	public static function log( $message ) {
+		if ( ! class_exists( 'WC_Logger' ) ) {
+			include_once( 'class-wc-logger.php' );
+		}
+
 		if ( empty( self::$log ) ) {
 			self::$log = new WC_Logger();
 		}
@@ -1468,8 +1472,7 @@ class WC_Geo_IP {
 					2 * $this->record_length
 				);
 			} else {
-				if ( 0 == fseek( $this->filehandle, 2 * $this->record_length * $offset, SEEK_SET ) ) {
-					$this->log( 'GeoIP API: fseek failed' );
+				if ( 0 != fseek( $this->filehandle, 2 * $this->record_length * $offset, SEEK_SET ) ) {
 					break;
 				}
 
@@ -1525,8 +1528,7 @@ class WC_Geo_IP {
 					2 * $this->record_length
 				);
 			} else {
-				if ( 0 == fseek( $this->filehandle, 2 * $this->record_length * $offset, SEEK_SET ) ) {
-					$this->log( 'GeoIP API: fseek failed' );
+				if ( 0 != fseek( $this->filehandle, 2 * $this->record_length * $offset, SEEK_SET ) ) {
 					break;
 				}
 
@@ -1604,7 +1606,7 @@ class WC_Geo_IP {
 	 */
 	public function geoip_country_code_by_addr_v6( $addr ) {
 		$country_id = $this->geoip_country_id_by_addr_v6( $addr );
-		if ( $country_id !== false ) {
+		if ( $country_id !== false && isset( $this->GEOIP_COUNTRY_CODES[ $country_id ]  ) ) {
 			return $this->GEOIP_COUNTRY_CODES[ $country_id ];
 		}
 

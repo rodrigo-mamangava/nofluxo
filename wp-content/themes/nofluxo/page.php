@@ -14,10 +14,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+<?php
+            echo '<div class="row page-loja pagina">';
+
+
+
+            echo '<div class="col-sm-12">';
+             while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
@@ -29,9 +33,18 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; // End of the loop. ?>
+            <?php
+            
+            
+            echo '</div><!-- col-sm-9 -->';
+            
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+            echo '</div> <!-- row page-loja pagina -->';
+?>
+
+
+
+
+
 <?php get_footer(); ?>

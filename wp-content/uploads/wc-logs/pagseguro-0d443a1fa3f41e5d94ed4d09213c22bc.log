@@ -1,0 +1,514 @@
+11-10-2015 @ 17:31:52 - Requesting token for order 214 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-214]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Nova camisa - Cor: Azul, Tamanho: M, Gênero: Infantil]]></description>
+      <amount>35.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-10-2015 @ 17:31:54 - PagSeguro Payment Token created with success! The Token is: 379FC3D074749F7FF4EDAF992FD6127A
+11-10-2015 @ 17:47:14 - Requesting token for order 215 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-215]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Nova camisa - Cor: Preto, Tamanho: M, Gênero: Masculino]]></description>
+      <amount>35.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-10-2015 @ 17:47:18 - PagSeguro Payment Token created with success! The Token is: 5116739F6060213114B3BF869881134F
+11-10-2015 @ 20:12:02 - Requesting token for order 216 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-216]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Woo Album #1]]></description>
+      <amount>9.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-10-2015 @ 20:12:04 - PagSeguro Payment Token created with success! The Token is: DCD6C79E7171140BB46ACFBA539B6D0B
+11-12-2015 @ 18:40:52 - Requesting token for order 227 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-227]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Happy Ninja]]></description>
+      <amount>18.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-12-2015 @ 18:40:54 - PagSeguro Payment Token created with success! The Token is: 1C1AD83D7878425EE41AEFB6ADD0B426
+11-12-2015 @ 20:00:16 - Requesting session ID...
+11-12-2015 @ 20:00:19 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 5cb1539d2ae748a28f43a14ec49db920
+)
+
+11-12-2015 @ 20:00:43 - Requesting direct payment for order 228 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>boleto</method>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+    <hash>be186df0b1591c02d469aac2331d8570b9ae2c23c3fad3b3508c970a823892e9</hash>
+  </sender>
+  <currency>BRL</currency>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Happy Ninja]]></description>
+      <amount>18.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-228]]></reference>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+</payment>
+
+11-12-2015 @ 20:00:45 - An error occurred while generating the PagSeguro direct payment: Array
+(
+    [headers] => Array
+        (
+            [date] => Thu, 12 Nov 2015 20:00:45 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Thu, 12 Nov 2015 20:03:44 GMT
+            [vary] => Accept-Encoding,User-Agent
+            [content-encoding] => gzip
+            [content-length] => 149
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53029</code><message>shipping address district is required.</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+11-12-2015 @ 20:01:07 - Requesting direct payment for order 228 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>boleto</method>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+    <hash>be186df0b1591c02d469aac2331d8570b9ae2c23c3fad3b3508c970a823892e9</hash>
+  </sender>
+  <currency>BRL</currency>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Happy Ninja]]></description>
+      <amount>18.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-228]]></reference>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+</payment>
+
+11-12-2015 @ 20:01:13 - PagSeguro direct payment created successfully!
+11-12-2015 @ 20:01:13 - PagSeguro payment status for order 228 is: 1
+11-12-2015 @ 20:02:51 - Requesting session ID...
+11-12-2015 @ 20:02:52 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 5a2731ecad4d4cf4bd67a93d4c6d731b
+)
+
+11-12-2015 @ 20:05:42 - Requesting direct payment for order 229 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+    <hash>7ace328049260d728c1cb36fa33fc35adc7f917e03d1cf6b818a4cddc92984a9</hash>
+  </sender>
+  <currency>BRL</currency>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Ninja Silhouette]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[WC-229]]></reference>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>3cb5403de36145628fb17bff938b4830</token>
+    <installment>
+      <quantity>1</quantity>
+      <value>20.00</value>
+    </installment>
+    <holder>
+      <name><![CDATA[Rodrigo B Muniz]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09171195769</value>
+        </document>
+      </documents>
+      <birthDate>02/20/1981</birthDate>
+      <phone>
+        <areaCode>21</areaCode>
+        <number>965331140</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+      <postalCode>22790704</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+11-12-2015 @ 20:05:43 - An error occurred while generating the PagSeguro direct payment: Array
+(
+    [headers] => Array
+        (
+            [date] => Thu, 12 Nov 2015 20:05:42 GMT
+            [server] => Apache-Coyote/1.1
+            [content-type] => application/xml;charset=ISO-8859-1
+            [cache-control] => max-age=180
+            [expires] => Thu, 12 Nov 2015 20:08:43 GMT
+            [vary] => Accept-Encoding,User-Agent
+            [content-encoding] => gzip
+            [content-length] => 160
+            [connection] => close
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53048</code><message>credit card holder birthdate invalid value: 02/20/1981</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+11-12-2015 @ 20:22:50 - Requesting token for order 230 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-230]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Ninja Silhouette]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Nova camisa - Cor: Preto, Tamanho: GG, Gênero: Feminino]]></description>
+      <amount>35.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-12-2015 @ 20:22:52 - PagSeguro Payment Token created with success! The Token is: 74DC26CCD1D1A1B774D47F924097DA07
+11-12-2015 @ 21:43:52 - Requesting token for order 231 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-231]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Woo Single #2]]></description>
+      <amount>2.00</amount>
+      <quantity>10</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-12-2015 @ 21:43:58 - PagSeguro Payment Token created with success! The Token is: B29E061FB2B2990114F7DFA9E90F731B

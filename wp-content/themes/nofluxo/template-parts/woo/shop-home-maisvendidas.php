@@ -8,8 +8,8 @@ $loop = new WP_Query($args);
 
 $total = $loop->found_posts;
 
-$listaPrimeiros = [1,5,9,13,17,21];
-$listaUltimos = [4,8,12,16,20,24];
+$listaPrimeiros = array(1,5,9,13,17,21);
+$listaUltimos = array(4,8,12,16,20,24);
 
 
 ?>
@@ -25,8 +25,8 @@ $listaUltimos = [4,8,12,16,20,24];
         </div>
 
         <div  class="col-xs-1 mais-vendidas-passador" >
-            <a class="" href="#carousel-mais-vendidas" role="button" data-slide="prev"><</a>
-            <a class="" href="#carousel-mais-vendidas" role="button" data-slide="next">></a>
+            <a class="" href="#carousel-mais-vendidas" role="button" data-slide="prev"><img src="<?php echo get_template_directory_uri() ?>/img/passador/seta-esq.png" ></a>
+            <a class="" href="#carousel-mais-vendidas" role="button" data-slide="next"><img src="<?php echo get_template_directory_uri() ?>/img/passador/seta-dir.png" ></a>
         </div>
 
 

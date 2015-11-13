@@ -84,8 +84,13 @@ if (is_front_page()) {
                      * @hooked woocommerce_template_loop_rating - 5
                      * @hooked woocommerce_template_loop_price - 10
                      */
+                    
+                    //show_add_to_wishlist();
+                    
+                    
                     do_action('woocommerce_after_shop_loop_item_title');
                     ?>
+                    
 
                 </div><!--row area-->
             </div><!--item-produto-label-->

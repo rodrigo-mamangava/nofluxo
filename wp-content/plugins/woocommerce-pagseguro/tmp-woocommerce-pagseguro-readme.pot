@@ -1,0 +1,862 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "WooCommerce PagSeguro"
+msgstr ""
+
+#. Short description.
+msgid "Adds PagSeguro gateway to the WooCommerce plugin"
+msgstr ""
+
+#. Screenshot description.
+msgid "Configurações do plugin."
+msgstr ""
+
+#. Screenshot description.
+msgid "Método de pagamento na página de finalizar o pedido."
+msgstr ""
+
+#. Screenshot description.
+msgid "Exemplo do Lightbox funcionando com o Sandbox do PagSeguro."
+msgstr ""
+
+#. Screenshot description.
+msgid "Pagamento com cartão de crédito usando o Checkout Transparente."
+msgstr ""
+
+#. Screenshot description.
+msgid "Pagamento com debito online usando o Checkout Transparente."
+msgstr ""
+
+#. Screenshot description.
+msgid "Pagamento com boleto bancário usando o Checkout Transparente."
+msgstr ""
+
+#. Found in description header.
+msgid "Add PagSeguro gateway to WooCommerce"
+msgstr ""
+
+#. Found in description header.
+msgid "Contribute"
+msgstr ""
+
+#. Found in description header.
+msgid "Descrição em Português:"
+msgstr ""
+
+#. Found in description header.
+msgid "Compatibilidade"
+msgstr ""
+
+#. Found in description header.
+msgid "Instalação"
+msgstr ""
+
+#. Found in description header.
+msgid "Integração"
+msgstr ""
+
+#. Found in description header.
+msgid "Dúvidas?"
+msgstr ""
+
+#. Found in description header.
+msgid "Coloborar"
+msgstr ""
+
+#. Found in description header.
+msgid "Agradecimentos"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Padrão:</strong> Cliente é redirecionado ao PagSeguro para concluir a compra."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Lightbox:</strong> Uma janela do PagSeguro é aberta na finalização para o cliente fazer o pagamento."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Transparente:</strong> O cliente faz o pagamento direto no seu site sem precisar ir ao site do PagSeguro."
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\">WooCommerce Extra Checkout Fields for Brazil</a>."
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"https://wordpress.org/plugins/woocommerce-multilingual/\">WooCommerce Multilingual</a>."
+msgstr ""
+
+#. Found in description list item.
+msgid "A nossa sessão de <a href=\"http://wordpress.org/plugins/woocommerce-pagseguro/faq/\">FAQ</a>."
+msgstr ""
+
+#. Found in description list item.
+msgid "Utilizando o nosso <a href=\"https://github.com/claudiosmweb/woocommerce-pagseguro\">fórum no Github</a>."
+msgstr ""
+
+#. Found in description list item.
+msgid "Criando um tópico no <a href=\"http://wordpress.org/support/plugin/woocommerce-pagseguro\">fórum de ajuda do WordPress</a>."
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://is-uz.com/\">Leandro Matos</a> ajudou com o layout e os ícones do Checkout Transparente."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This plugin adds PagSeguro gateway to WooCommerce."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Please notice that WooCommerce must be installed and active."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can contribute to the source code in our <a href=\"https://github.com/claudiosmweb/woocommerce-pagseguro\">GitHub</a> page."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Adicione o PagSeguro como método de pagamento em sua loja WooCommerce."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://pagseguro.uol.com.br/\">PagSeguro</a> é um método de pagamento brasileiro desenvolvido pela UOL."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "O plugin WooCommerce PagSeguro foi desenvolvido sem nenhum incentivo do PagSeguro ou da UOL. Nenhum dos desenvolvedores deste plugin possuem vínculos com estas duas empresas."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Este plugin foi desenvolvido a partir da <a href=\"https://pagseguro.uol.com.br/v2/guia-de-integracao/visao-geral.html\">documentação oficial do PagSeguro</a> e utiliza a última versão da API de pagamentos."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Estão disponíveis as seguintes modalidades de pagamento:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Além que é possível utilizar o novo <a href=\"https://sandbox.pagseguro.uol.com.br/comprador-de-testes.html\">sandbox do PagSeguro</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Compatível com as versões 2.1.x, 2.2.x, 2.3.x e 2.4.x do WooCommerce."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Este plugin também é compatível com o <a href=\"http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\">WooCommerce Extra Checkout Fields for Brazil</a>, desta forma é possível enviar os campos de \"CPF\", \"número do endereço\" e \"bairro\" (para o Checkout Transparente é obrigatório o uso deste plugin)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Confira o nosso guia de instalação e configuração do PagSeguro na aba <a href=\"http://wordpress.org/plugins/woocommerce-pagseguro/installation/\">Installation</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Este plugin funciona perfeitamente em conjunto com:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Você pode esclarecer suas dúvidas usando:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Você pode contribuir com código-fonte em nossa página no <a href=\"https://github.com/claudiosmweb/woocommerce-pagseguro\">GitHub</a>."
+msgstr ""
+
+#. Found in installation header.
+msgid "Instalação e configuração em Português:"
+msgstr ""
+
+#. Found in installation header.
+msgid "Instalação do plugin:"
+msgstr ""
+
+#. Found in installation header.
+msgid "Requerimentos:"
+msgstr ""
+
+#. Found in installation header.
+msgid "Configurações no PagSeguro:"
+msgstr ""
+
+#. Found in installation header.
+msgid "Configurações do Plugin:"
+msgstr ""
+
+#. Found in installation header.
+msgid "Checkout Transparente"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload plugin files to your plugins folder, or install using WordPress built-in Add New Plugin installer;"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin;"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to WooCommerce -&gt; Settings -&gt; Payment Gateways, choose PagSeguro and fill in your PagSeguro Email and Token."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Envie os arquivos do plugin para a pasta wp-content/plugins, ou instale usando o instalador de plugins do WordPress."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Ative o plugin."
+msgstr ""
+
+#. Found in installation list item.
+msgid "<strong>Checkout no PagSeguro (padrão):</strong> O cliente e redirecionado para o site do PagSeguro"
+msgstr ""
+
+#. Found in installation list item.
+msgid "<strong>Checkout em Lighbox:</strong> O cliente permance no seu site é aberto um Lightbox do PagSeguro onde o cliente fará o pagamento"
+msgstr ""
+
+#. Found in installation list item.
+msgid "<strong>Checkout Transparente:</strong> O cliente faz o pagamento direto em seu site na página de finalizar pedido utilizando a API do PagSeguro."
+msgstr ""
+
+#. Found in installation list item.
+msgid "<strong>Enviar apenas o total do pedido:</strong> Permite enviar apenas o total do pedido no lugar da lista de itens, esta opção deve ser utilizada apenas quando o total do pedido no WooCommerce esta ficando diferente do total no PagSeguro."
+msgstr ""
+
+#. Found in installation list item.
+msgid "<strong>Prefixo de pedido:</strong> Esta opção é útil quando você esta utilizando a mesma conta do PagSeguro em várias lojas e com isso você pode diferenciar os pagamentos pelo prefixo."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "É necessário possuir uma conta no <a href=\"http://pagseguro.uol.com.br/\">PagSeguro</a> e ter instalado o <a href=\"http://wordpress.org/plugins/woocommerce/\">WooCommerce</a>."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "No PagSeguro basta aceitar receber pagamentos apenas pela <strong>API</strong>."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Você deve ativar esta opção em \"Integrações\" &gt; \"<a href=\"https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml\">Pagamentos via API</a>\"."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Apenas com isso já é possível receber os pagamentos e fazer o retorno automático de dados."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Com o plugin instalado acesse o admin do WordPress e entre em \"WooCommerce\" &gt; \"Configurações\" &gt; \"Finalizar compra\" &gt; \"PagSeguro\"."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Habilite o PagSeguro, adicione o seu e-mail e o token do PagSeguro. O token é utilizado para gerar os pagamentos e fazer o retorno de dados."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Você pode conseguir um token no PagSeguro em \"Integrações\" &gt; \"<a href=\"https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml\">Token de Segurança</a>\"."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "É possível escolher entre três opções de pagamento que são:"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Você ainda pode definir o comportamento da integração utilizando as opções:"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Para utilizar o checkout transparente é necessário utilizar o plugin <a href=\"http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\">WooCommerce Extra Checkout Fields for Brazil</a>."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Com o <strong>WooCommerce Extra Checkout Fields for Brazil</strong> instalado e ativado você deve ir até \"WooCommerce &gt; Campos do Checkout\" e configurar a opção \"Exibir Tipo de Pessoa\" como \"Pessoa Fisíca apenas\"."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Isto é necessário porque é obrigatório o envio de CPF para o PagSeguro, além de que o PagSeguro aceita apenas CPF."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Note que é necessário aprovação do PagSeguro para utilizar o Checkout Transparente, saiba mais em \"<a href=\"https://pagseguro.uol.com.br/receba-pagamentos.jhtml\">Como receber pagamentos pelo PagSeguro</a>\"."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Pronto, sua loja já pode receber pagamentos pelo PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoradas as mensagens de erro durante o checkout."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido erro na tradução pt_BR do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido os links dos alertas sobre opções obrigatórios não configuradas do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado suporte para WooCommerce 2.4.x."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removido suporte para WooCommerce 2.0.x."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado método para ignorar a opção \"Manter Estoque (minutos)\" do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorado o suporte do Checkout Transparente no WooCommerce 2.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado suporte para o WooCommerce 2.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado suporte para WooCommerce Multilingual. "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado recurso para utilizar o endereço de entrega no Lightbox (antes funcionava apenas com checkout normal ou transparente)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada alerta de erro para CPF invalido com checkout transparente."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correções na tradução do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado alerta quando o usuário não preenche o campo bairro no checkout transparente."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionadas mensagens de erro para DDD e CEP inválidos."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorado o salvamento dos detalhes do pedido que o PagSeguro retorna para a loja, como link de boleto, método de pagamento utilizando e outros."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido link dos dados de sandbox"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado suporte para _transaction_id do WooCommerce 2.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado sistema de templates para personalizar os templates de checkout e outros. Para fazer isso basta copiar a pasta <code>templates/</code> deste plugin para dentro do seu tema, devendo ficar como <code>woocommerce/pagseguro/</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o nome do arquivo principal do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o script que escondes os botões \"Pagar com PagSeguro\" e \"Cancelar pedido &amp; restaurar carrinho\" quando o Lightbox é carregado."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o valor individual de cada produto."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria na lista de itens do pedido que é enviado para o PagSeguro, agora é possível ver o total de taxas enviadas."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada a opção \"Enviar apenas o total do pedido\" que envia apenas o total para o PagSeguro no lugar da lista de itens do pedido."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigida a exibição da opção \"Prefixo de pedido\" na página de opções do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada feature que permite usar o Checkout Transparente sem precisar digitar uma descrição para o método de pagamento."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção do checkout com Lightbox."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Implementando o Checkout Transparente do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorada todo o código de integração para tornar possível trabalhar bem o checkout padrão, Lightbox e Checkout Transparente."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria nas mensagens de erro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigida a URL de notifição para versões 2.0.x do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correções nas mensagens do log para a criação de tokens de pagamento."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada opção de ambiente sandbox."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria nos status do pedido, agora ao gerar um boleto o pedido é alterado para \"aguardando\"."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modificado o botão \"Finalizar pedido\", com o WooCommerce 2.1 ou superior vai mostrar a mensagem \"Realizar pagamento\"."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada opção para selecionar pagamento direto com redirecionamento ou pelo Lightbox do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria na compatibilidade com o WooCommerce 2.1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido padrões de código."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removida compatibilidade com versões 1.6.x ou inferiores do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada compatibilidade com WooCommerce 2.1 ou superior."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada mensagem sobre DDD errado nas mensagens de erro do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção da verificação do IPN."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada função para tratar as mensagens de erro do PagSeguro para CPF, CEP e número de telefone."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção da alteração de status pelo pela notificação de pagamento do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o erro causado com números de telefone sem DDD."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removida a obrigatoriedade de enviar os campos de endereço."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionadas as novas APIs de pagamentos e notificações do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removidas as APIs antigas de pagamento e notificações do PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria nos status de pagamento."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorias na notificações sobre compras em disputas ou que tiveram o pagamento devolvido."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria no JavaScript inline no formulário de checkout."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado o filtro <code>woocommerce_pagseguro_icon</code> para troca do ícone do método de pagamento."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria no filtro <code>woocommerce_pagseguro_args</code>, agora ele aceita o objeto <code>WC_Order</code> no lugar do ID."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria nas opções do plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria nas mensagens de status do pedido."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado link de <code>Configurações</code> na página de plugins."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorias no código."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado suporte para WooCommerce 2.1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado o ID da compra no filtro <code>woocommerce_pagseguro_args</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção do retorno automático de dados na versão 2.0.0 ou superior do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigida a compatibilidade com WooCommerce 2.0.0 ou mais recente."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o hook responsavel por salvar as opções para a versão 2.0 RC do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin corrigido para a versão 2.0 do WooCommerce."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhoria no método que atualiza o status do pedido."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção da quantidade de caracteres das descrição dos produtos no PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada opção para logs de erro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adiciona opção para validar ou não endereço (quando ativo força cliente a informar os dados corretamente e ir direto para a página de pagamento do PagSeguro)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido problema com cupons de desconto (descontos no carrinho)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrigido o problema de produto com a descrição/nome muito grande no PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removida a classe do retorno automático que usava cURL em favor da função wp_remote_post()."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Otimizado o retorno automático de dados."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tradução revisada."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorada a integração de retorno automático para o status de \"Aguardando pagamento\"."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado retorno automático de dados."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Melhorado o sistema de notificações."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada classe para validar o retorno automático de dados."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionado campo de token nas configurações do plugin (necessário para o retorno automático)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adicionada função para abater estoque automáticamente quando o cliente vai para o PagSeguro."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correção para impedir que o portal de pagamento seja habilitado se a conta de email do PagSeguro estiver em branco"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Versão incial do plugin."
+msgstr ""
+
+#. Found in faq header.
+msgid "What is the plugin license?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What is needed to use this plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "FAQ em Português:"
+msgstr ""
+
+#. Found in faq header.
+msgid "Qual é a licença do plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "O que eu preciso para utilizar este plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Como funciona o PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "PagSeguro recebe pagamentos de quais países?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Quais são os meios de pagamento que o plugin aceita?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Quais são as taxas de transações que o PagSeguro cobra?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Quais são os limites de recebimento do PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Como que plugin faz integração com PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Instalei o plugin, mas a opção de pagamento do PagSeguro some durante o checkout. O que fiz de errado?"
+msgstr ""
+
+#. Found in faq header.
+msgid "É possível enviar os dados de \"Número\", \"Bairro\" e \"CPF\" para o PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "O pedido foi pago e ficou com o status de \"processando\" e não como \"concluído\", isto esta certo ?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Ao tentar finalizar a compra aparece a mensagem \"PagSeguro: Um erro ocorreu ao processar o seu pagamento, por favor, tente novamente ou entre em contato para obter ajuda.\" o que fazer?"
+msgstr ""
+
+#. Found in faq header.
+msgid "O status do pedido não é alterado automaticamente?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Funciona com o Lightbox do PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Funciona com o checkout transparente do PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Funciona com o Sandbox do PagSeguro?"
+msgstr ""
+
+#. Found in faq header.
+msgid "O total do pedido no WooCommerce é diferente do enviado para o PagSeguro, como eu resolvo isso?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Quais URLs eu devo usar para configurar \"Notificação de transação\" e \"Página de redirecionamento\"?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Mais dúvidas relacionadas ao funcionamento do plugin?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "This plugin is released under a GPL license."
+msgstr ""
+
+#. Found in faq list item.
+msgid "WooCommerce version 2.1 or latter installed and active."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Only one account on <a href=\"http://pagseguro.uol.com.br/\" title=\"PagSeguro\">PagSeguro</a>."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Ter instalado o plugin WooCommerce 2.1 ou superior."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Possuir uma conta no PagSeguro."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Gerar um token de segurança no PagSeguro."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Ativar os pagamentos via API."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Utilizar uma das duas opções de configuração no PagSeguro (veja elas no guia de <a href=\"http://wordpress.org/plugins/woocommerce-pagseguro/installation/\">instalação do plugin</a>)."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Saiba mais em <a href=\"https://pagseguro.uol.com.br/para_seu_negocio/como_funciona.jhtml\">PagSeguro - Como funciona</a>."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Ou acesse a <a href=\"https://pagseguro.uol.com.br/atendimento/perguntas_frequentes.jhtml\">FAQ do PagSeguro</a>."
+msgstr ""
+
+#. Found in faq list item.
+msgid "<a href=\"https://pagseguro.uol.com.br/atendimento/perguntas_frequentes/nao-recebi-o-post-com-retorno-automatico-o-que-devo-fazer.jhtml\">Não recebi o POST do retorno automático. O que devo fazer?</a>"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Site com CloudFlare, pois por padrão serão bloqueadas quaisquer comunicações de outros servidores com o seu. É possível resolver isso desbloqueando a lista de IPs do PagSeguro."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Plugin de segurança como o \"iThemes Security\" com a opção para adicionar a lista do HackRepair.com no .htaccess do site. Acontece que o user-agent do PagSeguro esta no meio da lista e vai bloquear qualquer comunicação. Você pode remover isso da lista, basta encontrar onde bloquea o user-agent \"jakarta\" e deletar ou criar uma regra para aceitar os IPs do PagSeguro)."
+msgstr ""
+
+#. Found in faq list item.
+msgid "<code>mod_security</code> habilitado, neste caso vai acontecer igual com o CloudFlare bloqueando qualquer comunicação de outros servidores com o seu. Como solução você pode desativar ou permitir os IPs do PagSeguro."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Este plugin esta licenciado como GPL."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No momento o PagSeguro recebe pagamentos apenas do Brasil."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Configuramos o plugin para receber pagamentos apenas de usuários que selecionarem o Brasil nas informações de pagamento durante o checkout."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Confira os meios de pagamento em <a href=\"https://pagseguro.uol.com.br/para_voce/meios_de_pagamento_e_parcelamento.jhtml#rmcl\">PagSeguro - Meios de Pagamento e Parcelamento</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Para estas informações consulte: <a href=\"https://pagseguro.uol.com.br/taxas_e_tarifas.jhtml\">PagSeguro - Taxas e Tarifas</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Consulte: <a href=\"https://pagseguro.uol.com.br/account/limits.jhtml\">PagSeguro - Tabela de Limites</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Fazemos a integração baseada na documentação oficial do PagSeguro que pode ser encontrada em \"<a href=\"https://pagseguro.uol.com.br/v2/guia-de-integracao/visao-geral.html\">Guia de integração - PagSeguro</a>\" utilizando a última versão da API de pagamentos."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sim é possível, basta utilizar o plugin <a href=\"http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\">WooCommerce Extra Checkout Fields for Brazil</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sim, esta certo e significa que o plugin esta trabalhando como deveria."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Todo gateway de pagamentos no WooCommerce deve mudar o status do pedido para \"processando\" no momento que é confirmado o pagamento e nunca deve ser alterado sozinho para \"concluído\", pois o pedido deve ir apenas para o status \"concluído\" após ele ter sido entregue."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Para produtos baixáveis a configuração padrão do WooCommerce é permitir o acesso apenas quando o pedido tem o status \"concluído\", entretanto nas configurações do WooCommerce na aba <em>Produtos</em> é possível ativar a opção <strong>\"Conceder acesso para download do produto após o pagamento\"</strong> e assim liberar o download quando o status do pedido esta como \"processando\"."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Outro erro comum é gerar um token e cadastrar nas configurações do plugin um e-mail que não é o proprietário do token, então tenha certeza que estes dados estão realmente corretos!"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Note que caso você esteja utilizando a opção de <strong>sandbox</strong> é necessário usar um e-mail e token de teste que podem ser encontrados em \"<a href=\"https://sandbox.pagseguro.uol.com.br/comprador-de-testes.html\">PagSeguro Sandbox &gt; Dados de Teste</a>\"."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Se você tem certeza que o Token e Login estão corretos você deve acessar a página \"WooCommerce &gt; Status do Sistema\" e verificar se <strong>fsockopen</strong> e <strong>cURL</strong> estão ativos. É necessário procurar ajuda do seu provedor de hospedagem caso você tenha o <strong>fsockopen</strong> e/ou o <strong>cURL</strong> desativados."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Para quem estiver utilizando o <strong>Checkout Transparente</strong> é obrigatório o uso do plugin <a href=\"http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\">WooCommerce Extra Checkout Fields for Brazil</a> para enviar o CPF ao PagSeguro, caso o contrário será impossível de finalizar o pedido, veja no <a href=\"http://wordpress.org/plugins/woocommerce-pagseguro/installation/\">guia de instalação</a> como fazer isso."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Caso você não entenda o conteúdo do log não tem problema, você pode me abrir um <a href=\"https://wordpress.org/support/plugin/woocommerce-pagseguro#postform\">tópico no fórum do plugin</a> com o link do log (utilize o <a href=\"http://pastebin.com\">pastebin.com</a> ou o <a href=\"http://gist.github.com\">gist.github.com</a> para salvar o conteúdo do log)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sim, o status é alterado automaticamente usando a API de notificações de mudança de status do PagSeguro."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Caso os status dos seus pedidos não estiverem sendo alterados siga o tutorial do PagSeguro:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "A seguir uma lista de ferramentas que podem estar bloqueando as notificações do PagSeguro:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sim, basta ativar esta nas opções do plugin."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Sim, funciona e basta você ativar isso nas opções do plugin, além de configurar o seu token de desenvolvedor."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Para conseguir o token de desenvolver você deve acessar \"<a href=\"https://sandbox.pagseguro.uol.com.br/comprador-de-testes.html\">PagSeguro Sandbox &gt; Dados de Teste</a>\"."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Caso você tenha este problema, basta marcar ativar a opção <strong>Enviar apenas o total do pedido</strong> na página de configurações do plugin."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Não é necessário configurar qualquer URL para \"Notificação de transação\" ou para \"Página de redirecionamento\", o plugin já diz para o PagSeguro quais URLs serão utilizadas."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Por favor, caso você tenha algum problema com o funcionamento do plugin, <a href=\"https://wordpress.org/support/plugin/woocommerce-pagseguro#postform\">abra um tópico no fórum do plugin</a> com o link arquivo de log (ative ele nas opções do plugin e tente fazer uma compra, depois vá até WooCommerce &gt; Status do Sistema, selecione o log do <em>pagseguro</em> e copie os dados, depois crie um link usando o <a href=\"http://pastebin.com\">pastebin.com</a> ou o <a href=\"http://gist.github.com\">gist.github.com</a>), desta forma fica mais rápido para fazer o diagnóstico."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "License"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "WooCommerce PagSeguro is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "WooCommerce PagSeguro is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "You should have received a copy of the GNU General Public License along with WooCommerce PagSeguro. If not, see <a href=\"http://www.gnu.org/licenses/\">http://www.gnu.org/licenses/</a>."
+msgstr ""

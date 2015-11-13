@@ -6530,7 +6530,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.woocommerce-billing-fields:before,
+.woocommerce-billing-fields:after {
   content: " ";
   display: table;
 }
@@ -6548,7 +6550,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.woocommerce-billing-fields:after {
   clear: both;
 }
 .center-block {
@@ -7308,6 +7311,259 @@ fieldset[disabled] .footer-conteudo-esq .btn-default.active {
   color: #15c6d8;
   background-color: white;
 }
+.btn-mais {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #15c6d8;
+  border-color: #15c6d8;
+  border-radius: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  margin: 15px 0;
+}
+.btn-mais:focus,
+.btn-mais:active:focus,
+.btn-mais.active:focus,
+.btn-mais.focus,
+.btn-mais:active.focus,
+.btn-mais.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-mais:hover,
+.btn-mais:focus,
+.btn-mais.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-mais:active,
+.btn-mais.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-mais.disabled,
+.btn-mais[disabled],
+fieldset[disabled] .btn-mais {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-mais.disabled,
+fieldset[disabled] a.btn-mais {
+  pointer-events: none;
+}
+.btn-mais:focus,
+.btn-mais.focus {
+  color: white;
+  background-color: #109baa;
+  border-color: #0a5b64;
+}
+.btn-mais:hover {
+  color: white;
+  background-color: #109baa;
+  border-color: #1093a0;
+}
+.btn-mais:active,
+.btn-mais.active,
+.open > .dropdown-toggle.btn-mais {
+  color: white;
+  background-color: #109baa;
+  border-color: #1093a0;
+}
+.btn-mais:active:hover,
+.btn-mais.active:hover,
+.open > .dropdown-toggle.btn-mais:hover,
+.btn-mais:active:focus,
+.btn-mais.active:focus,
+.open > .dropdown-toggle.btn-mais:focus,
+.btn-mais:active.focus,
+.btn-mais.active.focus,
+.open > .dropdown-toggle.btn-mais.focus {
+  color: white;
+  background-color: #0d7e89;
+  border-color: #0a5b64;
+}
+.btn-mais:active,
+.btn-mais.active,
+.open > .dropdown-toggle.btn-mais {
+  background-image: none;
+}
+.btn-mais.disabled,
+.btn-mais[disabled],
+fieldset[disabled] .btn-mais,
+.btn-mais.disabled:hover,
+.btn-mais[disabled]:hover,
+fieldset[disabled] .btn-mais:hover,
+.btn-mais.disabled:focus,
+.btn-mais[disabled]:focus,
+fieldset[disabled] .btn-mais:focus,
+.btn-mais.disabled.focus,
+.btn-mais[disabled].focus,
+fieldset[disabled] .btn-mais.focus,
+.btn-mais.disabled:active,
+.btn-mais[disabled]:active,
+fieldset[disabled] .btn-mais:active,
+.btn-mais.disabled.active,
+.btn-mais[disabled].active,
+fieldset[disabled] .btn-mais.active {
+  background-color: #15c6d8;
+  border-color: #15c6d8;
+}
+.btn-mais .badge {
+  color: #15c6d8;
+  background-color: white;
+}
+.btn-entrar {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #61656d;
+  border-color: #61656d;
+  border-radius: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+.btn-entrar:focus,
+.btn-entrar:active:focus,
+.btn-entrar.active:focus,
+.btn-entrar.focus,
+.btn-entrar:active.focus,
+.btn-entrar.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-entrar:hover,
+.btn-entrar:focus,
+.btn-entrar.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-entrar:active,
+.btn-entrar.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-entrar.disabled,
+.btn-entrar[disabled],
+fieldset[disabled] .btn-entrar {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-entrar.disabled,
+fieldset[disabled] a.btn-entrar {
+  pointer-events: none;
+}
+.btn-entrar:focus,
+.btn-entrar.focus {
+  color: white;
+  background-color: #494c52;
+  border-color: #25262a;
+}
+.btn-entrar:hover {
+  color: white;
+  background-color: #494c52;
+  border-color: #44474d;
+}
+.btn-entrar:active,
+.btn-entrar.active,
+.open > .dropdown-toggle.btn-entrar {
+  color: white;
+  background-color: #494c52;
+  border-color: #44474d;
+}
+.btn-entrar:active:hover,
+.btn-entrar.active:hover,
+.open > .dropdown-toggle.btn-entrar:hover,
+.btn-entrar:active:focus,
+.btn-entrar.active:focus,
+.open > .dropdown-toggle.btn-entrar:focus,
+.btn-entrar:active.focus,
+.btn-entrar.active.focus,
+.open > .dropdown-toggle.btn-entrar.focus {
+  color: white;
+  background-color: #383a3f;
+  border-color: #25262a;
+}
+.btn-entrar:active,
+.btn-entrar.active,
+.open > .dropdown-toggle.btn-entrar {
+  background-image: none;
+}
+.btn-entrar.disabled,
+.btn-entrar[disabled],
+fieldset[disabled] .btn-entrar,
+.btn-entrar.disabled:hover,
+.btn-entrar[disabled]:hover,
+fieldset[disabled] .btn-entrar:hover,
+.btn-entrar.disabled:focus,
+.btn-entrar[disabled]:focus,
+fieldset[disabled] .btn-entrar:focus,
+.btn-entrar.disabled.focus,
+.btn-entrar[disabled].focus,
+fieldset[disabled] .btn-entrar.focus,
+.btn-entrar.disabled:active,
+.btn-entrar[disabled]:active,
+fieldset[disabled] .btn-entrar:active,
+.btn-entrar.disabled.active,
+.btn-entrar[disabled].active,
+fieldset[disabled] .btn-entrar.active {
+  background-color: #61656d;
+  border-color: #61656d;
+}
+.btn-entrar .badge {
+  color: #61656d;
+  background-color: white;
+}
 /* ==========================================================================
    Geral
    ========================================================================== */
@@ -7440,6 +7696,13 @@ p.linha-inteira {
    ========================================================================== */
 .pagina {
   margin-top: 90px;
+  margin-bottom: 30px;
+}
+.pagina .sublinhado {
+  border-bottom: solid 1px #ebebeb;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 50px 0 0 ;
 }
 .pagina a {
   color: #15c6d8;
@@ -7453,12 +7716,29 @@ p.linha-inteira {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
+.pagina .texto-padrao {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pagina .texto-padrao {
+    font-size: 11px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pagina .texto-padrao {
+    font-size: 13px;
+  }
+}
 .pagina p {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: #858585;
   text-align: justify;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .pagina p {
@@ -7476,6 +7756,7 @@ p.linha-inteira {
   color: #333333;
   margin-bottom: 25px;
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
 .pagina h3 {
   font-family: 'Lato', sans-serif;
@@ -7483,153 +7764,66 @@ p.linha-inteira {
   color: #333333;
   margin-bottom: 15px;
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
-.pagina h3.sublinhado {
+.pagina .faq h3 {
   border-bottom: solid 1px #ebebeb;
   padding-bottom: 10px;
   text-transform: uppercase;
   margin: 50px 0 0 ;
+  margin: 50px 0 0;
 }
-.pagina .faq {
+.pagina .faq .entry-content > ul {
+  padding-left: 0;
+}
+.pagina .faq .entry-content > ul > li {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+  text-align: justify;
+  margin-bottom: 35px;
+  padding-left: 0px;
   border-bottom: solid 1px #ebebeb;
-}
-.pagina .faq .btn-mais {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: white;
-  background-color: #15c6d8;
-  border-color: #15c6d8;
-  border-radius: 0;
-  font-size: 25px;
+  padding-bottom: 10px;
   text-transform: uppercase;
-  padding: 0px;
-  margin: 0px;
-  width: 24px;
-  height: 24px;
-  font-size: 16px;
-  margin: 15px 0;
+  margin: 50px 0 0 ;
+  margin: 10px 0;
 }
-.pagina .faq .btn-mais:focus,
-.pagina .faq .btn-mais:active:focus,
-.pagina .faq .btn-mais.active:focus,
-.pagina .faq .btn-mais.focus,
-.pagina .faq .btn-mais:active.focus,
-.pagina .faq .btn-mais.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+@media (min-width: 768px) and (max-width: 991px) {
+  .pagina .faq .entry-content > ul > li {
+    font-size: 11px;
+  }
 }
-.pagina .faq .btn-mais:hover,
-.pagina .faq .btn-mais:focus,
-.pagina .faq .btn-mais.focus {
-  color: #333333;
-  text-decoration: none;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pagina .faq .entry-content > ul > li {
+    font-size: 13px;
+  }
 }
-.pagina .faq .btn-mais:active,
-.pagina .faq .btn-mais.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+.pagina .faq .entry-content > ul > li .btn-mais {
+  margin-right: 10px;
 }
-.pagina .faq .btn-mais.disabled,
-.pagina .faq .btn-mais[disabled],
-fieldset[disabled] .pagina .faq .btn-mais {
-  cursor: not-allowed;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.pagina .faq .entry-content > ul > li > ul {
+  padding-left: 0;
 }
-a.pagina .faq .btn-mais.disabled,
-fieldset[disabled] a.pagina .faq .btn-mais {
-  pointer-events: none;
-}
-.pagina .faq .btn-mais:focus,
-.pagina .faq .btn-mais.focus {
-  color: white;
-  background-color: #109baa;
-  border-color: #0a5b64;
-}
-.pagina .faq .btn-mais:hover {
-  color: white;
-  background-color: #109baa;
-  border-color: #1093a0;
-}
-.pagina .faq .btn-mais:active,
-.pagina .faq .btn-mais.active,
-.open > .dropdown-toggle.pagina .faq .btn-mais {
-  color: white;
-  background-color: #109baa;
-  border-color: #1093a0;
-}
-.pagina .faq .btn-mais:active:hover,
-.pagina .faq .btn-mais.active:hover,
-.open > .dropdown-toggle.pagina .faq .btn-mais:hover,
-.pagina .faq .btn-mais:active:focus,
-.pagina .faq .btn-mais.active:focus,
-.open > .dropdown-toggle.pagina .faq .btn-mais:focus,
-.pagina .faq .btn-mais:active.focus,
-.pagina .faq .btn-mais.active.focus,
-.open > .dropdown-toggle.pagina .faq .btn-mais.focus {
-  color: white;
-  background-color: #0d7e89;
-  border-color: #0a5b64;
-}
-.pagina .faq .btn-mais:active,
-.pagina .faq .btn-mais.active,
-.open > .dropdown-toggle.pagina .faq .btn-mais {
-  background-image: none;
-}
-.pagina .faq .btn-mais.disabled,
-.pagina .faq .btn-mais[disabled],
-fieldset[disabled] .pagina .faq .btn-mais,
-.pagina .faq .btn-mais.disabled:hover,
-.pagina .faq .btn-mais[disabled]:hover,
-fieldset[disabled] .pagina .faq .btn-mais:hover,
-.pagina .faq .btn-mais.disabled:focus,
-.pagina .faq .btn-mais[disabled]:focus,
-fieldset[disabled] .pagina .faq .btn-mais:focus,
-.pagina .faq .btn-mais.disabled.focus,
-.pagina .faq .btn-mais[disabled].focus,
-fieldset[disabled] .pagina .faq .btn-mais.focus,
-.pagina .faq .btn-mais.disabled:active,
-.pagina .faq .btn-mais[disabled]:active,
-fieldset[disabled] .pagina .faq .btn-mais:active,
-.pagina .faq .btn-mais.disabled.active,
-.pagina .faq .btn-mais[disabled].active,
-fieldset[disabled] .pagina .faq .btn-mais.active {
-  background-color: #15c6d8;
-  border-color: #15c6d8;
-}
-.pagina .faq .btn-mais .badge {
-  color: #15c6d8;
-  background-color: white;
-}
-.pagina .faq h4 {
-  margin: 15px 0;
-}
-.pagina .faq p {
-  margin: 0 0 15px;
-}
-.pagina .faq .texto-explicativo {
+.pagina .faq .entry-content > ul > li > ul > li {
+  text-transform: initial;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #858585;
+  text-align: justify;
+  margin-bottom: 35px;
   display: none;
+  margin-left: 36px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pagina .faq .entry-content > ul > li > ul > li {
+    font-size: 11px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pagina .faq .entry-content > ul > li > ul > li {
+    font-size: 13px;
+  }
 }
 .pagina .endereco p {
   margin: 0;
@@ -7759,26 +7953,6 @@ div.select select {
   position: relative;
   border: solid 1px #ddd;
   margin-bottom: 40px;
-  /* ==========================================================================
-   SALES
-   ========================================================================== */
-  /*    span.onsale {
-            min-height: 3.236em;
-            min-width: 3.236em;
-            padding: .202em;
-            font-weight: 700;
-            position: absolute;
-            text-align: center;
-            line-height: 3.236;
-            top: -.5em;
-            left: -.5em;
-            margin: 0;
-            border-radius: 100%;
-            background-color: #77a464;
-            color: #fff;
-            font-size: .857em;
-            -webkit-font-smoothing: antialiased;
-        }*/
 }
 .item-produto a {
   color: initial;
@@ -7821,6 +7995,11 @@ div.select select {
 }
 .item-produto a .item-produto-label .item-produto-label-preco p {
   text-align: right !important;
+}
+.item-produto .btn-wishlist {
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 .ribbon-wrapper-green {
   width: 85px;
@@ -8109,177 +8288,6 @@ fieldset[disabled] .formPadrao .btn-enviar.active {
   }
 }
 /* ==========================================================================
-   TABETAS
-   ========================================================================== */
-.tabela-pedido {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-  font-family: 'Lato', sans-serif;
-}
-.tabela-pedido > thead > tr > th,
-.tabela-pedido > tbody > tr > th,
-.tabela-pedido > tfoot > tr > th,
-.tabela-pedido > thead > tr > td,
-.tabela-pedido > tbody > tr > td,
-.tabela-pedido > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-}
-.tabela-pedido > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
-}
-.tabela-pedido > caption + thead > tr:first-child > th,
-.tabela-pedido > colgroup + thead > tr:first-child > th,
-.tabela-pedido > thead:first-child > tr:first-child > th,
-.tabela-pedido > caption + thead > tr:first-child > td,
-.tabela-pedido > colgroup + thead > tr:first-child > td,
-.tabela-pedido > thead:first-child > tr:first-child > td {
-  border-top: 0;
-}
-.tabela-pedido > tbody + tbody {
-  border-top: 2px solid #dddddd;
-}
-.tabela-pedido .table {
-  background-color: #ffffff;
-}
-.tabela-pedido > tbody > tr:hover {
-  background-color: #f5f5f5;
-}
-.tabela-pedido thead {
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-.tabela-pedido tbody .btn-visualizar {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: white;
-  background-color: #61656d;
-  border-color: #61656d;
-  border-radius: 0;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-size: 13px;
-  text-transform: capitalize;
-}
-.tabela-pedido tbody .btn-visualizar:focus,
-.tabela-pedido tbody .btn-visualizar:active:focus,
-.tabela-pedido tbody .btn-visualizar.active:focus,
-.tabela-pedido tbody .btn-visualizar.focus,
-.tabela-pedido tbody .btn-visualizar:active.focus,
-.tabela-pedido tbody .btn-visualizar.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.tabela-pedido tbody .btn-visualizar:hover,
-.tabela-pedido tbody .btn-visualizar:focus,
-.tabela-pedido tbody .btn-visualizar.focus {
-  color: #333333;
-  text-decoration: none;
-}
-.tabela-pedido tbody .btn-visualizar:active,
-.tabela-pedido tbody .btn-visualizar.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.tabela-pedido tbody .btn-visualizar.disabled,
-.tabela-pedido tbody .btn-visualizar[disabled],
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar {
-  cursor: not-allowed;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-a.tabela-pedido tbody .btn-visualizar.disabled,
-fieldset[disabled] a.tabela-pedido tbody .btn-visualizar {
-  pointer-events: none;
-}
-.tabela-pedido tbody .btn-visualizar:focus,
-.tabela-pedido tbody .btn-visualizar.focus {
-  color: white;
-  background-color: #494c52;
-  border-color: #25262a;
-}
-.tabela-pedido tbody .btn-visualizar:hover {
-  color: white;
-  background-color: #494c52;
-  border-color: #44474d;
-}
-.tabela-pedido tbody .btn-visualizar:active,
-.tabela-pedido tbody .btn-visualizar.active,
-.open > .dropdown-toggle.tabela-pedido tbody .btn-visualizar {
-  color: white;
-  background-color: #494c52;
-  border-color: #44474d;
-}
-.tabela-pedido tbody .btn-visualizar:active:hover,
-.tabela-pedido tbody .btn-visualizar.active:hover,
-.open > .dropdown-toggle.tabela-pedido tbody .btn-visualizar:hover,
-.tabela-pedido tbody .btn-visualizar:active:focus,
-.tabela-pedido tbody .btn-visualizar.active:focus,
-.open > .dropdown-toggle.tabela-pedido tbody .btn-visualizar:focus,
-.tabela-pedido tbody .btn-visualizar:active.focus,
-.tabela-pedido tbody .btn-visualizar.active.focus,
-.open > .dropdown-toggle.tabela-pedido tbody .btn-visualizar.focus {
-  color: white;
-  background-color: #383a3f;
-  border-color: #25262a;
-}
-.tabela-pedido tbody .btn-visualizar:active,
-.tabela-pedido tbody .btn-visualizar.active,
-.open > .dropdown-toggle.tabela-pedido tbody .btn-visualizar {
-  background-image: none;
-}
-.tabela-pedido tbody .btn-visualizar.disabled,
-.tabela-pedido tbody .btn-visualizar[disabled],
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar,
-.tabela-pedido tbody .btn-visualizar.disabled:hover,
-.tabela-pedido tbody .btn-visualizar[disabled]:hover,
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar:hover,
-.tabela-pedido tbody .btn-visualizar.disabled:focus,
-.tabela-pedido tbody .btn-visualizar[disabled]:focus,
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar:focus,
-.tabela-pedido tbody .btn-visualizar.disabled.focus,
-.tabela-pedido tbody .btn-visualizar[disabled].focus,
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar.focus,
-.tabela-pedido tbody .btn-visualizar.disabled:active,
-.tabela-pedido tbody .btn-visualizar[disabled]:active,
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar:active,
-.tabela-pedido tbody .btn-visualizar.disabled.active,
-.tabela-pedido tbody .btn-visualizar[disabled].active,
-fieldset[disabled] .tabela-pedido tbody .btn-visualizar.active {
-  background-color: #61656d;
-  border-color: #61656d;
-}
-.tabela-pedido tbody .btn-visualizar .badge {
-  color: #61656d;
-  background-color: white;
-}
-/* ==========================================================================
    Seletor e Filtro de produtos
    ========================================================================== */
 .selecao-produto-grupo h3 {
@@ -8487,6 +8495,9 @@ fieldset[disabled] .widget .preco .btn-filtrar.active {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: solid 1px #ebebeb;
+}
+.sidebar-direita {
+  margin-top: 20px;
 }
 /* ==========================================================================
    ASIDE
@@ -9082,9 +9093,11 @@ ul li {
 .menu-item-has-children .sub-menu {
   display: block !important;
 }
+.menu-item-has-children .sub-menu li {
+  margin: 15px 0;
+}
 .menu-item-type-custom > a {
-  font-size: 18px !important;
-  color: #15c6d8 !important;
+  text-transform: uppercase;
 }
 /* ==========================================================================
    Banner
@@ -9243,9 +9256,6 @@ footer .credito {
 .produto-single .produto-single-imagens .produto-single-imagens-unica {
   /*margin-bottom: 15px;*/
 }
-.produto-single .produto-single-info {
-  padding-bottom: 45px;
-}
 .produto-single .produto-single-info .produto-single-info-titulo h1 {
   font-size: 28px;
   color: #333333;
@@ -9275,6 +9285,20 @@ footer .credito {
 }
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra {
   margin-top: 50px;
+  position: relative;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .aviso {
+  background-color: gray;
+  padding: 20px 5px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .aviso p {
+  color: white !important;
+}
+.produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .aviso p a {
+  display: none;
 }
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .selecao-produto,
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .comprar-produto {
@@ -9524,3 +9548,787 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 /* ==========================================================================
    PAGE-CONTATO
    ========================================================================== */
+/* ==========================================================================
+   PADRAO DO WOOCOMERCE
+   ========================================================================== */
+/* ==========================================================================
+   PADRAO DO WOOCOMERCE
+   ========================================================================== */
+.woocommerce table.shop_table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+table.cart th {
+  vertical-align: middle;
+}
+page table.cart td.actions {
+  text-align: right;
+}
+.woocommerce .order_details {
+  margin: 0 0 1.5em;
+  list-style: none;
+}
+table {
+  background-color: transparent;
+}
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+.woocommerce #content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon,
+.woocommerce-page #content table.cart td.actions .coupon,
+.woocommerce-page table.cart td.actions .coupon {
+  float: left;
+}
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d3ced2;
+  padding: 6px 6px 5px;
+  margin: 0 4px 0 0;
+  outline: 0;
+  line-height: 1;
+}
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d3ced2;
+  padding: 6px 6px 5px;
+  margin: 0 4px 0 0;
+  outline: 0;
+  line-height: 1;
+}
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  float: right;
+  width: 48%;
+}
+cart .cart-collaterals .cart_totals table {
+  border-collapse: separate;
+  margin: 0 0 6px;
+  padding: 0;
+  border-left: 0;
+}
+.woocommerce-cart .wc-proceed-to-checkout {
+  padding: 1em 0;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.woocommerce form .form-row {
+  padding: 3px;
+  margin: 0 0 6px;
+}
+.woocommerce form .form-row label {
+  line-height: 2;
+}
+.woocommerce form .form-row .required {
+  color: red;
+  font-weight: 700;
+  border: 0;
+}
+.clear,
+.woocommerce .woocommerce-breadcrumb:after,
+.woocommerce .woocommerce-error:after,
+.woocommerce .woocommerce-info:after,
+.woocommerce .woocommerce-message:after {
+  clear: both;
+}
+.woocommerce-checkout #payment ul.payment_methods {
+  text-align: left;
+  padding: 1em;
+  border-bottom: 1px solid #d3ced2;
+  margin: 0;
+  list-style: none;
+}
+.woocommerce-checkout #payment ul.payment_methods li {
+  line-height: 2;
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+}
+/* ==========================================================================
+   TABETAS
+   ========================================================================== */
+.tabela-pedido {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.tabela-pedido > thead > tr > th,
+.tabela-pedido > tbody > tr > th,
+.tabela-pedido > tfoot > tr > th,
+.tabela-pedido > thead > tr > td,
+.tabela-pedido > tbody > tr > td,
+.tabela-pedido > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.tabela-pedido > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.tabela-pedido > caption + thead > tr:first-child > th,
+.tabela-pedido > colgroup + thead > tr:first-child > th,
+.tabela-pedido > thead:first-child > tr:first-child > th,
+.tabela-pedido > caption + thead > tr:first-child > td,
+.tabela-pedido > colgroup + thead > tr:first-child > td,
+.tabela-pedido > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.tabela-pedido > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.tabela-pedido .table {
+  background-color: #ffffff;
+}
+.tabela-pedido > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.shop_table {
+  border: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+.shop_table > thead > tr > th,
+.shop_table > tbody > tr > th,
+.shop_table > tfoot > tr > th,
+.shop_table > thead > tr > td,
+.shop_table > tbody > tr > td,
+.shop_table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.shop_table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.shop_table > caption + thead > tr:first-child > th,
+.shop_table > colgroup + thead > tr:first-child > th,
+.shop_table > thead:first-child > tr:first-child > th,
+.shop_table > caption + thead > tr:first-child > td,
+.shop_table > colgroup + thead > tr:first-child > td,
+.shop_table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.shop_table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.shop_table .table {
+  background-color: #ffffff;
+}
+.shop_table > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.shop_table thead {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.shop_table tbody .btn-visualizar {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #61656d;
+  border-color: #61656d;
+  border-radius: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.shop_table tbody .btn-visualizar:focus,
+.shop_table tbody .btn-visualizar:active:focus,
+.shop_table tbody .btn-visualizar.active:focus,
+.shop_table tbody .btn-visualizar.focus,
+.shop_table tbody .btn-visualizar:active.focus,
+.shop_table tbody .btn-visualizar.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.shop_table tbody .btn-visualizar:hover,
+.shop_table tbody .btn-visualizar:focus,
+.shop_table tbody .btn-visualizar.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.shop_table tbody .btn-visualizar:active,
+.shop_table tbody .btn-visualizar.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.shop_table tbody .btn-visualizar.disabled,
+.shop_table tbody .btn-visualizar[disabled],
+fieldset[disabled] .shop_table tbody .btn-visualizar {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.shop_table tbody .btn-visualizar.disabled,
+fieldset[disabled] a.shop_table tbody .btn-visualizar {
+  pointer-events: none;
+}
+.shop_table tbody .btn-visualizar:focus,
+.shop_table tbody .btn-visualizar.focus {
+  color: white;
+  background-color: #494c52;
+  border-color: #25262a;
+}
+.shop_table tbody .btn-visualizar:hover {
+  color: white;
+  background-color: #494c52;
+  border-color: #44474d;
+}
+.shop_table tbody .btn-visualizar:active,
+.shop_table tbody .btn-visualizar.active,
+.open > .dropdown-toggle.shop_table tbody .btn-visualizar {
+  color: white;
+  background-color: #494c52;
+  border-color: #44474d;
+}
+.shop_table tbody .btn-visualizar:active:hover,
+.shop_table tbody .btn-visualizar.active:hover,
+.open > .dropdown-toggle.shop_table tbody .btn-visualizar:hover,
+.shop_table tbody .btn-visualizar:active:focus,
+.shop_table tbody .btn-visualizar.active:focus,
+.open > .dropdown-toggle.shop_table tbody .btn-visualizar:focus,
+.shop_table tbody .btn-visualizar:active.focus,
+.shop_table tbody .btn-visualizar.active.focus,
+.open > .dropdown-toggle.shop_table tbody .btn-visualizar.focus {
+  color: white;
+  background-color: #383a3f;
+  border-color: #25262a;
+}
+.shop_table tbody .btn-visualizar:active,
+.shop_table tbody .btn-visualizar.active,
+.open > .dropdown-toggle.shop_table tbody .btn-visualizar {
+  background-image: none;
+}
+.shop_table tbody .btn-visualizar.disabled,
+.shop_table tbody .btn-visualizar[disabled],
+fieldset[disabled] .shop_table tbody .btn-visualizar,
+.shop_table tbody .btn-visualizar.disabled:hover,
+.shop_table tbody .btn-visualizar[disabled]:hover,
+fieldset[disabled] .shop_table tbody .btn-visualizar:hover,
+.shop_table tbody .btn-visualizar.disabled:focus,
+.shop_table tbody .btn-visualizar[disabled]:focus,
+fieldset[disabled] .shop_table tbody .btn-visualizar:focus,
+.shop_table tbody .btn-visualizar.disabled.focus,
+.shop_table tbody .btn-visualizar[disabled].focus,
+fieldset[disabled] .shop_table tbody .btn-visualizar.focus,
+.shop_table tbody .btn-visualizar.disabled:active,
+.shop_table tbody .btn-visualizar[disabled]:active,
+fieldset[disabled] .shop_table tbody .btn-visualizar:active,
+.shop_table tbody .btn-visualizar.disabled.active,
+.shop_table tbody .btn-visualizar[disabled].active,
+fieldset[disabled] .shop_table tbody .btn-visualizar.active {
+  background-color: #61656d;
+  border-color: #61656d;
+}
+.shop_table tbody .btn-visualizar .badge {
+  color: #61656d;
+  background-color: white;
+}
+.shop_table tbody .order .order-actions a,
+.shop_table tbody .order .order-actions input.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #62656d;
+  border-color: #62656d;
+  display: block;
+  font-size: 9px;
+  padding: 2px;
+  margin: 4px 0px;
+  border-radius: 0;
+}
+.shop_table tbody .order .order-actions a:focus,
+.shop_table tbody .order .order-actions input.button:focus,
+.shop_table tbody .order .order-actions a:active:focus,
+.shop_table tbody .order .order-actions input.button:active:focus,
+.shop_table tbody .order .order-actions a.active:focus,
+.shop_table tbody .order .order-actions input.button.active:focus,
+.shop_table tbody .order .order-actions a.focus,
+.shop_table tbody .order .order-actions input.button.focus,
+.shop_table tbody .order .order-actions a:active.focus,
+.shop_table tbody .order .order-actions input.button:active.focus,
+.shop_table tbody .order .order-actions a.active.focus,
+.shop_table tbody .order .order-actions input.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.shop_table tbody .order .order-actions a:hover,
+.shop_table tbody .order .order-actions input.button:hover,
+.shop_table tbody .order .order-actions a:focus,
+.shop_table tbody .order .order-actions input.button:focus,
+.shop_table tbody .order .order-actions a.focus,
+.shop_table tbody .order .order-actions input.button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.shop_table tbody .order .order-actions a:active,
+.shop_table tbody .order .order-actions input.button:active,
+.shop_table tbody .order .order-actions a.active,
+.shop_table tbody .order .order-actions input.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.shop_table tbody .order .order-actions a.disabled,
+.shop_table tbody .order .order-actions input.button.disabled,
+.shop_table tbody .order .order-actions a[disabled],
+.shop_table tbody .order .order-actions input.button[disabled],
+fieldset[disabled] .shop_table tbody .order .order-actions a,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.shop_table tbody .order .order-actions a.disabled,
+a.shop_table tbody .order .order-actions input.button.disabled,
+fieldset[disabled] a.shop_table tbody .order .order-actions a,
+fieldset[disabled] a.shop_table tbody .order .order-actions input.button {
+  pointer-events: none;
+}
+.shop_table tbody .order .order-actions a:focus,
+.shop_table tbody .order .order-actions input.button:focus,
+.shop_table tbody .order .order-actions a.focus,
+.shop_table tbody .order .order-actions input.button.focus {
+  color: white;
+  background-color: #4a4c52;
+  border-color: #26272a;
+}
+.shop_table tbody .order .order-actions a:hover,
+.shop_table tbody .order .order-actions input.button:hover {
+  color: white;
+  background-color: #4a4c52;
+  border-color: #45474d;
+}
+.shop_table tbody .order .order-actions a:active,
+.shop_table tbody .order .order-actions input.button:active,
+.shop_table tbody .order .order-actions a.active,
+.shop_table tbody .order .order-actions input.button.active,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions a,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions input.button {
+  color: white;
+  background-color: #4a4c52;
+  border-color: #45474d;
+}
+.shop_table tbody .order .order-actions a:active:hover,
+.shop_table tbody .order .order-actions input.button:active:hover,
+.shop_table tbody .order .order-actions a.active:hover,
+.shop_table tbody .order .order-actions input.button.active:hover,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions a:hover,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions input.button:hover,
+.shop_table tbody .order .order-actions a:active:focus,
+.shop_table tbody .order .order-actions input.button:active:focus,
+.shop_table tbody .order .order-actions a.active:focus,
+.shop_table tbody .order .order-actions input.button.active:focus,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions a:focus,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions input.button:focus,
+.shop_table tbody .order .order-actions a:active.focus,
+.shop_table tbody .order .order-actions input.button:active.focus,
+.shop_table tbody .order .order-actions a.active.focus,
+.shop_table tbody .order .order-actions input.button.active.focus,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions a.focus,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions input.button.focus {
+  color: white;
+  background-color: #393b3f;
+  border-color: #26272a;
+}
+.shop_table tbody .order .order-actions a:active,
+.shop_table tbody .order .order-actions input.button:active,
+.shop_table tbody .order .order-actions a.active,
+.shop_table tbody .order .order-actions input.button.active,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions a,
+.open > .dropdown-toggle.shop_table tbody .order .order-actions input.button {
+  background-image: none;
+}
+.shop_table tbody .order .order-actions a.disabled,
+.shop_table tbody .order .order-actions input.button.disabled,
+.shop_table tbody .order .order-actions a[disabled],
+.shop_table tbody .order .order-actions input.button[disabled],
+fieldset[disabled] .shop_table tbody .order .order-actions a,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button,
+.shop_table tbody .order .order-actions a.disabled:hover,
+.shop_table tbody .order .order-actions input.button.disabled:hover,
+.shop_table tbody .order .order-actions a[disabled]:hover,
+.shop_table tbody .order .order-actions input.button[disabled]:hover,
+fieldset[disabled] .shop_table tbody .order .order-actions a:hover,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button:hover,
+.shop_table tbody .order .order-actions a.disabled:focus,
+.shop_table tbody .order .order-actions input.button.disabled:focus,
+.shop_table tbody .order .order-actions a[disabled]:focus,
+.shop_table tbody .order .order-actions input.button[disabled]:focus,
+fieldset[disabled] .shop_table tbody .order .order-actions a:focus,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button:focus,
+.shop_table tbody .order .order-actions a.disabled.focus,
+.shop_table tbody .order .order-actions input.button.disabled.focus,
+.shop_table tbody .order .order-actions a[disabled].focus,
+.shop_table tbody .order .order-actions input.button[disabled].focus,
+fieldset[disabled] .shop_table tbody .order .order-actions a.focus,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button.focus,
+.shop_table tbody .order .order-actions a.disabled:active,
+.shop_table tbody .order .order-actions input.button.disabled:active,
+.shop_table tbody .order .order-actions a[disabled]:active,
+.shop_table tbody .order .order-actions input.button[disabled]:active,
+fieldset[disabled] .shop_table tbody .order .order-actions a:active,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button:active,
+.shop_table tbody .order .order-actions a.disabled.active,
+.shop_table tbody .order .order-actions input.button.disabled.active,
+.shop_table tbody .order .order-actions a[disabled].active,
+.shop_table tbody .order .order-actions input.button[disabled].active,
+fieldset[disabled] .shop_table tbody .order .order-actions a.active,
+fieldset[disabled] .shop_table tbody .order .order-actions input.button.active {
+  background-color: #62656d;
+  border-color: #62656d;
+}
+.shop_table tbody .order .order-actions a .badge,
+.shop_table tbody .order .order-actions input.button .badge {
+  color: #62656d;
+  background-color: white;
+}
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+.order_details .product-name p {
+  margin-bottom: 0px;
+}
+.cart .actions input.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #f45245;
+  border-color: #f45245;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 6.5px 12px;
+  font-size: 12px;
+  /*padding: 2px;*/
+  /*margin: 4px 0px;*/
+  border-radius: 0;
+}
+.cart .actions input.button:focus,
+.cart .actions input.button:active:focus,
+.cart .actions input.button.active:focus,
+.cart .actions input.button.focus,
+.cart .actions input.button:active.focus,
+.cart .actions input.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.cart .actions input.button:hover,
+.cart .actions input.button:focus,
+.cart .actions input.button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.cart .actions input.button:active,
+.cart .actions input.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.cart .actions input.button.disabled,
+.cart .actions input.button[disabled],
+fieldset[disabled] .cart .actions input.button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.cart .actions input.button.disabled,
+fieldset[disabled] a.cart .actions input.button {
+  pointer-events: none;
+}
+.cart .actions input.button:focus,
+.cart .actions input.button:active:focus,
+.cart .actions input.button.active:focus,
+.cart .actions input.button.focus,
+.cart .actions input.button:active.focus,
+.cart .actions input.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.cart .actions input.button:hover,
+.cart .actions input.button:focus,
+.cart .actions input.button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.cart .actions input.button:active,
+.cart .actions input.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.cart .actions input.button.disabled,
+.cart .actions input.button[disabled],
+fieldset[disabled] .cart .actions input.button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.cart .actions input.button.disabled,
+fieldset[disabled] a.cart .actions input.button {
+  pointer-events: none;
+}
+.cart .actions input.button:focus,
+.cart .actions input.button.focus {
+  color: white;
+  background-color: #f12515;
+  border-color: #af170a;
+}
+.cart .actions input.button:hover {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.cart .actions input.button:active,
+.cart .actions input.button.active,
+.open > .dropdown-toggle.cart .actions input.button {
+  color: white;
+  background-color: #f12515;
+  border-color: #ee1f0e;
+}
+.cart .actions input.button:active:hover,
+.cart .actions input.button.active:hover,
+.open > .dropdown-toggle.cart .actions input.button:hover,
+.cart .actions input.button:active:focus,
+.cart .actions input.button.active:focus,
+.open > .dropdown-toggle.cart .actions input.button:focus,
+.cart .actions input.button:active.focus,
+.cart .actions input.button.active.focus,
+.open > .dropdown-toggle.cart .actions input.button.focus {
+  color: white;
+  background-color: #d61c0d;
+  border-color: #af170a;
+}
+.cart .actions input.button:active,
+.cart .actions input.button.active,
+.open > .dropdown-toggle.cart .actions input.button {
+  background-image: none;
+}
+.cart .actions input.button.disabled,
+.cart .actions input.button[disabled],
+fieldset[disabled] .cart .actions input.button,
+.cart .actions input.button.disabled:hover,
+.cart .actions input.button[disabled]:hover,
+fieldset[disabled] .cart .actions input.button:hover,
+.cart .actions input.button.disabled:focus,
+.cart .actions input.button[disabled]:focus,
+fieldset[disabled] .cart .actions input.button:focus,
+.cart .actions input.button.disabled.focus,
+.cart .actions input.button[disabled].focus,
+fieldset[disabled] .cart .actions input.button.focus,
+.cart .actions input.button.disabled:active,
+.cart .actions input.button[disabled]:active,
+fieldset[disabled] .cart .actions input.button:active,
+.cart .actions input.button.disabled.active,
+.cart .actions input.button[disabled].active,
+fieldset[disabled] .cart .actions input.button.active {
+  background-color: #f45245;
+  border-color: #f45245;
+}
+.cart .actions input.button .badge {
+  color: #f45245;
+  background-color: white;
+}
+.cart .actions > input.button {
+  float: right;
+}
+.woocommerce-billing-fields {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.woocommerce-billing-fields label {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .woocommerce-billing-fields label {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.woocommerce-billing-fields input,
+.woocommerce-billing-fields .input-text {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+@media (min-width: 768px) {
+  .woocommerce-billing-fields input,
+  .woocommerce-billing-fields .input-text {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.woocommerce-billing-fields input:focus,
+.woocommerce-billing-fields .input-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.woocommerce-billing-fields input::-moz-placeholder,
+.woocommerce-billing-fields .input-text::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.woocommerce-billing-fields input:-ms-input-placeholder,
+.woocommerce-billing-fields .input-text:-ms-input-placeholder {
+  color: #999999;
+}
+.woocommerce-billing-fields input::-webkit-input-placeholder,
+.woocommerce-billing-fields .input-text::-webkit-input-placeholder {
+  color: #999999;
+}
+.woocommerce-billing-fields input[disabled],
+.woocommerce-billing-fields .input-text[disabled],
+.woocommerce-billing-fields input[readonly],
+.woocommerce-billing-fields .input-text[readonly],
+fieldset[disabled] .woocommerce-billing-fields input,
+fieldset[disabled] .woocommerce-billing-fields .input-text {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.woocommerce-billing-fields input[disabled],
+.woocommerce-billing-fields .input-text[disabled],
+fieldset[disabled] .woocommerce-billing-fields input,
+fieldset[disabled] .woocommerce-billing-fields .input-text {
+  cursor: not-allowed;
+}
+textarea.woocommerce-billing-fields input,
+textarea.woocommerce-billing-fields .input-text {
+  height: auto;
+}
+textarea#order_comments {
+  width: 100%;
+}
+#place_order {
+  float: right !important;
+}
+.checkout_coupon {
+  margin: 20px 0;
+}
+form.login .form-control {
+  margin: 0 0 10px;
+}
+form.login div.checkbox {
+  float: right !important;
+}
