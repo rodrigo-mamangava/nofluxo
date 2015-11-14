@@ -16,5 +16,14 @@ if (get_query_var('page') =="" || get_query_var('page') == 1) {
 }
 ?>
 
-<?php get_template_part('template-parts/woo/shop', 'home-produtos'); ?>
+
+<?php if( get_query_var('page') > 1) :?>
+    <div class="home-int">
+<?php endif;?>
+
+    <?php get_template_part('template-parts/woo/shop', 'home-produtos'); ?>
+
+<?php if(get_query_var('page') > 1) :?>
+    </div>
+<?php endif;?>
 

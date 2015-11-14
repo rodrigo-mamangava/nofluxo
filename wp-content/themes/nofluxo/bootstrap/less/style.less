@@ -179,7 +179,8 @@ p, h1, h2, h3, h4, h5, h6{
 }
 .btn-vermelho{
     .btn-padrao(white, @vermelho-padrao, @vermelho-padrao);
-    padding: 6.5px 12px;
+    font-size: 22px;
+    padding: 12px 35px;
 }
 
 .btn-azul{                    
@@ -386,6 +387,11 @@ p.linha-inteira{
 
     margin-top: 90px;
     margin-bottom: 30px;
+    position: relative;
+    
+    .breadcrumb-geral{
+        margin-top: -88px;
+    }
 
     .sublinhado{
         .sublinhado;
@@ -1139,6 +1145,10 @@ woocommerce .widget_price_filter .ui-slider {
 .woocommerce input.button{
     .btn-vermelho;
 }
+.woocommerce button.button{
+    font-size: 22px; 
+    padding: 12px 35px;
+}
 .widget_product_search input[type="submit"]{
     .btn-vermelho;
 }
@@ -1307,6 +1317,11 @@ ul li {
         //font-size: 18px !important;
         //color: @cor-hover !important;
         .text-uppercase;
+        &:hover, &:active, &:focus{
+            color: @branco !important;
+                cursor: default;
+        }
+            cursor: default;
     }
 }
 
@@ -1377,14 +1392,15 @@ header{
 
 
             img{
-                width: 180px;  
+                width: 180px !important;
+                
             }
 
         }
         .logo-interno{
 
             img{
-                width: 160px;
+                width: 160px !important;
             }
 
         }
@@ -1428,8 +1444,23 @@ footer{
             font-weight: bold;
             font-size: 12px;
             color: @cinza-claro;
+            
+            
+            a{
+                &:hover, &:active, &:focus{
+                    color: @cor-hover;
+                    text-decoration: none;
+                }
+            }
+            
+            
+            
             p{
-                padding-bottom: 10px;               
+                padding-bottom: 10px;
+                
+                
+                
+                
             }
 
             img.sitemap-icon{
@@ -1446,6 +1477,7 @@ footer{
             font-weight: bold;
             font-size: 14px;
             color: @cinza-claro;
+            margin-bottom: 5px;
 
             input, button{
                 border-radius: 0;
@@ -1455,6 +1487,16 @@ footer{
         .logo-footer{
             padding-top: 10px;
 
+        }
+        
+        
+        .link-social{
+            margin-top: 5px;
+            
+            a{
+            margin-right: -20px;
+                
+            }
         }
 
     }
@@ -1508,6 +1550,10 @@ footer{
     }
 }
 
+.home-int{
+    margin: 27px 0 0;
+}
+
 
 /* ==========================================================================
    PRODUTO-SINGLE
@@ -1550,6 +1596,64 @@ footer{
         .dados-extra-titulo{
             .text-right;
             margin-top: -34px;
+            position: relative;
+            z-index: 300;
+            
+            
+            a.produto-single-info-titulo-wishlist{
+                color: @cinza-escuro-x;
+                
+                margin-right: 15px;
+                
+                &:hover, &:active, &:focus{
+                    text-decoration: none;
+                }
+                
+                                              
+            }
+            
+            .passador-item{
+                
+                a{
+                    margin: 0 5px;
+                }
+            }
+            
+            
+        }
+        
+        .dados-extra-titulo-wish{
+            .pull-right;
+            margin-right: 45px;
+            
+            i{
+                    font-size: 18px;                      
+                }  
+
+        }
+        
+        .dados-extra-titulo-pass{
+            .pull-right;
+
+            
+        }
+        
+        .yith-wcwl-add-to-wishlist {
+            margin-top: 0px;
+            
+            .yith-wcwl-add-button{
+                
+                a.button{
+                    .button-variant(@cinza-escuro-x, transparent, transparent);
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    font-size: 12px;
+                    text-transform: initial;
+                    display: inline;
+                }
+                
+            }
         }
 
 
@@ -1780,6 +1884,7 @@ footer{
 /* ==========================================================================
    PAGE-LOJA
    ========================================================================== */
+
 
 .colecao-completa-3-colunas{
     margin-top: -15px;

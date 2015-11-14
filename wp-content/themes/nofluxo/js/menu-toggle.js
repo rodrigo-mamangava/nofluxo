@@ -5,7 +5,10 @@
 
 jQuery(document).ready(function ($) {
     $('.menu > a').click(function () {
-
+        
+        var menuAberto = $('.menu').children('a').hasClass('menu-ativo');
+        
+              
         if ($(this).hasClass('menu-ativo')) {
             $(this).toggleClass('menu-ativo');
             var subMenu = $(this).data('menu');

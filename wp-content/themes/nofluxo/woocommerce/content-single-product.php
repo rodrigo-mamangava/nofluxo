@@ -28,8 +28,22 @@ if (post_password_required()) {
 ?>
 
 <div class="row produto-single pagina">
+    
+    <div class="col-xs-10 col-xs-offset-2 breadcrumb-geral">
+    <?php if ( function_exists('yoast_breadcrumb') ) 
+    {
+        yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+        
+    } ?>
+    </div>
 
     <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+        
+        <?php
+
+         //debug(get_the_ID());
+        
+        ?>
 
         <div class="col-sm-4">
             <?php
@@ -53,13 +67,16 @@ if (post_password_required()) {
                         </div>
                     </div>
                     <div class="col-xs-12">
-                        <div class="dados-extra-titulo">
-                            <a href="#" class="produto-single-info-titulo-wishlist">
-                                <i class="fa fa-heart-o" ></i>
-                                Wishlist
-                            </a>
-                            <?php previous_post_link('%link', '<<'); ?>
-                            <?php next_post_link('%link', '>>'); ?>
+                        <div class="dados-extra-titulo dados-extra-titulo-wish">                           
+                            <?php echo do_shortcode('[yith_wcwl_add_to_wishlist icon="fa-heart-o" label="Wishlist"  already_in_wishslist_text=""   ]'); ?>                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="dados-extra-titulo dados-extra-titulo-pass">                            
+                            <div class="passador-item">
+                                <?php previous_post_link('%link', '<img src="'.get_template_directory_uri().'/img/passador/seta-esq.png" >'); ?>
+                                <?php next_post_link('%link', '<img src="'.get_template_directory_uri().'/img/passador/seta-dir.png" >'); ?>
+                            </div>
                         </div>
                     </div>
 

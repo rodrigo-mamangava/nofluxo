@@ -253,6 +253,13 @@ if (!function_exists('woocommerce_content')) {
         } else {
 
             echo '<div class="row page-loja pagina">';
+            
+             if ( function_exists('yoast_breadcrumb') ){
+                 echo '<div class="col-xs-10 col-xs-offset-2 breadcrumb-geral">';
+                 yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+                 echo '</div>';
+                 
+             }
 
             echo '<div class="col-sm-3">';
             get_sidebar('esquerda');
@@ -813,3 +820,13 @@ function wc_print_notices_single() {
 
 	wc_clear_notices();
 }
+
+
+
+//add_filter ('add_to_cart_redirect', 'redirect_to_checkout');
+//
+//function redirect_to_checkout() {
+//    global $woocommerce;
+//    $checkout_url = $woocommerce->cart->get_checkout_url();
+//    return $checkout_url;
+//}

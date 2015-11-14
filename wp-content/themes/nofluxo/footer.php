@@ -17,8 +17,8 @@
                                     <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-contato2x.png" class="sitemap-icon">Contato</p></a>
                                 </div>
                                 <div class="col-sm-6 sitemap">
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-quem-somos2x.png" class="sitemap-icon">Meu Cadastro</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-meu-cadastro2x.png" class="sitemap-icon">Produtos</p></a>
+                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-meu-cadastro2x.png" class="sitemap-icon">Meu Cadastro</p></a>
+                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-produtos2x.png" class="sitemap-icon">Produtos</p></a>
                                     <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-seguranca2x.png" class="sitemap-icon">Segurança</p></a>
                                     <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-logistica2x.png" class="sitemap-icon">Logistica</p></a>
                                 </div>
@@ -30,7 +30,7 @@
                             <p class="outros">
                                 Chega mais
                             </p>
-                            <div class="row">
+                            <div class="row link-social">
                                 <a class="col-xs-3" href="#">
                                     <img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-social-facebook2x.png" class="img-responsive ">
                                 </a>

@@ -6900,7 +6900,8 @@ h6 {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
 }
 .btn-vermelho:focus,
 .btn-vermelho:active:focus,
@@ -7697,6 +7698,10 @@ p.linha-inteira {
 .pagina {
   margin-top: 90px;
   margin-bottom: 30px;
+  position: relative;
+}
+.pagina .breadcrumb-geral {
+  margin-top: -88px;
 }
 .pagina .sublinhado {
   border-bottom: solid 1px #ebebeb;
@@ -8380,7 +8385,8 @@ fieldset[disabled] .formPadrao .btn-enviar.active {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
   font-size: 14px;
   width: 90px;
 }
@@ -8584,7 +8590,8 @@ woocommerce .widget_price_filter .ui-slider {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
 }
 .woocommerce #respond input#submit:focus,
 .woocommerce a.button:focus,
@@ -8842,6 +8849,10 @@ fieldset[disabled] .woocommerce input.button.active {
   color: #f45245;
   background-color: white;
 }
+.woocommerce button.button {
+  font-size: 22px;
+  padding: 12px 35px;
+}
 .widget_product_search input[type="submit"] {
   display: inline-block;
   margin-bottom: 0;
@@ -8867,7 +8878,8 @@ fieldset[disabled] .woocommerce input.button.active {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
 }
 .widget_product_search input[type="submit"]:focus,
 .widget_product_search input[type="submit"]:active:focus,
@@ -9098,6 +9110,13 @@ ul li {
 }
 .menu-item-type-custom > a {
   text-transform: uppercase;
+  cursor: default;
+}
+.menu-item-type-custom > a:hover,
+.menu-item-type-custom > a:active,
+.menu-item-type-custom > a:focus {
+  color: #ffffff !important;
+  cursor: default;
 }
 /* ==========================================================================
    Banner
@@ -9148,10 +9167,10 @@ header .navbar .navbar-brand {
                         }*/
 }
 header .navbar .navbar-brand img {
-  width: 180px;
+  width: 180px !important;
 }
 header .navbar .logo-interno img {
-  width: 160px;
+  width: 160px !important;
 }
 /* ==========================================================================
    Footer
@@ -9178,6 +9197,12 @@ footer .footer-conteudo .sitemap {
   font-size: 12px;
   color: #e3e1e1;
 }
+footer .footer-conteudo .sitemap a:hover,
+footer .footer-conteudo .sitemap a:active,
+footer .footer-conteudo .sitemap a:focus {
+  color: #15c6d8;
+  text-decoration: none;
+}
 footer .footer-conteudo .sitemap p {
   padding-bottom: 10px;
 }
@@ -9191,6 +9216,7 @@ footer .footer-conteudo .outros {
   font-weight: bold;
   font-size: 14px;
   color: #e3e1e1;
+  margin-bottom: 5px;
 }
 footer .footer-conteudo .outros input,
 footer .footer-conteudo .outros button {
@@ -9198,6 +9224,12 @@ footer .footer-conteudo .outros button {
 }
 footer .footer-conteudo .logo-footer {
   padding-top: 10px;
+}
+footer .footer-conteudo .link-social {
+  margin-top: 5px;
+}
+footer .footer-conteudo .link-social a {
+  margin-right: -20px;
 }
 footer .credito {
   margin-top: 15px;
@@ -9246,6 +9278,9 @@ footer .credito {
   font-size: 25px;
   margin: 0 10px;
 }
+.home-int {
+  margin: 27px 0 0;
+}
 /* ==========================================================================
    PRODUTO-SINGLE
    ========================================================================== */
@@ -9264,6 +9299,105 @@ footer .credito {
 .produto-single .produto-single-info .dados-extra-titulo {
   text-align: right;
   margin-top: -34px;
+  position: relative;
+  z-index: 300;
+}
+.produto-single .produto-single-info .dados-extra-titulo a.produto-single-info-titulo-wishlist {
+  color: #333333;
+  margin-right: 15px;
+}
+.produto-single .produto-single-info .dados-extra-titulo a.produto-single-info-titulo-wishlist:hover,
+.produto-single .produto-single-info .dados-extra-titulo a.produto-single-info-titulo-wishlist:active,
+.produto-single .produto-single-info .dados-extra-titulo a.produto-single-info-titulo-wishlist:focus {
+  text-decoration: none;
+}
+.produto-single .produto-single-info .dados-extra-titulo .passador-item a {
+  margin: 0 5px;
+}
+.produto-single .produto-single-info .dados-extra-titulo-wish {
+  float: right !important;
+  margin-right: 45px;
+}
+.produto-single .produto-single-info .dados-extra-titulo-wish i {
+  font-size: 18px;
+}
+.produto-single .produto-single-info .dados-extra-titulo-pass {
+  float: right !important;
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist {
+  margin-top: 0px;
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button {
+  color: #333333;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  text-transform: initial;
+  display: inline;
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.focus {
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:hover {
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active,
+.open > .dropdown-toggle.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button {
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active:hover,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active:hover,
+.open > .dropdown-toggle.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:hover,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active:focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active:focus,
+.open > .dropdown-toggle.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active.focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active.focus,
+.open > .dropdown-toggle.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.focus {
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active,
+.open > .dropdown-toggle.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button {
+  background-image: none;
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled],
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled:hover,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled]:hover,
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:hover,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled:focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled]:focus,
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled.focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled].focus,
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.focus,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled:active,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled]:active,
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button:active,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.disabled.active,
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button[disabled].active,
+fieldset[disabled] .produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button.active {
+  background-color: transparent;
+  border-color: transparent;
+}
+.produto-single .produto-single-info .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a.button .badge {
+  color: transparent;
+  background-color: #333333;
 }
 .produto-single .produto-single-info .produto-single-info-descricao {
   position: relative;
@@ -9348,7 +9482,8 @@ footer .credito {
   border-radius: 0;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
   width: 200px;
   height: 60px;
   padding-top: 13px;
@@ -10087,7 +10222,8 @@ fieldset[disabled] .shop_table tbody .order .order-actions input.button.active {
   border-color: #f45245;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 6.5px 12px;
+  font-size: 22px;
+  padding: 12px 35px;
   font-size: 12px;
   /*padding: 2px;*/
   /*margin: 4px 0px;*/
