@@ -155,6 +155,8 @@ function nofluxo_scripts() {
     wp_enqueue_script('nofluxo-widget-ajuste', get_template_directory_uri() . '/js/widget-ajuste.js', array('jquery'), '20151109', true);
     wp_enqueue_script('nofluxo-variations-ajuste', get_template_directory_uri() . '/js/variations-ajuste.js', array('jquery'), '20151109', true);
     
+    wp_enqueue_script('nofluxo-produto-loop-ajuste', get_template_directory_uri() . '/js/produto-loop-ajuste.js', array('jquery'), '20151115', true);
+    
     wp_enqueue_script('nofluxo-entry-content-li-ajustes', get_template_directory_uri() . '/js/entry-content-li-ajustes.js', array('jquery'), '20151112', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -643,19 +645,15 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 
 function get_product_search_form() {
     ?>
-    <div class="pesquisar"> 
+    <div class="pesquisar form-group"> 
         <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
             <input 
                 type="search" 
-                class="search-field" 
+                class="search-field form-control" 
                 placeholder="Pesquisar" 
                 value="<?php echo get_search_query(); ?>" 
                 name="s" 
                 title="<?php echo esc_attr_x('Search for:', 'label', 'woocommerce'); ?>" 
-                />
-            <input 
-                type="submit" 
-                value="Pesquisar" 
                 />
             <input 
                 type="hidden" 

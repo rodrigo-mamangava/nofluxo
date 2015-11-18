@@ -7959,6 +7959,15 @@ div.select select {
   border: solid 1px #ddd;
   margin-bottom: 40px;
 }
+.item-produto .item-produto-wish {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.item-produto .item-produto-wish a i {
+  color: white;
+  font-size: 30px;
+}
 .item-produto a {
   color: initial;
 }
@@ -8066,6 +8075,9 @@ p.price ins,
 span.price ins {
   text-decoration: none;
 }
+/* ==========================================================================
+   woocommerce-message
+   ========================================================================== */
 .woocommerce .woocommerce-message {
   border-top-color: #8fae1b;
 }
@@ -8118,6 +8130,131 @@ span.price ins {
 .woocommerce .woocommerce-info:after,
 .woocommerce .woocommerce-message:after {
   clear: both;
+}
+.woocommerce .woocommerce-message a {
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  white-space: nowrap !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border-radius: 4px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  color: white !important;
+  background-color: #61656d !important;
+  border-color: #61656d !important;
+  border-radius: 0 !important;
+  font-size: 25px !important;
+  text-transform: uppercase !important;
+  font-size: inherit !important;
+  margin-right: 20px;
+}
+.woocommerce .woocommerce-message a:focus,
+.woocommerce .woocommerce-message a:active:focus,
+.woocommerce .woocommerce-message a.active:focus,
+.woocommerce .woocommerce-message a.focus,
+.woocommerce .woocommerce-message a:active.focus,
+.woocommerce .woocommerce-message a.active.focus {
+  outline: thin dotted !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px !important;
+}
+.woocommerce .woocommerce-message a:hover,
+.woocommerce .woocommerce-message a:focus,
+.woocommerce .woocommerce-message a.focus {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+.woocommerce .woocommerce-message a:active,
+.woocommerce .woocommerce-message a.active {
+  outline: 0 !important;
+  background-image: none !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+.woocommerce .woocommerce-message a.disabled,
+.woocommerce .woocommerce-message a[disabled],
+fieldset[disabled] .woocommerce .woocommerce-message a {
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.woocommerce .woocommerce-message a.disabled,
+fieldset[disabled] a.woocommerce .woocommerce-message a {
+  pointer-events: none !important;
+}
+.woocommerce .woocommerce-message a:focus,
+.woocommerce .woocommerce-message a.focus {
+  color: white !important;
+  background-color: #494c52 !important;
+  border-color: #25262a !important;
+}
+.woocommerce .woocommerce-message a:hover {
+  color: white !important;
+  background-color: #494c52 !important;
+  border-color: #44474d !important;
+}
+.woocommerce .woocommerce-message a:active,
+.woocommerce .woocommerce-message a.active,
+.open > .dropdown-toggle.woocommerce .woocommerce-message a {
+  color: white !important;
+  background-color: #494c52 !important;
+  border-color: #44474d !important;
+}
+.woocommerce .woocommerce-message a:active:hover,
+.woocommerce .woocommerce-message a.active:hover,
+.open > .dropdown-toggle.woocommerce .woocommerce-message a:hover,
+.woocommerce .woocommerce-message a:active:focus,
+.woocommerce .woocommerce-message a.active:focus,
+.open > .dropdown-toggle.woocommerce .woocommerce-message a:focus,
+.woocommerce .woocommerce-message a:active.focus,
+.woocommerce .woocommerce-message a.active.focus,
+.open > .dropdown-toggle.woocommerce .woocommerce-message a.focus {
+  color: white !important;
+  background-color: #383a3f !important;
+  border-color: #25262a !important;
+}
+.woocommerce .woocommerce-message a:active,
+.woocommerce .woocommerce-message a.active,
+.open > .dropdown-toggle.woocommerce .woocommerce-message a {
+  background-image: none !important;
+}
+.woocommerce .woocommerce-message a.disabled,
+.woocommerce .woocommerce-message a[disabled],
+fieldset[disabled] .woocommerce .woocommerce-message a,
+.woocommerce .woocommerce-message a.disabled:hover,
+.woocommerce .woocommerce-message a[disabled]:hover,
+fieldset[disabled] .woocommerce .woocommerce-message a:hover,
+.woocommerce .woocommerce-message a.disabled:focus,
+.woocommerce .woocommerce-message a[disabled]:focus,
+fieldset[disabled] .woocommerce .woocommerce-message a:focus,
+.woocommerce .woocommerce-message a.disabled.focus,
+.woocommerce .woocommerce-message a[disabled].focus,
+fieldset[disabled] .woocommerce .woocommerce-message a.focus,
+.woocommerce .woocommerce-message a.disabled:active,
+.woocommerce .woocommerce-message a[disabled]:active,
+fieldset[disabled] .woocommerce .woocommerce-message a:active,
+.woocommerce .woocommerce-message a.disabled.active,
+.woocommerce .woocommerce-message a[disabled].active,
+fieldset[disabled] .woocommerce .woocommerce-message a.active {
+  background-color: #61656d !important;
+  border-color: #61656d !important;
+}
+.woocommerce .woocommerce-message a .badge {
+  color: #61656d !important;
+  background-color: white !important;
 }
 /* ==========================================================================
    FORM PADRÃO
@@ -9011,6 +9148,8 @@ fieldset[disabled] .widget_product_search input[type="submit"].active {
 .widget_product_categories a,
 .widget_layered_nav a {
   color: #858585;
+  margin-left: -28px;
+  padding-left: 28px;
 }
 .widget_product_categories ul,
 .widget_layered_nav ul {
@@ -9239,6 +9378,20 @@ footer .credito {
   font-weight: 400;
   font-size: 10px;
   padding: 5px 0;
+}
+/* ==========================================================================
+   SEARCH FORM
+   ========================================================================== */
+.woocommerce-product-search .search-field {
+  width: 100%;
+}
+.woocommerce-product-search input[type='search'] {
+  background-image: url(img/icone/zoom.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding: 0 5px;
+  color: #858585 !important;
 }
 /* ==========================================================================
    HOME
@@ -9679,6 +9832,15 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 }
 .contadorAndOrdenado .ordenador {
   text-align: right;
+}
+/* ==========================================================================
+   PAGE WISHLIST
+   ========================================================================== */
+.wishlist_table tr td.product-thumbnail a img {
+  height: auto;
+}
+.wishlist_table tr td.product-add-to-cart a {
+  font-size: 10px;
 }
 /* ==========================================================================
    PAGE-CONTATO
@@ -10192,6 +10354,93 @@ fieldset[disabled] .shop_table tbody .order .order-actions input.button.active {
   color: #62656d;
   background-color: white;
 }
+.cart_totals table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.cart_totals table > thead > tr > th,
+.cart_totals table > tbody > tr > th,
+.cart_totals table > tfoot > tr > th,
+.cart_totals table > thead > tr > td,
+.cart_totals table > tbody > tr > td,
+.cart_totals table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.cart_totals table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.cart_totals table > caption + thead > tr:first-child > th,
+.cart_totals table > colgroup + thead > tr:first-child > th,
+.cart_totals table > thead:first-child > tr:first-child > th,
+.cart_totals table > caption + thead > tr:first-child > td,
+.cart_totals table > colgroup + thead > tr:first-child > td,
+.cart_totals table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.cart_totals table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.cart_totals table .table {
+  background-color: #ffffff;
+}
+.cart_totals table > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+/* ==========================================================================
+   CUSTOMIZACAO FORM PAGSEGURO 
+   ========================================================================== */
+.payment_method_pagseguro .input-text {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.payment_method_pagseguro .input-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.payment_method_pagseguro .input-text::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.payment_method_pagseguro .input-text:-ms-input-placeholder {
+  color: #999999;
+}
+.payment_method_pagseguro .input-text::-webkit-input-placeholder {
+  color: #999999;
+}
+.payment_method_pagseguro .input-text[disabled],
+.payment_method_pagseguro .input-text[readonly],
+fieldset[disabled] .payment_method_pagseguro .input-text {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.payment_method_pagseguro .input-text[disabled],
+fieldset[disabled] .payment_method_pagseguro .input-text {
+  cursor: not-allowed;
+}
+textarea.payment_method_pagseguro .input-text {
+  height: auto;
+}
 /* ==========================================================================
    FORMS
    ========================================================================== */
@@ -10466,5 +10715,14 @@ form.login .form-control {
   margin: 0 0 10px;
 }
 form.login div.checkbox {
+  float: right !important;
+}
+form.login .lost_password {
+  margin-top: 20px;
+}
+form.register .form-control {
+  margin: 0 0 10px;
+}
+form.register div.checkbox {
   float: right !important;
 }

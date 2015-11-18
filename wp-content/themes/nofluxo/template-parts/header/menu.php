@@ -48,7 +48,7 @@
                             <div class="col-xs-12">
                                 <div class="linha-azul"></div>
                             </div>
-                            <div class="col-xs-12 menu-pesquisar">
+                            <div class="col-sm-4 col-sm-offset-8 menu-pesquisar">
                                 <?php echo get_product_search_form() ?>
                             </div>
 

@@ -52,6 +52,10 @@ if (is_front_page()) {
     <?php do_action('woocommerce_before_shop_loop_item'); ?>
 
     <div class="item-produto">
+        
+        <div class="item-produto-wish">                           
+            <?php echo do_shortcode('[yith_wcwl_add_to_wishlist icon="fa-heart-o" label=""  already_in_wishslist_text=""   ]'); ?>                            
+        </div>
 
         <a href="<?php the_permalink(); ?>">
 

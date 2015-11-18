@@ -691,7 +691,21 @@ div.select select {
 .item-produto{
     position: relative;
     border: solid 1px #ddd;
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
+    
+    .item-produto-wish{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        
+        a{
+            
+            i{
+                color: white;
+                font-size: 30px;                
+            }
+        }
+    }
 
     a{
         color: initial;
@@ -827,6 +841,12 @@ p.price, span.price{
 }
 
 
+
+/* ==========================================================================
+   woocommerce-message
+   ========================================================================== */
+
+
 .woocommerce .woocommerce-message {
     border-top-color: #8fae1b;
 }
@@ -841,6 +861,9 @@ p.price, span.price{
     list-style: none!important;
     width: auto;
     word-wrap: break-word;
+    
+    
+    
 }
 
 .woocommerce .woocommerce-message:before {
@@ -869,6 +892,11 @@ p.price, span.price{
     clear: both;
 }
 
+
+.woocommerce .woocommerce-message a{
+    .btn-entrar !important;
+    margin-right: 20px;
+}
 
 
 
@@ -1189,7 +1217,9 @@ woocommerce .widget_price_filter .ui-slider {
     color: @cor-p-padrao;
 
     a{
-        color: @cor-p-padrao;        
+        color: @cor-p-padrao;
+        margin-left: -28px;
+        padding-left: 28px;
     }
 
 
@@ -1512,6 +1542,28 @@ footer{
     }
 
 }
+
+
+
+/* ==========================================================================
+   SEARCH FORM
+   ========================================================================== */
+.woocommerce-product-search{
+    
+    .search-field{
+        width: 100%;
+    }
+    
+        input[type='search'] {
+            background-image: url(img/icone/zoom.png);
+            background-position:right;            
+            background-repeat: no-repeat;
+            background-size: 15px;
+            padding: 0 5px;
+            color: #858585 !important;
+        }
+
+    }
 
 
 
@@ -1926,6 +1978,39 @@ footer{
 
 
 /* ==========================================================================
+   PAGE WISHLIST
+   ========================================================================== */
+.wishlist_table{
+    
+    tr {
+        
+        td.product-thumbnail{
+            
+            a{
+                
+                img{
+                    height: auto;
+                }
+                
+            }
+            
+        }
+        
+        
+        td.product-add-to-cart {
+            
+            a{
+                font-size: 10px;
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+/* ==========================================================================
    PAGE-CONTATO
    ========================================================================== */
 
@@ -2130,6 +2215,28 @@ cart .cart-collaterals .cart_totals table {
 
 }
 
+.cart_totals{
+    
+    table{
+        .table; 
+        .table-hover;
+        
+    }
+}
+
+
+/* ==========================================================================
+   CUSTOMIZACAO FORM PAGSEGURO 
+   ========================================================================== */
+
+.payment_method_pagseguro{
+    .input-text{
+        .form-control;
+    }
+}
+
+
+
 /* ==========================================================================
    FORMS
    ========================================================================== */
@@ -2225,5 +2332,18 @@ form.login{
         .pull-right;        
     }
     
+    .lost_password{
+        margin-top: 20px;
+    }
+}
+
+
+ form.register{
+    .form-control{
+        margin: 0 0 10px;
+    }
     
+    div.checkbox{
+        .pull-right;        
+    }
 }
