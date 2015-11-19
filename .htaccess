@@ -10,3 +10,8 @@ RewriteRule . /nofluxo/index.php [L]
 </IfModule>
 
 # END WordPress
+
+AuthUserFile htpasswd
+AuthName "Enter password"
+AuthType Basic
+Require valid-user
