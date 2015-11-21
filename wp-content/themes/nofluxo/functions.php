@@ -303,7 +303,7 @@ function linkMyCart() {
     $total = $woocommerce->cart->get_cart_total();
     $cart_url = $woocommerce->cart->get_cart_url();
 
-    $cart = '<a href=' . $cart_url . ' class="pull-right">';
+    $cart = '<a href="' . $cart_url . '" class="pull-right">';
     $cart .= '<img class="icone-menu" src="' . get_template_directory_uri() . '/img/icone/geral/ico-carrinho2x.png"> ';
     $cart .= $qty;
     $cart .= '</a>';
