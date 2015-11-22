@@ -575,3 +575,9 @@
     [id] => 09a5be6fe80743d490b84d5f9b013680
 )
 
+11-22-2015 @ 14:16:01 - Requesting session ID...
+11-22-2015 @ 14:16:03 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 3ec9b878531842598fdf243c06033235
+)
+

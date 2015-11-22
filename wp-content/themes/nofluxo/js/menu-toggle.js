@@ -24,5 +24,25 @@ jQuery(document).ready(function ($) {
 
     });
     
-    $( "li.menu-item-has-children" ).wrap( "<div class='col-xs-2'></div>" );
+    $('.sub-menu').find( "li.menu-item-has-children" ).wrap( "<div class='col-xs-2'></div>" );
+    
+    
+    $('#menu-mobile').click(function (){
+        $('.sub-menu-mobile').slideToggle();
+    });
+    
+    $('.sub-menu-mobile').find('a').click(function (){
+        
+        $(this).find('.fa').toggleClass('fa-caret-right').toggleClass('fa-caret-down');
+        
+        $(this).next('div').slideToggle();
+        
+
+        
+        console.log('ok');
+        
+        
+    });
+    
+    
 });

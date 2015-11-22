@@ -1,4 +1,4 @@
-<header class="container-fluid">
+<header class="container-fluid hidden-xs">
     <div class="row">
         <nav class="navbar">
             <div class="container">
@@ -6,9 +6,9 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <?php if (is_front_page()) : ?>
-                            <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo/logo-noFluxo-home2x.png" class=""></a>
+                            <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo/logo-noFluxo-home2x.png" ></a>
                         <?php else: ?>
-                            <a class="navbar-brand logo-interno" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo/logo-noFluxo-internas2x.png" class=""></a>                    
+                            <a class="navbar-brand logo-interno" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo/logo-noFluxo-internas2x.png" ></a>                    
                         <?php endif; ?>
 
                     </div>
@@ -119,7 +119,3 @@
 
 
 </header>
-
-
-
-

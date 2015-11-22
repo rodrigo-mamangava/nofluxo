@@ -26,6 +26,7 @@
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'nofluxo'); ?></a>
 
         <?php get_template_part('template-parts/header/menu'); ?>
+        <?php get_template_part('template-parts/header/menu', 'mobile'); ?>
 
         <?php if (is_front_page()) : ?>
             <div class="container-fluid banner">

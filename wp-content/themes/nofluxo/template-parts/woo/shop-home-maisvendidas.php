@@ -14,17 +14,17 @@ $listaUltimos = array(4,8,12,16,20,24);
 
 ?>
 
-<div class="mais-vendidas">
+<div class="mais-vendidas hidden-xs">
 
     <div class="row">
 
 
 
-        <div class="col-xs-11 mais-vendidas-titulo">
+        <div class="col-xs-8 col-sm-10  mais-vendidas-titulo">
             <h2 class="h2-com-linha"><span> <img class="icone-titulo" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Camisa2x.png">  As mais vendidas</span></h2>
         </div>
 
-        <div  class="col-xs-1 mais-vendidas-passador" >
+        <div  class="col-xs-4 col-sm-2  mais-vendidas-passador" >
             <a class="" href="#carousel-mais-vendidas" role="button" data-slide="prev"><img src="<?php echo get_template_directory_uri() ?>/img/passador/seta-esq.png" ></a>
             <a class="" href="#carousel-mais-vendidas" role="button" data-slide="next"><img src="<?php echo get_template_directory_uri() ?>/img/passador/seta-dir.png" ></a>
         </div>

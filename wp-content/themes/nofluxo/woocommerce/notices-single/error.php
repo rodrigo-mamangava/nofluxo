@@ -14,7 +14,7 @@ if (!$messages) {
     return;
 }
 ?>
-<div class="col-xs-6 col-xs-offset-2 aviso">
+<div class="col-xs-6 col-xs-offset-2 aviso alert alert-danger" role="alert" >
 <?php foreach ($messages as $message) : ?>
         <p><?php echo wp_kses_post($message); ?></p>
     <?php endforeach; ?>
