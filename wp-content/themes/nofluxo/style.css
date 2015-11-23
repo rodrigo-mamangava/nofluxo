@@ -8022,6 +8022,7 @@ div.select select {
 }
 .item-produto a img {
   width: 100% !important;
+  height: auto !important;
 }
 .item-produto a .item-produto-label {
   height: 52px;
@@ -8094,6 +8095,7 @@ div.select select {
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  font-size: 11px;
 }
 /*.ribbon-green:before, .ribbon-green:after {
   content: "";
@@ -9938,6 +9940,10 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 }
 .wishlist_table tr td.product-add-to-cart a {
   font-size: 10px;
+}
+a.add_to_wishlist.button.alt {
+  background-color: transparent;
+  border: 0;
 }
 /* ==========================================================================
    PAGE-CONTATO

@@ -16,6 +16,6 @@ global $post, $product;
 ?>
 <?php if ( $product->is_on_sale() ) : ?>
 
-<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="ribbon-wrapper-green"><div class="ribbon-green">' . __( 'Sale', 'woocommerce' ) . '</div></div>', $post, $product ); ?>
+<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="ribbon-wrapper-green"><div class="ribbon-green">' . 'Promoção!' . '</div></div>', $post, $product ); ?>
 
 <?php endif; ?>

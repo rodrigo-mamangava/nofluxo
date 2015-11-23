@@ -52,7 +52,7 @@ if (is_front_page()) {
     <?php do_action('woocommerce_before_shop_loop_item'); ?>
 
     <div class="item-produto">
-        
+
         <div class="item-produto-wish">                           
             <?php echo do_shortcode('[yith_wcwl_add_to_wishlist icon="fa-heart-o" label=""  already_in_wishslist_text=""   ]'); ?>                            
         </div>
@@ -68,33 +68,67 @@ if (is_front_page()) {
              * @hooked woocommerce_show_product_loop_sale_flash - 10
              * @hooked woocommerce_template_loop_product_thumbnail - 10
              */
-            do_action('woocommerce_before_shop_loop_item_title');
+            //do_action('woocommerce_before_shop_loop_item_title');
+            woocommerce_show_product_loop_sale_flash();
+           
+
+            $attachment_ids = $product->get_gallery_attachment_ids();
+            
+            if (sizeof($attachment_ids) > 1) {
+                
+                $urlPri = "";
+                $urlSec = "";
+                
+                for ($i = 0; $i <= 1; $i++) {
+                    
+                    if($i == 0){
+                        $urlPri =  wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                    }else if($i == 1){
+                        $urlSec = wp_get_attachment_url( $attachment_ids[0] );
+                    }
+                    
+                }
+                
+                ?>
+                    <img 
+                        width="300" 
+                        height="300" 
+                        src="<?php echo$urlPri;?>" class="attachment-shop_catalog wp-post-image" 
+                        onmouseover="this.src='<?php echo$urlSec;?>'" 
+                        onmouseout="this.src='<?php echo$urlPri;?>'" 
+                        >
+            
+                <?php
+                
+
+            }else{
+                 woocommerce_template_loop_product_thumbnail();
+            }
             ?>
 
             <div class="item-produto-label">
                 <div class="row area">
 
-                    <?php
-                    /**
-                     * woocommerce_shop_loop_item_title hook
-                     *
-                     * @hooked woocommerce_template_loop_product_title - 10
-                     */
-                    do_action('woocommerce_shop_loop_item_title');
+            <?php
+            /**
+             * woocommerce_shop_loop_item_title hook
+             *
+             * @hooked woocommerce_template_loop_product_title - 10
+             */
+            do_action('woocommerce_shop_loop_item_title');
 
-                    /**
-                     * woocommerce_after_shop_loop_item_title hook
-                     *
-                     * @hooked woocommerce_template_loop_rating - 5
-                     * @hooked woocommerce_template_loop_price - 10
-                     */
-                    
-                    //show_add_to_wishlist();
-                    
-                    
-                    do_action('woocommerce_after_shop_loop_item_title');
-                    ?>
-                    
+            /**
+             * woocommerce_after_shop_loop_item_title hook
+             *
+             * @hooked woocommerce_template_loop_rating - 5
+             * @hooked woocommerce_template_loop_price - 10
+             */
+            //show_add_to_wishlist();
+
+
+            do_action('woocommerce_after_shop_loop_item_title');
+            ?>
+
 
                 </div><!--row area-->
             </div><!--item-produto-label-->
@@ -102,14 +136,14 @@ if (is_front_page()) {
         </a>
     </div><!--item-produto-->
 
-    <?php
-    /**
-     * woocommerce_after_shop_loop_item hook
-     *
-     * @hooked woocommerce_template_loop_add_to_cart - 10
-     */
-    //do_action('woocommerce_after_shop_loop_item');
-    ?>
+<?php
+/**
+ * woocommerce_after_shop_loop_item hook
+ *
+ * @hooked woocommerce_template_loop_add_to_cart - 10
+ */
+//do_action('woocommerce_after_shop_loop_item');
+?>
 
 </div>
 
