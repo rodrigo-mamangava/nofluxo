@@ -2,7 +2,8 @@
 $args = array(
     'post_type' => 'product',
     'product_cat' => 'mais-vendidas',
-    'posts_per_page' => 24
+    'posts_per_page' => 24,
+    'orderby' => 'rand',
 );
 $loop = new WP_Query($args);
 

@@ -599,3 +599,54 @@
     [id] => ac35ef74defb4dbc8298ae1aa1d98cfb
 )
 
+11-23-2015 @ 20:02:24 - Requesting session ID...
+11-23-2015 @ 20:02:29 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => e05f1631f04647ecb47a5fc23314c1a1
+)
+
+11-23-2015 @ 20:12:14 - Requesting token for order 240 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-240]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>24.90</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Happy Ninja]]></description>
+      <amount>18.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-23-2015 @ 20:12:16 - PagSeguro Payment Token created with success! The Token is: B75C9C65B9B9B1A554FEEF8330EE0F68

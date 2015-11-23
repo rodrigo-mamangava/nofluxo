@@ -74,28 +74,30 @@ if (is_front_page()) {
 
             $attachment_ids = $product->get_gallery_attachment_ids();
             
-            if (sizeof($attachment_ids) > 1) {
+            //debug(sizeof($attachment_ids));
+            
+            if (sizeof($attachment_ids) == 1) {
                 
                 $urlPri = "";
                 $urlSec = "";
                 
                 for ($i = 0; $i <= 1; $i++) {
                     
+                    //debug(wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'shop_catalog' ));
+                    
                     if($i == 0){
-                        $urlPri =  wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                        $urlPri =  wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'shop_catalog' );
                     }else if($i == 1){
-                        $urlSec = wp_get_attachment_url( $attachment_ids[0] );
+                        $urlSec = wp_get_attachment_image_src( $attachment_ids[0], 'shop_catalog' );
                     }
                     
                 }
                 
                 ?>
                     <img 
-                        width="300" 
-                        height="300" 
-                        src="<?php echo$urlPri;?>" class="attachment-shop_catalog wp-post-image" 
-                        onmouseover="this.src='<?php echo$urlSec;?>'" 
-                        onmouseout="this.src='<?php echo$urlPri;?>'" 
+                        src="<?php echo$urlPri[0];?>" class="attachment-shop_catalog wp-post-image" 
+                        onmouseover="this.src='<?php echo$urlSec[0];?>'" 
+                        onmouseout="this.src='<?php echo$urlPri[0];?>'" 
                         >
             
                 <?php

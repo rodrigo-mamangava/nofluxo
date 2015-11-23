@@ -8007,9 +8007,10 @@ div.select select {
   position: absolute;
   top: 0;
   left: 20px;
+  display: none;
 }
 .item-produto .item-produto-wish a i {
-  color: white;
+  color: #15c6d8;
   font-size: 30px;
 }
 .item-produto a {
@@ -8688,6 +8689,26 @@ fieldset[disabled] .widget .preco .btn-filtrar.active {
 .sidebar-direita {
   margin-top: 20px;
 }
+.wiget-carouser .passdor-widget {
+  margin: 0;
+  padding: 0;
+  margin-top: -46px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+.wiget-carouser .passdor-widget a {
+  padding-left: 10px;
+}
+.wiget-carouser #carousel-mais-vendidas-widget {
+  margin: 0px 0px 20px;
+}
+.wiget-carouser #carousel-mais-vendidas-widget .item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
 /* ==========================================================================
    ASIDE
    ========================================================================== */
@@ -9308,8 +9329,14 @@ ul li {
    ========================================================================== */
 .banner {
   background-color: #255625;
-  height: 210px;
+  min-height: 100px;
   background-image: url("../nofluxo/img/logo/logo-noFluxo-rodape.png");
+}
+.banner .img-banner {
+  position: relative;
+  z-index: 1;
+  width: 100% !important;
+  height: auto !important;
 }
 /* ==========================================================================
    header
@@ -9350,6 +9377,8 @@ header .navbar a:focus {
 }
 header .navbar .navbar-brand img {
   width: 180px;
+  position: relative;
+  z-index: 200;
 }
 @media (max-width: 767px) {
   header .navbar .navbar-brand img {
@@ -9368,6 +9397,8 @@ header .navbar .navbar-brand img {
 }
 header .navbar .logo-interno img {
   width: 160px;
+  position: relative;
+  z-index: 200;
 }
 @media (max-width: 767px) {
   header .navbar .logo-interno img {
@@ -9857,8 +9888,9 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 .produto-single .produto-single-info .produto-single-info-adicional .produto-single-info-adicional-texto {
   background-color: #f3f3f3;
   font-size: 18px;
-  padding: 10px 0;
+  padding: 10px 20px;
   font-style: italic;
+  white-space: pre-wrap;
 }
 .produto-single .produto-single-imagens .img-responsive,
 .produto-single .produto-single-imagens .thumbnail > img,

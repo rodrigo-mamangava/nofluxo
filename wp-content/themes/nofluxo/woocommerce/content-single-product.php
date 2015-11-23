@@ -118,10 +118,14 @@ if (post_password_required()) {
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="produto-single-info-adicional">
+                                            <div class="produto-single-info-adicional-texto"><?php echo get_post_meta($post->ID, 'info-adicional', true); 
+                                            ?></div>
 
                                         <?php
-                                        woocommerce_product_additional_information_tab();
+                                        //woocommerce_product_additional_information_tab();
                                         ?>
+                                            
+                                            
 
                                         </div>
 

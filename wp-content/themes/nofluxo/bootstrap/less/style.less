@@ -782,12 +782,14 @@ div.select select {
         position: absolute;
         top: 0;
         left: 20px;
-
+        display: none;
+        
         a{
 
             i{
-                color: white;
-                font-size: 30px;                
+                color: @cor-hover;
+                font-size: 30px;
+                
             }
         }
     }
@@ -1179,6 +1181,39 @@ p.price, span.price{
     margin-top: 20px;
 }
 
+.wiget-carouser{
+    
+    
+    .passdor-widget{
+        margin:0;
+        padding: 0;
+        margin-top: -46px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        .text-right;
+        
+        a{
+            padding-left: 10px;
+        }
+        
+    }
+    
+    //
+    #carousel-mais-vendidas-widget{
+        margin: 0px 0px 20px;
+        
+        .item{
+            
+            img{
+                .img-responsive;
+                width: 100%;
+            }
+            
+        }
+        
+    }
+}
+
 
 
 
@@ -1447,9 +1482,18 @@ ul li {
    ========================================================================== */
 .banner{
     background-color: #255625;
-    height: 210px;
+    min-height: 100px;
     background-image: url("../nofluxo/img/logo/logo-noFluxo-rodape.png");
+
+    .img-banner{
+        position: relative;
+        z-index: 1;
+        width: 100% !important;
+        height: auto !important;
+    }
+
 }
+
 
 
 
@@ -1504,6 +1548,9 @@ header{
 
             img{
                 width:180px;
+                
+                position: relative;
+                z-index: 200;
 
                 @media (max-width: @screen-xs-max) { 
                     width: 60px;
@@ -1523,6 +1570,8 @@ header{
 
             img{
                 width: 160px;
+                position: relative;
+                z-index: 200;
 
                 @media (max-width: @screen-xs-max) { 
                     width: 60px;
@@ -1981,8 +2030,9 @@ footer{
             .produto-single-info-adicional-texto{
                 background-color: @cinza-claro-xx;
                 font-size: 18px;
-                padding: 10px 0;
+                padding: 10px 20px;
                 font-style: italic;
+                white-space: pre-wrap;
 
             }
 

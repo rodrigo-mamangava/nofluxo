@@ -29,15 +29,9 @@
         <?php get_template_part('template-parts/header/menu', 'mobile'); ?>
 
         <?php if (is_front_page()) : ?>
-            <div class="container-fluid banner">
-                <div class="row">
-                    <div class="col-xs-12">
-
-                    </div>
-
-                </div>
-
-            </div>
+        
+            <?php get_template_part('template-parts/header/banner'); ?>
+        
         <?php endif; ?>
 
 
