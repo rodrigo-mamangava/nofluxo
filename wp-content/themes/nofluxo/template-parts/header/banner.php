@@ -24,9 +24,9 @@
                             
                             <?php $countA = 0;?>
                             <ol class="carousel-indicators">
-                                <?php while($loop->have_posts()) : $loop->the_post() ; ?>                                                       
+                                <?php while($loop->have_posts()) : $loop->the_post() ; ?>
                                 <li data-target="#carousel-example-generic" data-slide-to="<?php echo $countA?>" class="<?php echo ($countA == 0) ? 'active' : ''; ?>"></li>                          
-                                <?php $countA++; ?>                            
+                                <?php $countA++; ?>                                   
                                 <?php endwhile; ?>
                             </ol>
 
@@ -36,11 +36,18 @@
                             <?php $countB = 0;?>
                             
                             <div class="carousel-inner" role="listbox">
-                                <?php while($loop->have_posts()) : $loop->the_post() ; ?>
+                                <?php while($loop->have_posts()) : $loop->the_post() ; ?>                                
                                 <div class="item <?php echo ($countB == 0)?'active' : null;  ?>">
-                                    <?php echo get_the_post_thumbnail(get_the_ID() ,'homepage-banner', array( 'class' => 'img-responsive img-banner' ) ); ?>
-                                    <div class="carousel-caption">
-                                    </div>
+                                    <?php
+                                        $urlBanner = get_post_meta( get_the_ID(), 'url-banner' );
+                                    ?>
+                                    <a href="<?php echo ($urlBanner[0])? $urlBanner[0] : ''; ?>">
+                                                                                
+                                        <?php echo get_the_post_thumbnail(get_the_ID() ,'homepage-banner', array( 'class' => 'img-responsive img-banner' ) ); ?>
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </a>
+
                                 </div>                                    
                                 <?php $countB++; ?>
                             

@@ -1678,8 +1678,13 @@ footer{
             font-weight: bold;
             font-size: 22px;
             color: @branco;
+            @media (max-width: @screen-xs-max) { 
+                padding-top: 25px;
+            }
+            
             padding-bottom: 25px;
             .text-uppercase;
+            
         }
 
         .sitemap{
@@ -1777,7 +1782,7 @@ footer{
 
 
         .link-social{
-            margin-top: 5px;
+            margin-top: 15px;
 
             a{
                 margin-right: -20px;
@@ -1789,6 +1794,21 @@ footer{
             }
         }
 
+    }
+    
+    .footer-conteudo-logo{
+        
+        
+        
+        @media (max-width: @screen-xs-max) { 
+            
+            padding: 25px 0px;
+            
+            img{
+                .center-block;
+            }
+            
+        }
     }
 
     .credito{
@@ -2251,6 +2271,10 @@ footer{
     }
     .ordenador{
         .text-right;
+        input, button, select, textarea {
+
+            width: 100%;
+        }
 
     }
 

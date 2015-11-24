@@ -1,0 +1,4 @@
+<?php
+/* Wordfence temporary file security header */
+echo "Nothing to see here!\n"; exit(0);
+?>a:22:{s:9:"cacheType";s:0:"";s:9:"howGetIPs";s:0:"";s:6:"apiKey";s:160:"f0a7e54616665887bba2c539f849289fa840055afb9e571eac2fa0ddfe8deb21d29dc1ed78bdbaa5adbff4f238e299c85abca2b3e76c769923857aec30ab2debe33e0d140b0188d8d868ed38281dbf32";s:20:"loginSec_lockoutMins";s:3:"240";s:19:"other_hideWPVersion";s:1:"1";s:15:"firewallEnabled";s:1:"1";s:18:"liveTrafficEnabled";s:1:"1";s:14:"disableCookies";s:1:"0";s:17:"actUpdateInterval";s:0:"";s:7:"debugOn";s:1:"0";s:10:"tourClosed";s:1:"1";s:13:"welcomeClosed";s:1:"1";s:10:"autoUpdate";s:1:"1";s:11:"alertEmails";s:0:"";s:26:"loginSec_disableAuthorScan";s:1:"1";s:25:"liveTraf_ignorePublishers";s:1:"1";s:38:"email_summary_dashboard_widget_enabled";s:1:"1";s:22:"email_summary_interval";s:8:"biweekly";s:11:"whitelisted";s:0:"";s:18:"liveTraf_ignoreIPs";s:0:"";s:17:"liveTraf_ignoreUA";s:0:"";s:6:"encKey";s:16:"354363353dec8d54";}

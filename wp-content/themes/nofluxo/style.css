@@ -9477,6 +9477,11 @@ footer .footer-conteudo .titulo {
   padding-bottom: 25px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  footer .footer-conteudo .titulo {
+    padding-top: 25px;
+  }
+}
 footer .footer-conteudo .sitemap {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -9545,7 +9550,7 @@ footer .footer-conteudo .logo-footer {
   padding-top: 10px;
 }
 footer .footer-conteudo .link-social {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 footer .footer-conteudo .link-social a {
   margin-right: -20px;
@@ -9554,6 +9559,16 @@ footer .footer-conteudo .link-social a:hover,
 footer .footer-conteudo .link-social a:active,
 footer .footer-conteudo .link-social a:focus {
   color: #15c6d8 !important;
+}
+@media (max-width: 767px) {
+  footer .footer-conteudo-logo {
+    padding: 25px 0px;
+  }
+  footer .footer-conteudo-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 footer .credito {
   margin-top: 15px;
@@ -10039,6 +10054,12 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 }
 .contadorAndOrdenado .ordenador {
   text-align: right;
+}
+.contadorAndOrdenado .ordenador input,
+.contadorAndOrdenado .ordenador button,
+.contadorAndOrdenado .ordenador select,
+.contadorAndOrdenado .ordenador textarea {
+  width: 100%;
 }
 /* ==========================================================================
    PAGE WISHLIST

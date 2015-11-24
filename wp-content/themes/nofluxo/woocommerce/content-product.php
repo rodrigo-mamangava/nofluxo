@@ -41,9 +41,9 @@ $woocommerce_loop['loop'] ++;
 $classes = array();
 
 if (is_front_page()) {
-    $classes[] = 'col-sm-3';
+    $classes[] = 'col-sm-4 col-md-3';
 } else {
-    $classes[] = 'col-sm-4';
+    $classes[] = 'col-sm-6 col-md-4';
 }
 ?>
 

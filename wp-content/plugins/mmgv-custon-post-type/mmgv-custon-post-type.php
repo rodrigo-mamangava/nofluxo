@@ -44,7 +44,7 @@ function mmgv_PostsSet() {
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => 6,
-        'supports' => array('title', 'thumbnail', 'page-attributes'),
+        'supports' => array('title', 'thumbnail', 'page-attributes', 'custom-fields'),
         'taxonomies' => array('category')
     );
 
