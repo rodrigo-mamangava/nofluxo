@@ -10,18 +10,12 @@
                         <div class="col-sm-4">
                             <h2 class="titulo">No Fluxo</h2>
                             <div class="row">
-                                <div class="col-sm-6 sitemap">
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-quem-somos2x.png" class="sitemap-icon">Quem somos</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-oportunindades2x.png" class="sitemap-icon">Oportunidade</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-faq2x.png" class="sitemap-icon">FAQ</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-contato2x.png" class="sitemap-icon">Contato</p></a>
+                                <div class="col-xs-12 sitemap">
+                                <?php
+                                    wp_nav_menu(array('menu' => 'Footer Mapa','menu_class' => 'double'));
+                                ?>
                                 </div>
-                                <div class="col-sm-6 sitemap">
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-meu-cadastro2x.png" class="sitemap-icon">Meu Cadastro</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-produtos2x.png" class="sitemap-icon">Produtos</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-seguranca2x.png" class="sitemap-icon">Segurança</p></a>
-                                    <a><p><img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-logistica2x.png" class="sitemap-icon">Logistica</p></a>
-                                </div>
+
                             </div>
 
                         </div>
@@ -31,31 +25,14 @@
                                 Chega mais
                             </p>
                             <div class="row link-social">
-                                <a class="col-xs-3" href="#">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-social-facebook2x.png" class="img-responsive ">
-                                </a>
-                                <a class="col-xs-3" href="#">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-social-instagram2x.png" class="img-responsive ">
-                                </a>
-                                <a class="col-xs-3" href="#">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-social-snap2x.png" class="img-responsive ">
-                                </a>
-                                <a class="col-xs-3" href="#">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/icone/ico-social-youtube2x.png" class="img-responsive">
-                                </a>
-
+                                <?php
+                                    wp_nav_menu(array('menu' => 'Footer Social', 'menu_class' => 'linha'));
+                                ?>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <h2 class="titulo">Newsletter</h2>
-                            <p class="outros">Cadastre-se. Vamos te botar nas boas!</p>
-                            <div class="input-group outros">
-                                <input type="text" class="form-control" placeholder="Coloque seu email">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">OK</button>
-                                </span>
-                            </div><!-- /input-group -->
-
+                            <?php formCadastroNews(); ?>
                         </div>
 
 

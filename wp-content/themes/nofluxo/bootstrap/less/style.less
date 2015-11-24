@@ -391,11 +391,11 @@ p.linha-inteira{
 
     .breadcrumb-geral{
         margin-top: -88px;
-        
+
         @media (max-width: @screen-xs-max) { 
-           margin-left: 0;
+            margin-left: 0;
         }
-        
+
     }
 
     .sublinhado{
@@ -625,20 +625,20 @@ p.linha-inteira{
             }
 
             &>div{
-                
+
                 display: none;
-               
+
 
                 ul.menu {
                     .text-left;
                     margin: 15px 0;
-                    
-                    
+
+
                     a{
-                       
+
                     }
-                    
-                    
+
+
 
                     padding-left: 10px;
 
@@ -783,13 +783,13 @@ div.select select {
         top: 0;
         left: 20px;
         display: none;
-        
+
         a{
 
             i{
                 color: @cor-hover;
                 font-size: 30px;
-                
+
             }
         }
     }
@@ -1182,8 +1182,8 @@ p.price, span.price{
 }
 
 .wiget-carouser{
-    
-    
+
+
     .passdor-widget{
         margin:0;
         padding: 0;
@@ -1191,26 +1191,26 @@ p.price, span.price{
         padding-top: 0px;
         padding-bottom: 20px;
         .text-right;
-        
+
         a{
             padding-left: 10px;
         }
-        
+
     }
-    
+
     //
     #carousel-mais-vendidas-widget{
         margin: 0px 0px 20px;
-        
+
         .item{
-            
+
             img{
                 .img-responsive;
                 width: 100%;
             }
-            
+
         }
-        
+
     }
 }
 
@@ -1548,7 +1548,7 @@ header{
 
             img{
                 width:180px;
-                
+
                 position: relative;
                 z-index: 200;
 
@@ -1623,12 +1623,51 @@ header{
 footer{
 
     background-color: @cinza-escuro-x;
-    min-height: 230px;
+    //min-height: 230px;
     padding-top: 33px;
 
     a{
         color: @branco;        
     }
+
+
+    ul, menu, dir {
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0px;
+    }
+
+
+    ul.double{
+        width:100%;
+        margin-bottom:20px;
+        overflow:hidden;
+
+    }
+    ul.double li{
+        line-height:1.5em;
+        float:left;
+        display:inline;
+        width:50%;
+    }
+
+    ul.linha {
+    }
+
+    ul.linha li {
+        display: inline;
+    }
+
+    ul.linha li a {
+        padding: 10px 20px;
+
+    }
+
+
 
 
 
@@ -1648,14 +1687,57 @@ footer{
             font-weight: bold;
             font-size: 12px;
             color: @cinza-claro;
+            
+            
+            li{
+                background-position: left center;
+                background-repeat: no-repeat;
+                padding-left: 25px;
+                padding-top: 2px;
+                background-size: 20px;
+                
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+                &.quem-somos{
+                    background-image: url(img/icone/ico-quem-somos2x.png);                    
+                }
+                &.oportunidade{
+                    background-image: url(img/icone/ico-oportunindades2x.png);                    
+                }
+                &.faq{
+                    background-image: url(img/icone/ico-faq2x.png);                    
+                }
+                &.contato{
+                    background-image: url(img/icone/ico-contato2x.png);                    
+                }
+                &.meu-cadastro{
+                    background-image: url(img/icone/ico-meu-cadastro2x.png);                    
+                }
+                &.produtos{
+                    background-image: url(img/icone/ico-produtos2x.png);                    
+                }
+                &.seguranca{
+                    background-image: url(img/icone/ico-seguranca2x.png);                    
+                }
+                &.logistica{
+                    background-image: url(img/icone/ico-logistica2x.png);                    
+                }
+            
+            
+            }
+              
+            
+            
 
 
             a{
                 &:hover, &:active, &:focus{
                     color: @cor-hover;
                     text-decoration: none;
-                }
+                }                
             }
+            
 
 
 
@@ -1699,6 +1781,10 @@ footer{
 
             a{
                 margin-right: -20px;
+                
+                &:hover, &:active, &:focus{
+                    color: @cor-hover !important;
+                }
 
             }
         }
@@ -1824,12 +1910,12 @@ footer{
             margin-top: -34px;
             position: relative;
             z-index: 300;
-            
+
             @media (max-width: @screen-xs-max) { 
                 margin-top: 0px;
             }
-            
-            
+
+
 
 
             a.produto-single-info-titulo-wishlist{
@@ -1861,7 +1947,7 @@ footer{
                 margin-right: 25px;
                 margin-bottom: 10px;
             }
-            
+
 
             i{
                 font-size: 18px;                      
@@ -1871,14 +1957,14 @@ footer{
 
         .dados-extra-titulo-pass{
             .pull-right;
-            
+
             .passador-item{
-                
+
                 @media (max-width: @screen-xs-max) { 
                     margin-top: -30px;
                 }
-                
-                
+
+
             }
 
 
@@ -1939,11 +2025,11 @@ footer{
                     position: absolute;
                     top: 30px;
                     right: 30px;
-                    
+
                     @media (max-width: @screen-xs-max) { 
-                            top: 205px;
-                            right: initial;
-                            
+                        top: 205px;
+                        right: initial;
+
                     }
 
                     p{
@@ -2210,7 +2296,7 @@ footer{
 a.add_to_wishlist.button.alt{
     background-color: transparent;
     border: 0;
-    
+
 }
 
 /* ==========================================================================
@@ -2236,13 +2322,13 @@ a.add_to_wishlist.button.alt{
     width: 100%;
     border-collapse: separate;
     border-radius: 5px;
-    
+
     @media (max-width: @screen-xs-max) { 
         thead, tbody{
             .product-thumbnail{
-                 display: none;
+                display: none;
             }
-            
+
             .product-quantity{
                 input, button, select, textarea {
                     font-family: inherit;
@@ -2252,14 +2338,14 @@ a.add_to_wishlist.button.alt{
                 }
             }
         }
-    
-        
-    
-    
-    
+
+
+
+
+
     }
-    
-    
+
+
 }
 
 thead {
@@ -2328,8 +2414,8 @@ address {
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
     float: right;
     width: 48%;
-    
-    
+
+
 }
 
 cart .cart-collaterals .cart_totals table {
@@ -2445,11 +2531,11 @@ cart .cart-collaterals .cart_totals table {
 }
 
 .cart_totals{
-        
-        @media (max-width: @screen-xs-max) { 
-            width: 100% !important;
-            
-        }
+
+    @media (max-width: @screen-xs-max) { 
+        width: 100% !important;
+
+    }
 
 
     table{
@@ -2457,11 +2543,11 @@ cart .cart-collaterals .cart_totals table {
         .table-hover;
 
     }
-    
+
     .checkout-button{
         font-size: 12px !important;
         padding: 12px 24px !important;
-        
+
     }
 }
 

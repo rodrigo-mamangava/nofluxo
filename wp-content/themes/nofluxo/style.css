@@ -9436,11 +9436,38 @@ header .navbar .menu-hamb {
    ========================================================================== */
 footer {
   background-color: #333333;
-  min-height: 230px;
   padding-top: 33px;
 }
 footer a {
   color: #ffffff;
+}
+footer ul,
+footer menu,
+footer dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+footer ul.double {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+footer ul.double li {
+  line-height: 1.5em;
+  float: left;
+  display: inline;
+  width: 50%;
+}
+footer ul.linha li {
+  display: inline;
+}
+footer ul.linha li a {
+  padding: 10px 20px;
 }
 footer .footer-conteudo .titulo {
   font-family: 'Raleway', sans-serif;
@@ -9455,6 +9482,39 @@ footer .footer-conteudo .sitemap {
   font-weight: bold;
   font-size: 12px;
   color: #e3e1e1;
+}
+footer .footer-conteudo .sitemap li {
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  padding-top: 2px;
+  background-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer .footer-conteudo .sitemap li.quem-somos {
+  background-image: url(img/icone/ico-quem-somos2x.png);
+}
+footer .footer-conteudo .sitemap li.oportunidade {
+  background-image: url(img/icone/ico-oportunindades2x.png);
+}
+footer .footer-conteudo .sitemap li.faq {
+  background-image: url(img/icone/ico-faq2x.png);
+}
+footer .footer-conteudo .sitemap li.contato {
+  background-image: url(img/icone/ico-contato2x.png);
+}
+footer .footer-conteudo .sitemap li.meu-cadastro {
+  background-image: url(img/icone/ico-meu-cadastro2x.png);
+}
+footer .footer-conteudo .sitemap li.produtos {
+  background-image: url(img/icone/ico-produtos2x.png);
+}
+footer .footer-conteudo .sitemap li.seguranca {
+  background-image: url(img/icone/ico-seguranca2x.png);
+}
+footer .footer-conteudo .sitemap li.logistica {
+  background-image: url(img/icone/ico-logistica2x.png);
 }
 footer .footer-conteudo .sitemap a:hover,
 footer .footer-conteudo .sitemap a:active,
@@ -9489,6 +9549,11 @@ footer .footer-conteudo .link-social {
 }
 footer .footer-conteudo .link-social a {
   margin-right: -20px;
+}
+footer .footer-conteudo .link-social a:hover,
+footer .footer-conteudo .link-social a:active,
+footer .footer-conteudo .link-social a:focus {
+  color: #15c6d8 !important;
 }
 footer .credito {
   margin-top: 15px;
