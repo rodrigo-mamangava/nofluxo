@@ -16,16 +16,61 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'db_no_fluxo');
 
-/** Usuário do banco de dados MySQL */
-define('DB_USER', 'root');
 
-/** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1') {
+	define('DB_NAME', 'db_no_fluxo');
 
-/** nome do host do MySQL */
-define('DB_HOST', 'localhost');
+	/** Usuário do banco de dados MySQL */
+	define('DB_USER', 'root');
+
+	/** Senha do banco de dados MySQL */
+	define('DB_PASSWORD', '');
+
+	/** nome do host do MySQL */
+	define('DB_HOST', 'localhost');
+
+	define('AUTH_KEY',         'T-CC35H 4NfJTuQFC{]05dCA2#e&uVw bSK,]~P|7G)|$ZGV|duMfvI*YNc[7*[F');
+	define('SECURE_AUTH_KEY',  'sqMekCf*X1ELxU`w|f,&6{|B[bK|jt$Ou+ <kB<av1NFa5H+@/$W82,B|vjva;Sa');
+	define('LOGGED_IN_KEY',    'J:.-|5(.2$x%61rE+$4-&|1TCq$,)+3D{z1l5ldLWs2PHNyTz-t)WnU@tBD2zrFv');
+	define('NONCE_KEY',        '*t#GS}Fk_Y)H&)d>H-F!D%2vqhI-o{fC*fLAg8<T5A|=gqccT6zev!RN`8a|,%]|');
+	define('AUTH_SALT',        'qk| 0JOc+ZC9Xy.h?b~^-8p$ng.yj 2a?qtoyB`]vaWJq*W`<ubZ,65k6TQZoX?6');
+	define('SECURE_AUTH_SALT', '(S.KX!C+-jhj]n2h+%U[m:|%&r|t&Cd7y=swD(-d||1A|5`_huf~L?!JFFRcs#2z');
+	define('LOGGED_IN_SALT',   ';-+d%-h?P0J2hLChg^;CmY.lD,]Fw{nE6=?aX}aT_IUSptIg7.pvfqOZMQ& JiLy');
+	define('NONCE_SALT',       'dGUGqeRHG;q=fgzuG7eMRJace:.XFV9fty@LjJF u7[)(cg&EV2,^%`SOB!Y:4OJ');
+
+
+}else{
+
+	if (($_SERVER['HTTP_CLOUDFRONT_FORWARDED_PROTO'] == 'https') OR ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'))
+	{$_SERVER['HTTPS']='on';}
+	 
+	/** The name of the database for WordPress */ define('DB_NAME', $_SERVER["RDS_DB_NAME"]);
+	/** MySQL database username */
+	define('DB_USER', $_SERVER["RDS_USERNAME"]);
+	 
+	/** MySQL database password */ define('DB_PASSWORD', $_SERVER["RDS_PASSWORD"]); /** MySQL hostname */
+	define('DB_HOST', $_SERVER["RDS_HOSTNAME"]);
+	 
+	 
+	define('WP_HOME','http://nofluxo.com');
+	define('WP_SITEURL','http://nofluxo.com');
+
+	/**#@+
+	 * Authentication Unique Keys and Salts.
+	 * Change these to different unique phrases!
+	 */
+	define('AUTH_KEY',$_SERVER["SECURE_AUTH_KEY"]);
+	define('SECURE_AUTH_KEY',$_SERVER["AUTH_KEY"]);
+	define('LOGGED_IN_KEY',$_SERVER["LOGGED_IN_KEY"]);
+	define('NONCE_KEY',$_SERVER["NONCE_KEY"]);
+	define('AUTH_SALT',$_SERVER["AUTH_SALT"]);
+	define('SECURE_AUTH_SALT', $_SERVER["SECURE_AUTH_SALT"]);
+	define('LOGGED_IN_SALT', $_SERVER["LOGGED_IN_SALT"]);
+	define('NONCE_SALT', $_SERVER["NONCE_SALT"]);
+
+
+}
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8mb4');
@@ -33,23 +78,9 @@ define('DB_CHARSET', 'utf8mb4');
 /** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
 
-/**#@+
- * Chaves únicas de autenticação e salts.
- *
- * Altere cada chave para um frase única!
- * Você pode gerá-las usando o {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * Você pode alterá-las a qualquer momento para desvalidar quaisquer cookies existentes. Isto irá forçar todos os usuários a fazerem login novamente.
- *
- * @since 2.6.0
- */
-define('AUTH_KEY',         'T-CC35H 4NfJTuQFC{]05dCA2#e&uVw bSK,]~P|7G)|$ZGV|duMfvI*YNc[7*[F');
-define('SECURE_AUTH_KEY',  'sqMekCf*X1ELxU`w|f,&6{|B[bK|jt$Ou+ <kB<av1NFa5H+@/$W82,B|vjva;Sa');
-define('LOGGED_IN_KEY',    'J:.-|5(.2$x%61rE+$4-&|1TCq$,)+3D{z1l5ldLWs2PHNyTz-t)WnU@tBD2zrFv');
-define('NONCE_KEY',        '*t#GS}Fk_Y)H&)d>H-F!D%2vqhI-o{fC*fLAg8<T5A|=gqccT6zev!RN`8a|,%]|');
-define('AUTH_SALT',        'qk| 0JOc+ZC9Xy.h?b~^-8p$ng.yj 2a?qtoyB`]vaWJq*W`<ubZ,65k6TQZoX?6');
-define('SECURE_AUTH_SALT', '(S.KX!C+-jhj]n2h+%U[m:|%&r|t&Cd7y=swD(-d||1A|5`_huf~L?!JFFRcs#2z');
-define('LOGGED_IN_SALT',   ';-+d%-h?P0J2hLChg^;CmY.lD,]Fw{nE6=?aX}aT_IUSptIg7.pvfqOZMQ& JiLy');
-define('NONCE_SALT',       'dGUGqeRHG;q=fgzuG7eMRJace:.XFV9fty@LjJF u7[)(cg&EV2,^%`SOB!Y:4OJ');
+
+
+
 
 /**#@-*/
 
