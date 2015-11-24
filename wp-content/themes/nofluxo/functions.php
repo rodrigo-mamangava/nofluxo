@@ -264,11 +264,11 @@ if (!function_exists('woocommerce_content')) {
                  
              }
 
-            echo '<div class="col-sm-3">';
+            echo '<div class="col-xs-12 hidden-xs col-sm-3 ">';
             get_sidebar('esquerda');
             echo '</div> <!-- col-sm-3 -->';
 
-            echo '<div class="col-sm-9">';
+            echo '<div class="col-xs-12 col-sm-9 ">';
             get_template_part('template-parts/woo/shop', 'sidebar');
             echo '</div><!-- col-sm-9 -->';
 

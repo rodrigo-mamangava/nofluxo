@@ -1858,7 +1858,7 @@ footer{
             .pull-right;
             margin-right: 45px;
             @media (max-width: @screen-xs-max) { 
-                margin-right: -24px;
+                margin-right: 25px;
                 margin-bottom: 10px;
             }
             
@@ -1871,6 +1871,15 @@ footer{
 
         .dados-extra-titulo-pass{
             .pull-right;
+            
+            .passador-item{
+                
+                @media (max-width: @screen-xs-max) { 
+                    margin-top: -30px;
+                }
+                
+                
+            }
 
 
         }
@@ -1930,6 +1939,12 @@ footer{
                     position: absolute;
                     top: 30px;
                     right: 30px;
+                    
+                    @media (max-width: @screen-xs-max) { 
+                            top: 205px;
+                            right: initial;
+                            
+                    }
 
                     p{
                         color: #a94442 !important;
@@ -2221,6 +2236,30 @@ a.add_to_wishlist.button.alt{
     width: 100%;
     border-collapse: separate;
     border-radius: 5px;
+    
+    @media (max-width: @screen-xs-max) { 
+        thead, tbody{
+            .product-thumbnail{
+                 display: none;
+            }
+            
+            .product-quantity{
+                input, button, select, textarea {
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    width: 60px;
+                }
+            }
+        }
+    
+        
+    
+    
+    
+    }
+    
+    
 }
 
 thead {
@@ -2289,6 +2328,8 @@ address {
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
     float: right;
     width: 48%;
+    
+    
 }
 
 cart .cart-collaterals .cart_totals table {
@@ -2404,11 +2445,23 @@ cart .cart-collaterals .cart_totals table {
 }
 
 .cart_totals{
+        
+        @media (max-width: @screen-xs-max) { 
+            width: 100% !important;
+            
+        }
+
 
     table{
         .table; 
         .table-hover;
 
+    }
+    
+    .checkout-button{
+        font-size: 12px !important;
+        padding: 12px 24px !important;
+        
     }
 }
 

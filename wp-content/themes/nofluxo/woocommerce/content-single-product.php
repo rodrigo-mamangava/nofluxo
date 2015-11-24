@@ -135,9 +135,8 @@ if (post_password_required()) {
 
                         </div>
                     </div>
-
-<?php get_template_part('template-parts/woo/sharebuttons'); ?>
-
+                    
+                    <?php get_template_part('template-parts/woo/sharebuttons'); ?>
                 </div>
 
 <?php

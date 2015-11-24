@@ -650,3 +650,48 @@
 </checkout>
 
 11-23-2015 @ 20:12:16 - PagSeguro Payment Token created with success! The Token is: B75C9C65B9B9B1A554FEEF8330EE0F68
+11-24-2015 @ 01:43:44 - Requesting token for order 241 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-241]]></reference>
+  <sender>
+    <name><![CDATA[Rodrigo Muniz]]></name>
+    <email><![CDATA[c20436440206494791768@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09171195769</value>
+      </document>
+    </documents>
+    <phone>
+      <areaCode>21</areaCode>
+      <number>965331140</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Av. das Américas]]></street>
+      <number>16400</number>
+      <complement><![CDATA[111]]></complement>
+      <district><![CDATA[Recreio dos Bandeirantes]]></district>
+      <postalCode>22790704</postalCode>
+      <city><![CDATA[Rio de Janeiro]]></city>
+      <state>RJ</state>
+      <country>BRA</country>
+    </address>
+    <cost>24.80</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Woo Single #2]]></description>
+      <amount>2.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+11-24-2015 @ 01:43:46 - PagSeguro Payment Token created with success! The Token is: 36E262A102027BEAA466EF8FC8492AB3
