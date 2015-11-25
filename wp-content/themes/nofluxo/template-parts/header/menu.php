@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-xs-10">
                         <div class="row">
-                            <div class="col-xs-12 menu">
+                            <div class="col-xs-12 menu menu-principal">
 
                                 <a href="<?php echo esc_url(home_url('/')); ?>" class="pull-left">Home </a>
 
@@ -25,14 +25,30 @@
                                 <a href="#" class="pull-left" data-menu='nofluxo' >No Fluxo <i class="fa fa-caret-down"></i> </a>
                                 <a href="#" class="pull-left" data-menu='atendimento'>Atendimento ao cliente <i class="fa fa-caret-down"></i> </a>
 
-                                <a href="#" class="pull-right last-item" data-menu='buscar'>  <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Search2x.png"></a>
+                                <a href="#" 
+                                   class="pull-right last-item" 
+                                   data-menu='buscar'
+                                   >  
+                                    <img 
+                                        class="icone-menu" 
+                                        src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Search2x.png"
+                                        data-imgin='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Search2xhover.png'
+                                        data-imgout='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Search2x.png'
+                                        >
+                                </a>
 
                                 <?php linkInOut(); ?>
                                 <?php linkMyCart(); ?>
                                 <a 
                                     href="<?php echo YITH_WCWL()->get_wishlist_url(); ?>" 
-                                    class="pull-right " > 
-                                    <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2x.png">
+                                    class="pull-right "
+                                    > 
+                                    <img 
+                                        class="icone-menu" 
+                                        src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2x.png"
+                                        data-imgin='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2xhover.png'
+                                        data-imgout='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Favoritar2x.png'                                        
+                                        >
                                     <?php echo yith_wcwl_count_products(); ?>
                                 </a>
                             </div>

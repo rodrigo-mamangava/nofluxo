@@ -152,6 +152,7 @@ function nofluxo_scripts() {
     wp_enqueue_script('nofluxo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
 
 
+    wp_enqueue_script('nofluxo-menu-hover', get_template_directory_uri() . '/js/menu-hover.js', array('jquery'), '20151125', true);
     wp_enqueue_script('nofluxo-menu-toggle', get_template_directory_uri() . '/js/menu-toggle.js', array('jquery'), '20151105', true);
     wp_enqueue_script('nofluxo-coracao-toggle', get_template_directory_uri() . '/js/coracao-toggle.js', array('jquery'), '20151123', true);
     wp_enqueue_script('nofluxo-widget-ajuste', get_template_directory_uri() . '/js/widget-ajuste.js', array('jquery'), '20151109', true);
@@ -266,9 +267,19 @@ if (!function_exists('woocommerce_content')) {
                 echo '</div>';
             }
 
+            
+            //visivel nos >= 768
+//            echo '<div class="col-xs-12 menu-mobile visible-xs-block">';
+//            get_sidebar('esquerda');
+//            echo '</div> <!-- menu-mobile -->';
+            
             echo '<div class="col-xs-12 hidden-xs col-sm-3 ">';
             get_sidebar('esquerda');
             echo '</div> <!-- col-sm-3 -->';
+            
+
+            
+            
 
             echo '<div class="col-xs-12 col-sm-9 ">';
             get_template_part('template-parts/woo/shop', 'sidebar');
@@ -305,13 +316,20 @@ function linkMyCart() {
     $qty = $woocommerce->cart->get_cart_contents_count();
     $total = $woocommerce->cart->get_cart_total();
     $cart_url = $woocommerce->cart->get_cart_url();
+    
+    ?>
+    <a href="<?php echo $cart_url; ?>" class="pull-right">
+        <img 
+            class="icone-menu" 
+            src="<?php echo get_template_directory_uri(); ?>/img/icone/geral/ico-carrinho2x.png"
+            data-imgin='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-carrinho2xhover.png'
+            data-imgout='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-carrinho2x.png'            
+            >
+        <?php echo $qty; ?>
+    </a>
+    
+    <?php
 
-    $cart = '<a href="' . $cart_url . '" class="pull-right">';
-    $cart .= '<img class="icone-menu" src="' . get_template_directory_uri() . '/img/icone/geral/ico-carrinho2x.png"> ';
-    $cart .= $qty;
-    $cart .= '</a>';
-
-    echo $cart;
 }
 
 function linkInOut() {
@@ -323,7 +341,12 @@ function linkInOut() {
             class="pull-right"
             href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>" 
             title="<?php _e('My Account', 'woothemes'); ?>">
-            <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png">
+            <img 
+                class="icone-menu" 
+                src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png"
+                data-imgin='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2xhover.png'
+                data-imgout='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png'
+                >
         </a>
     <?php } else {
         ?>
@@ -331,7 +354,12 @@ function linkInOut() {
             class="pull-right"
             href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>" 
             title="<?php _e('Login / Register', 'woothemes'); ?>">
-            <img class="icone-menu" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png">
+            <img 
+                class="icone-menu" 
+                src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png"
+                data-imgin='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2xhover.png'
+                data-imgout='<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Login2x.png'
+                >
         </a>
         <?php
     }
