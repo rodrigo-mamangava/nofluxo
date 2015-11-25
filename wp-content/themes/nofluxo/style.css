@@ -9302,6 +9302,53 @@ aside.widget_layered_nav_filters li.chosen a:hover {
 ul li {
   list-style: none;
 }
+.sidebar-mobile select {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.sidebar-mobile select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.sidebar-mobile select::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.sidebar-mobile select:-ms-input-placeholder {
+  color: #999999;
+}
+.sidebar-mobile select::-webkit-input-placeholder {
+  color: #999999;
+}
+.sidebar-mobile select[disabled],
+.sidebar-mobile select[readonly],
+fieldset[disabled] .sidebar-mobile select {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.sidebar-mobile select[disabled],
+fieldset[disabled] .sidebar-mobile select {
+  cursor: not-allowed;
+}
+textarea.sidebar-mobile select {
+  height: auto;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -10075,6 +10122,55 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 .contadorAndOrdenado .ordenador select,
 .contadorAndOrdenado .ordenador textarea {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .contadorAndOrdenado .ordenador select {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+  .contadorAndOrdenado .ordenador select:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  .contadorAndOrdenado .ordenador select::-moz-placeholder {
+    color: #999999;
+    opacity: 1;
+  }
+  .contadorAndOrdenado .ordenador select:-ms-input-placeholder {
+    color: #999999;
+  }
+  .contadorAndOrdenado .ordenador select::-webkit-input-placeholder {
+    color: #999999;
+  }
+  .contadorAndOrdenado .ordenador select[disabled],
+  .contadorAndOrdenado .ordenador select[readonly],
+  fieldset[disabled] .contadorAndOrdenado .ordenador select {
+    background-color: #eeeeee;
+    opacity: 1;
+  }
+  .contadorAndOrdenado .ordenador select[disabled],
+  fieldset[disabled] .contadorAndOrdenado .ordenador select {
+    cursor: not-allowed;
+  }
+  textarea.contadorAndOrdenado .ordenador select {
+    height: auto;
+  }
 }
 /* ==========================================================================
    PAGE WISHLIST

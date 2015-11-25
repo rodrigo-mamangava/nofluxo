@@ -125,6 +125,15 @@ function nofluxo_widgets_init() {
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>',
     ));
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar Mobile', 'nofluxo'),
+        'id' => 'sidebar-3',
+        'description' => 'Sidebar extra apenas para mobile',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
 }
 
 add_action('widgets_init', 'nofluxo_widgets_init');
@@ -269,9 +278,9 @@ if (!function_exists('woocommerce_content')) {
 
             
             //visivel nos >= 768
-//            echo '<div class="col-xs-12 menu-mobile visible-xs-block">';
-//            get_sidebar('esquerda');
-//            echo '</div> <!-- menu-mobile -->';
+            echo '<div class="col-xs-12 visible-xs">';
+            get_sidebar('mobile');
+            echo '</div> <!-- menu-mobile -->';
             
             echo '<div class="col-xs-12 hidden-xs col-sm-3 ">';
             get_sidebar('esquerda');
