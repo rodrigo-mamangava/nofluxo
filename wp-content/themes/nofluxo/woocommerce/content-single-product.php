@@ -109,13 +109,16 @@ if (post_password_required()) {
                                     <div class="col-xs-12">
                                         <?php wc_print_notices_single(); ?>
                                     </div>
-
+                                    
                                     <?php
-                                    woocommerce_template_single_add_to_cart();
+                                        woocommerce_template_single_add_to_cart();
                                     ?>
 
                                 </div>
                                 <div class="row">
+                                    
+                                    
+                                    
                                     <div class="col-xs-12">
                                         <div class="produto-single-info-adicional">
                                             <div class="produto-single-info-adicional-texto"><?php echo get_post_meta($post->ID, 'info-adicional', true); 

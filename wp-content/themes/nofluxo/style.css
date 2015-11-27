@@ -6866,6 +6866,11 @@ h6 {
 .skip-link {
   display: none;
 }
+a:focus {
+  outline: thin dotted;
+  outline: 0;
+  outline-offset: 0;
+}
 /* ==========================================================================
    Cores
    ========================================================================== */
@@ -9622,8 +9627,37 @@ footer .footer-conteudo .link-social a:focus {
     margin-right: auto;
   }
 }
-footer .credito {
+footer .pagamentos {
   margin-top: 15px;
+  background-color: #3d3d3d;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 10px;
+  padding: 5px 0;
+}
+footer .pagamentos .pagseguro {
+  width: 100%;
+  padding: 5px 0 0;
+}
+@media (max-width: 767px) {
+  footer .pagamentos .pagseguro {
+    width: 100px;
+  }
+}
+footer .pagamentos p {
+  text-align: left;
+  padding: 5px 0 0;
+}
+@media (max-width: 767px) {
+  footer .pagamentos p {
+    padding: 5px 0;
+  }
+}
+footer .pagamentos p img {
+  width: 37px;
+}
+footer .credito {
   background-color: #1f2427;
   text-align: center;
   color: #ffffff;
@@ -10020,6 +10054,19 @@ fieldset[disabled] .produto-single .produto-single-info .produto-single-info-des
 }
 .produto-single .produto-single-info .produto-single-info-descricao .disponiveis-compra .variations_form table {
   width: 100%;
+}
+.produto-single .produto-single-info table.variations tfoot tr {
+  text-align: right;
+}
+.produto-single .produto-single-info table.variations tfoot tr img {
+  margin-top: -107px;
+  margin-right: -40px;
+}
+@media (max-width: 767px) {
+  .produto-single .produto-single-info table.variations tfoot tr img {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
 }
 .produto-single .produto-single-info .produto-single-info-adicional {
   color: #858585;

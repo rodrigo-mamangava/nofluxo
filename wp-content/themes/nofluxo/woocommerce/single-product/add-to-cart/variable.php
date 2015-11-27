@@ -47,7 +47,27 @@ do_action('woocommerce_before_add_to_cart_form');
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <a 
+                                href="#"
+                                data-toggle="modal" 
+                                data-target=".bs-example-modal-lg"
+                                ><img src="<?php echo get_template_directory_uri() ?>/img/camisa/icon-medidas-camisas.png" ></a>                            
+                        </td>
+                    </tr>
+                    
+                </tfoot>
             </table>
+            
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <img src="<?php echo get_template_directory_uri() ?>/img/camisa/tabela-medidas-camisas.png" style="width: 100%">
+                  </div>
+                </div>
+            </div>
 
             <?php //do_action('woocommerce_before_add_to_cart_button'); ?>
 

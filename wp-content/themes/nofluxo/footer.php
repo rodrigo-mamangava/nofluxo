@@ -49,9 +49,13 @@
         </div><!-- container footer-conteudo -->
     </div><!--row-->
     
+   
+    <?php get_template_part( 'template-parts/bandeiras' ); ?>
+
     <div class="row credito">
         <div class="col-xs-12 ">
-            <p>All content designs 2010-<?php echo date('Y'); ?> No Fluxo. <a href="#">Politica de Privacidade</a></p>
+            <p>All content designs 2010-<?php echo date('Y'); ?> No Fluxo.com. CNPJ29.358.108/0001-32 Razão e Emoção Roupas LTDA<a href="#">Politica de Privacidade</a></p>
+                
         </div>
     </div>
 
