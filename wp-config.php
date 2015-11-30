@@ -38,8 +38,7 @@ if($_SERVER['SERVER_ADDR'] == '127.0.0.1') {
 	define('SECURE_AUTH_SALT', '(S.KX!C+-jhj]n2h+%U[m:|%&r|t&Cd7y=swD(-d||1A|5`_huf~L?!JFFRcs#2z');
 	define('LOGGED_IN_SALT',   ';-+d%-h?P0J2hLChg^;CmY.lD,]Fw{nE6=?aX}aT_IUSptIg7.pvfqOZMQ& JiLy');
 	define('NONCE_SALT',       'dGUGqeRHG;q=fgzuG7eMRJace:.XFV9fty@LjJF u7[)(cg&EV2,^%`SOB!Y:4OJ');
-
-
+        
 }else{
 
 	if (($_SERVER['HTTP_CLOUDFRONT_FORWARDED_PROTO'] == 'https') OR ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'))
