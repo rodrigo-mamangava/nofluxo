@@ -73,10 +73,10 @@ if (is_front_page()) {
            
 
             $attachment_ids = $product->get_gallery_attachment_ids();
-            
+                        
             //debug(sizeof($attachment_ids));
             
-            if (sizeof($attachment_ids) == 1) {
+            if (sizeof($attachment_ids) >= 1) {
                 
                 $urlPri = "";
                 $urlSec = "";
