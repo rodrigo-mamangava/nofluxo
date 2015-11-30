@@ -12,6 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="col-xs-8 item-produto-label-nome bubble">
+<div class="col-md-8 item-produto-label-nome bubble">
     <p><?php the_title(); ?></p>
 </div>

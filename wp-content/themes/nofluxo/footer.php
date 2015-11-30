@@ -7,7 +7,7 @@
 
                     <div class="row">
 
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <h2 class="titulo">No Fluxo</h2>
                             <div class="row">
                                 <div class="col-xs-12 sitemap">
@@ -19,7 +19,7 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <h2 class="titulo">Socialize!</h2>  
                             <p class="outros">
                                 Chega mais
@@ -30,7 +30,7 @@
                                 ?>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <h2 class="titulo">Newsletter</h2>
                             <?php formCadastroNews(); ?>
                         </div>
@@ -40,7 +40,7 @@
                     </div><!-- row -->
 
                 </div><!--footer-conteudo-->
-                <div class=" footer-conteudo-logo col-sm-2">
+                <div class=" footer-conteudo-logo col-md-2">
                     <img src="<?php echo get_template_directory_uri() ?>/img/logo/logo-noFluxo-rodape2x.png" class="img-responsive logo-footer">
 
                 </div><!--footer-conteudo-logo-->
