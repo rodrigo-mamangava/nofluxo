@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Produtos em Destaque
+ * Plugin Name: Produtos em Destaque - No FLUXO
  * Description: Widget com carrossel de produtos em destaque.
  * Author: Mamangava
  * Author URI: http://mamangava.com/
- * Version: 0.0.1
+ * Version: 1.0.0
  * License: GPLv2 or later
  */
 

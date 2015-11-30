@@ -1,9 +1,9 @@
 <?php
 
 /**
- *  Plugin Name: Custom Post Type para NoFluxo
+ *  Plugin Name: Banner No Fluxo
  *  Description: Adição de custom post do tipo: BANNER
- *  Version: 1.0
+ *  Version: 1.0.0
  *  Author: Mamangava
  *  Author URI: http://mamangava.com
  * 	Author Email: rodrigo@mamangava.com

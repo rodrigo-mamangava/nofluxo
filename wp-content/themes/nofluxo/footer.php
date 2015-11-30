@@ -54,7 +54,13 @@
 
     <div class="row credito">
         <div class="col-xs-12 ">
-            <p>All content designs 2010-<?php echo date('Y'); ?> No Fluxo.com. CNPJ29.358.108/0001-32 Razão e Emoção Roupas LTDA<a href="#">Politica de Privacidade</a></p>
+            <p>
+                All content designs 2010-<?php echo date('Y'); ?> 
+                &#183; No Fluxo.com. 
+                &#183; CNPJ29.358.108/0001-32 
+                &#183; Razão e Emoção Roupas LTDA
+                &#183; <a href="#">Politica de Privacidade</a>
+                &#183; <a href="http://pinzon17.com.br/">Desenvolvimento Estúdio Pinzon17</a></p>
                 
         </div>
     </div>
