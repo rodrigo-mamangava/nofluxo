@@ -44,6 +44,15 @@
                                 ?>
                                 
                             </li>
+                            <?php if(menuExiste('menuYou')) :?>
+                            <li><a id="menu-loja" href="#"  data-menu='loja' >Youtubers <i class="fa fa-caret-right"></i> </a>
+                            
+                                <?php
+                                wp_nav_menu(array('menu' => 'Menu Youtubers'));
+                                ?>
+                                
+                            </li>
+                            <?php endif;?>
                           
                             <li><a href="#"  data-menu='nofluxo' >No Fluxo <i class="fa fa-caret-right"></i> </a>
                                 <?php
