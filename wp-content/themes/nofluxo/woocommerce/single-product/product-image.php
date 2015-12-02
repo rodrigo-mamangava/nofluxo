@@ -14,10 +14,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $woocommerce, $product;
 
 ?>
+
 <div class="row">
     <div class="produto-single-imagens">
         
         <div class="col-xs-12 produto-single-imagens-unica">
+            <div class="images">
 
 	<?php
 		if ( has_post_thumbnail() ) {
@@ -47,6 +49,8 @@ global $post, $woocommerce, $product;
 
 		}
 	?>
+                
+            </div>
         </div>
         
 
