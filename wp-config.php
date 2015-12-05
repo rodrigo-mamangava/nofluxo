@@ -17,6 +17,12 @@
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
 
+/** Amazon Web Services Access Key  */
+define( 'AWS_ACCESS_KEY_ID', 'AKIAJQ2CUMOPG2KDEMOQ' );
+define( 'AWS_SECRET_ACCESS_KEY', '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' );
+
+
+
 
 if($_SERVER['SERVER_ADDR'] == '127.0.0.1') {
 	define('DB_NAME', 'db_no_fluxo');
