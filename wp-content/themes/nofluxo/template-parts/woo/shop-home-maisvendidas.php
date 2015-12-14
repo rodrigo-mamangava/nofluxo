@@ -22,7 +22,7 @@ $listaUltimos = array(4,8,12,16,20,24);
 
 
         <div class="col-xs-8 col-sm-10  mais-vendidas-titulo">
-            <h2 class="h2-com-linha"><span> <img class="icone-titulo" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Camisa2x.png">  As mais vendidas</span></h2>
+            <h2 class="h2-com-linha"><span> <img class="icone-titulo" src="<?php echo get_template_directory_uri() ?>/img/icone/geral/ico-Camisa2x.png"> Destaques</span></h2>
         </div>
 
         <div  class="col-xs-4 col-sm-2  mais-vendidas-passador" >

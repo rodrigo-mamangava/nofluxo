@@ -3,7 +3,8 @@ $args = array(
     'post_type' => 'product',
     'posts_per_page' => 12,
     'paged' => get_query_var('page'),
-    'orderby' => 'rand',
+    'orderby' => 'date',
+    'order'   => 'DESC',
 );
 $loop = new WP_Query($args);
 ?>
