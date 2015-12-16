@@ -49,8 +49,12 @@
         </div><!-- container footer-conteudo -->
     </div><!--row-->
     
+    <br/>
+        <?php get_template_part( 'template-parts/sitelock' ); ?>
+    <br/>
    
     <?php get_template_part( 'template-parts/bandeiras' ); ?>
+    
 
     <div class="row credito">
         <div class="col-xs-12 ">
